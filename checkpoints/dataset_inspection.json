@@ -1,0 +1,27 @@
+{
+    "dataset_path": "E:\\rag\\synthetic_knowledge_items.csv",
+    "dataset_name": "Synthetic IT-Related Knowledge Items",
+    "dataset_version": "Version 3",
+    "rows": 100,
+    "columns": 4,
+    "column_names": [
+        "ki_topic",
+        "ki_text",
+        "alt_ki_text",
+        "bad_ki_text"
+    ],
+    "data_types": {
+        "ki_topic": "str",
+        "ki_text": "str",
+        "alt_ki_text": "str",
+        "bad_ki_text": "str"
+    },
+    "missing_values": {
+        "ki_topic": 0,
+        "ki_text": 0,
+        "alt_ki_text": 0,
+        "bad_ki_text": 0
+    },
+    "duplicate_rows": 0,
+    "memory_mb": 1.354
+}

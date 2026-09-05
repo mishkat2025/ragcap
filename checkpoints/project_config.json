@@ -1,0 +1,26 @@
+{
+    "project": {
+        "name": "Synthetic IT Knowledge RAG",
+        "dataset_name": "Synthetic IT-Related Knowledge Items",
+        "dataset_version": "Version 3",
+        "expected_records": 100,
+        "expected_columns": 4
+    },
+    "dataset": {
+        "filename": "synthetic_knowledge_items.csv",
+        "raw_path": "E:\\rag\\synthetic_knowledge_items.csv"
+    },
+    "chunking": {
+        "chunk_size": 500,
+        "chunk_overlap": 50
+    },
+    "retrieval": {
+        "method": "dense",
+        "top_k": 5
+    },
+    "generation": {
+        "provider": "ollama",
+        "base_url": "http://localhost:11434",
+        "model": null
+    }
+}

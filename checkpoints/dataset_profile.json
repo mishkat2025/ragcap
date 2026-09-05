@@ -1,0 +1,69 @@
+{
+    "schema": {
+        "document_id_source": "row_index",
+        "topic_column": "ki_topic",
+        "primary_text_column": "ki_text",
+        "alternative_text_column": "alt_ki_text",
+        "bad_text_column": "bad_ki_text"
+    },
+    "document_strategy": {
+        "baseline_corpus": "primary",
+        "topic_field": "ki_topic",
+        "content_field": "ki_text",
+        "excluded_from_baseline": [
+            "alt_ki_text",
+            "bad_ki_text"
+        ],
+        "alternative_text_usage": "Reserved for controlled experiments/evaluation.",
+        "bad_text_usage": "Reserved for robustness/adversarial experiments and evaluation."
+    },
+    "record_count": 100,
+    "unique_topics": 98,
+    "text_statistics": {
+        "topic_char_length": {
+            "count": 100.0,
+            "mean": 41.55,
+            "std": 9.77,
+            "min": 25.0,
+            "25%": 33.0,
+            "50%": 41.0,
+            "75%": 50.0,
+            "max": 64.0
+        },
+        "primary_char_length": {
+            "count": 100.0,
+            "mean": 2581.34,
+            "std": 361.6,
+            "min": 1606.0,
+            "25%": 2327.25,
+            "50%": 2573.5,
+            "75%": 2824.25,
+            "max": 3730.0
+        },
+        "alternative_char_length": {
+            "count": 100.0,
+            "mean": 2440.64,
+            "std": 372.04,
+            "min": 1526.0,
+            "25%": 2240.5,
+            "50%": 2415.0,
+            "75%": 2660.5,
+            "max": 3456.0
+        },
+        "bad_char_length": {
+            "count": 100.0,
+            "mean": 2921.6,
+            "std": 319.16,
+            "min": 2326.0,
+            "25%": 2756.25,
+            "50%": 2923.0,
+            "75%": 3108.0,
+            "max": 3904.0
+        }
+    },
+    "version_comparison": {
+        "primary_equals_alternative": 0,
+        "primary_equals_bad": 0,
+        "alternative_equals_bad": 0
+    }
+}
