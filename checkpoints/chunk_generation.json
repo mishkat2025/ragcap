@@ -1,0 +1,26 @@
+{
+  "stage": "token_aware_chunk_generation",
+  "status": "success",
+  "generation_version": "corrected_final_chunk_handling",
+  "source_documents": 100,
+  "generated_chunks": 164,
+  "tokenizer": "cl100k_base",
+  "chunk_size_tokens": 500,
+  "chunk_overlap_tokens": 50,
+  "step_size_tokens": 450,
+  "chunk_token_statistics": {
+    "minimum": 53,
+    "maximum": 500,
+    "mean": 347,
+    "median": 474.5
+  },
+  "document_distribution": {
+    "one_chunk_documents": 36,
+    "two_chunk_documents": 64,
+    "three_plus_chunk_documents": 0,
+    "total_documents": 100
+  },
+  "tiny_chunks": 0,
+  "source_documents_path": "E:\\rag\\data\\processed\\rag_documents.json",
+  "chunks_path": "E:\\rag\\data\\processed\\rag_chunks.json"
+}

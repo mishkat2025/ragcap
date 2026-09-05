@@ -1,0 +1,1229 @@
+{
+    "document_count": 100,
+    "tokenizer": "cl100k_base",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "token_statistics": {
+        "minimum": 335,
+        "maximum": 776,
+        "mean": 537.08,
+        "median": 537.0,
+        "p25": 488.75,
+        "p75": 588.75
+    },
+    "character_statistics": {
+        "minimum": 1606,
+        "maximum": 3730,
+        "mean": 2581.34
+    },
+    "characters_per_token": {
+        "minimum": 4.345368916797488,
+        "maximum": 5.434782608695652,
+        "mean": 4.812409354747111
+    },
+    "estimated_chunk_count": 164,
+    "document_token_statistics": [
+        {
+            "document_id": "doc_001",
+            "topic": "Setting Up a Mobile Device for Company Email",
+            "character_count": 2568,
+            "token_count": 535,
+            "characters_per_token": 4.8
+        },
+        {
+            "document_id": "doc_002",
+            "topic": "Resetting a Forgotten PIN",
+            "character_count": 1873,
+            "token_count": 421,
+            "characters_per_token": 4.448931116389549
+        },
+        {
+            "document_id": "doc_003",
+            "topic": "Configuring VPN Access for Remote Workers",
+            "character_count": 2607,
+            "token_count": 528,
+            "characters_per_token": 4.9375
+        },
+        {
+            "document_id": "doc_004",
+            "topic": "Troubleshooting Issues with Microsoft Office",
+            "character_count": 2924,
+            "token_count": 558,
+            "characters_per_token": 5.240143369175628
+        },
+        {
+            "document_id": "doc_005",
+            "topic": "Setting Up a Conference Call on Cisco Webex",
+            "character_count": 2405,
+            "token_count": 523,
+            "characters_per_token": 4.598470363288719
+        },
+        {
+            "document_id": "doc_006",
+            "topic": "Creating a Backup of Important Files",
+            "character_count": 2521,
+            "token_count": 516,
+            "characters_per_token": 4.885658914728682
+        },
+        {
+            "document_id": "doc_007",
+            "topic": "Troubleshooting Issues with Company-Issued Tablets",
+            "character_count": 2331,
+            "token_count": 505,
+            "characters_per_token": 4.6158415841584155
+        },
+        {
+            "document_id": "doc_008",
+            "topic": "Setting Up a Secure Wireless Network",
+            "character_count": 2788,
+            "token_count": 551,
+            "characters_per_token": 5.05989110707804
+        },
+        {
+            "document_id": "doc_009",
+            "topic": "Resetting a Jammed Printer",
+            "character_count": 2312,
+            "token_count": 494,
+            "characters_per_token": 4.680161943319838
+        },
+        {
+            "document_id": "doc_010",
+            "topic": "Configuring Email on an Android Device",
+            "character_count": 2748,
+            "token_count": 601,
+            "characters_per_token": 4.572379367720466
+        },
+        {
+            "document_id": "doc_011",
+            "topic": "Troubleshooting Issues with Citrix",
+            "character_count": 3255,
+            "token_count": 693,
+            "characters_per_token": 4.696969696969697
+        },
+        {
+            "document_id": "doc_012",
+            "topic": "Setting Up a New Printer on the Network",
+            "character_count": 2632,
+            "token_count": 542,
+            "characters_per_token": 4.856088560885609
+        },
+        {
+            "document_id": "doc_013",
+            "topic": "Creating a Restore Point on a Windows Machine",
+            "character_count": 2288,
+            "token_count": 476,
+            "characters_per_token": 4.80672268907563
+        },
+        {
+            "document_id": "doc_014",
+            "topic": "Troubleshooting Issues with Audio on a Laptop",
+            "character_count": 2705,
+            "token_count": 609,
+            "characters_per_token": 4.441707717569787
+        },
+        {
+            "document_id": "doc_015",
+            "topic": "Setting Up a Secure FTP Connection",
+            "character_count": 2223,
+            "token_count": 493,
+            "characters_per_token": 4.509127789046653
+        },
+        {
+            "document_id": "doc_016",
+            "topic": "Resetting a Forgotten Username",
+            "character_count": 2357,
+            "token_count": 469,
+            "characters_per_token": 5.025586353944563
+        },
+        {
+            "document_id": "doc_017",
+            "topic": "Configuring a Company-Issued Smartphone",
+            "character_count": 2751,
+            "token_count": 543,
+            "characters_per_token": 5.066298342541437
+        },
+        {
+            "document_id": "doc_018",
+            "topic": "Troubleshooting Issues with Java",
+            "character_count": 2768,
+            "token_count": 637,
+            "characters_per_token": 4.345368916797488
+        },
+        {
+            "document_id": "doc_019",
+            "topic": "Setting Up a New User's Computer",
+            "character_count": 2693,
+            "token_count": 524,
+            "characters_per_token": 5.1393129770992365
+        },
+        {
+            "document_id": "doc_020",
+            "topic": "Creating a New Distribution List in Exchange",
+            "character_count": 2579,
+            "token_count": 567,
+            "characters_per_token": 4.548500881834215
+        },
+        {
+            "document_id": "doc_021",
+            "topic": "Troubleshooting Issues with Adobe Flash",
+            "character_count": 2552,
+            "token_count": 541,
+            "characters_per_token": 4.717190388170056
+        },
+        {
+            "document_id": "doc_022",
+            "topic": "Setting Up a Meeting on Microsoft Teams",
+            "character_count": 2423,
+            "token_count": 495,
+            "characters_per_token": 4.894949494949495
+        },
+        {
+            "document_id": "doc_023",
+            "topic": "Resetting a Biometric Login",
+            "character_count": 2298,
+            "token_count": 491,
+            "characters_per_token": 4.680244399185336
+        },
+        {
+            "document_id": "doc_024",
+            "topic": "Configuring a Network Drive",
+            "character_count": 2828,
+            "token_count": 621,
+            "characters_per_token": 4.553945249597423
+        },
+        {
+            "document_id": "doc_025",
+            "topic": "Troubleshooting Issues with Company-Issued Headsets",
+            "character_count": 3009,
+            "token_count": 613,
+            "characters_per_token": 4.908646003262643
+        },
+        {
+            "document_id": "doc_026",
+            "topic": "Setting Up a Secure Connection to a Database",
+            "character_count": 2692,
+            "token_count": 538,
+            "characters_per_token": 5.003717472118959
+        },
+        {
+            "document_id": "doc_027",
+            "topic": "Creating a Knowledge Base Article",
+            "character_count": 2842,
+            "token_count": 544,
+            "characters_per_token": 5.224264705882353
+        },
+        {
+            "document_id": "doc_028",
+            "topic": "Troubleshooting Issues with Skype for Business",
+            "character_count": 2769,
+            "token_count": 595,
+            "characters_per_token": 4.653781512605042
+        },
+        {
+            "document_id": "doc_029",
+            "topic": "Setting Up a New Monitor on a Desktop",
+            "character_count": 2337,
+            "token_count": 489,
+            "characters_per_token": 4.779141104294479
+        },
+        {
+            "document_id": "doc_030",
+            "topic": "Resetting a Computer's BIOS",
+            "character_count": 2321,
+            "token_count": 503,
+            "characters_per_token": 4.614314115308151
+        },
+        {
+            "document_id": "doc_031",
+            "topic": "Configuring a Firewall Exception",
+            "character_count": 2401,
+            "token_count": 509,
+            "characters_per_token": 4.717092337917485
+        },
+        {
+            "document_id": "doc_032",
+            "topic": "Troubleshooting Issues with Microsoft Visio",
+            "character_count": 3075,
+            "token_count": 660,
+            "characters_per_token": 4.659090909090909
+        },
+        {
+            "document_id": "doc_033",
+            "topic": "Setting Up a Remote Desktop Connection",
+            "character_count": 2684,
+            "token_count": 540,
+            "characters_per_token": 4.970370370370371
+        },
+        {
+            "document_id": "doc_034",
+            "topic": "Creating a System Restore Point",
+            "character_count": 2652,
+            "token_count": 544,
+            "characters_per_token": 4.875
+        },
+        {
+            "document_id": "doc_035",
+            "topic": "Troubleshooting Issues with Company-Issued Smartwatches",
+            "character_count": 2521,
+            "token_count": 506,
+            "characters_per_token": 4.982213438735178
+        },
+        {
+            "document_id": "doc_036",
+            "topic": "Setting Up a New User's Voicemail",
+            "character_count": 2073,
+            "token_count": 432,
+            "characters_per_token": 4.798611111111111
+        },
+        {
+            "document_id": "doc_037",
+            "topic": "Resetting a Forgotten Security Question",
+            "character_count": 2220,
+            "token_count": 457,
+            "characters_per_token": 4.857768052516412
+        },
+        {
+            "document_id": "doc_038",
+            "topic": "Configuring a Company-Issued Tablet for International Travel",
+            "character_count": 2823,
+            "token_count": 577,
+            "characters_per_token": 4.892547660311958
+        },
+        {
+            "document_id": "doc_039",
+            "topic": "Troubleshooting Issues with Microsoft Access",
+            "character_count": 3105,
+            "token_count": 620,
+            "characters_per_token": 5.008064516129032
+        },
+        {
+            "document_id": "doc_040",
+            "topic": "Setting Up a Secure Connection to a SharePoint Site",
+            "character_count": 2600,
+            "token_count": 539,
+            "characters_per_token": 4.823747680890538
+        },
+        {
+            "document_id": "doc_041",
+            "topic": "Creating a New Folder in the Company's File System",
+            "character_count": 2191,
+            "token_count": 474,
+            "characters_per_token": 4.622362869198312
+        },
+        {
+            "document_id": "doc_042",
+            "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+            "character_count": 2961,
+            "token_count": 630,
+            "characters_per_token": 4.7
+        },
+        {
+            "document_id": "doc_043",
+            "topic": "Setting Up a Meeting on Zoom",
+            "character_count": 2660,
+            "token_count": 565,
+            "characters_per_token": 4.707964601769912
+        },
+        {
+            "document_id": "doc_044",
+            "topic": "Resetting a Forgotten Employee ID",
+            "character_count": 1901,
+            "token_count": 389,
+            "characters_per_token": 4.886889460154242
+        },
+        {
+            "document_id": "doc_045",
+            "topic": "Configuring a Network Printer",
+            "character_count": 2928,
+            "token_count": 619,
+            "characters_per_token": 4.730210016155089
+        },
+        {
+            "document_id": "doc_046",
+            "topic": "Troubleshooting Issues with Microsoft Publisher",
+            "character_count": 2932,
+            "token_count": 544,
+            "characters_per_token": 5.389705882352941
+        },
+        {
+            "document_id": "doc_047",
+            "topic": "Setting Up a New User's Account in Salesforce",
+            "character_count": 2670,
+            "token_count": 541,
+            "characters_per_token": 4.935304990757856
+        },
+        {
+            "document_id": "doc_048",
+            "topic": "Creating a New IT Request",
+            "character_count": 2167,
+            "token_count": 465,
+            "characters_per_token": 4.660215053763441
+        },
+        {
+            "document_id": "doc_049",
+            "topic": "Troubleshooting Issues with Company-Issued Laptops",
+            "character_count": 2809,
+            "token_count": 569,
+            "characters_per_token": 4.936731107205624
+        },
+        {
+            "document_id": "doc_050",
+            "topic": "Setting Up a Secure Connection to a Database Server",
+            "character_count": 2846,
+            "token_count": 594,
+            "characters_per_token": 4.7912457912457915
+        },
+        {
+            "document_id": "doc_051",
+            "topic": "Resetting a Computer's IP Address",
+            "character_count": 2579,
+            "token_count": 549,
+            "characters_per_token": 4.697632058287796
+        },
+        {
+            "document_id": "doc_052",
+            "topic": "Configuring a Company-Issued Smartphone for International Travel",
+            "character_count": 2915,
+            "token_count": 594,
+            "characters_per_token": 4.907407407407407
+        },
+        {
+            "document_id": "doc_053",
+            "topic": "Troubleshooting Issues with Microsoft Excel",
+            "character_count": 3389,
+            "token_count": 716,
+            "characters_per_token": 4.733240223463687
+        },
+        {
+            "document_id": "doc_054",
+            "topic": "Setting Up a New User's Account in JIRA",
+            "character_count": 2200,
+            "token_count": 479,
+            "characters_per_token": 4.592901878914405
+        },
+        {
+            "document_id": "doc_055",
+            "topic": "Creating a New IT Incident Report",
+            "character_count": 2283,
+            "token_count": 490,
+            "characters_per_token": 4.659183673469387
+        },
+        {
+            "document_id": "doc_056",
+            "topic": "Troubleshooting Issues with a Jammed Copier",
+            "character_count": 2683,
+            "token_count": 587,
+            "characters_per_token": 4.570698466780239
+        },
+        {
+            "document_id": "doc_057",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Device",
+            "character_count": 2145,
+            "token_count": 430,
+            "characters_per_token": 4.988372093023256
+        },
+        {
+            "document_id": "doc_058",
+            "topic": "Resetting a Forgotten Network Password",
+            "character_count": 2406,
+            "token_count": 495,
+            "characters_per_token": 4.86060606060606
+        },
+        {
+            "document_id": "doc_059",
+            "topic": "Configuring a Network Scanner",
+            "character_count": 2595,
+            "token_count": 539,
+            "characters_per_token": 4.8144712430426715
+        },
+        {
+            "document_id": "doc_060",
+            "topic": "Troubleshooting Issues with Microsoft Word",
+            "character_count": 2978,
+            "token_count": 640,
+            "characters_per_token": 4.653125
+        },
+        {
+            "document_id": "doc_061",
+            "topic": "Setting Up a New User's Account in Oracle",
+            "character_count": 2428,
+            "token_count": 546,
+            "characters_per_token": 4.446886446886447
+        },
+        {
+            "document_id": "doc_062",
+            "topic": "Creating a New IT Service Request",
+            "character_count": 2634,
+            "token_count": 606,
+            "characters_per_token": 4.346534653465347
+        },
+        {
+            "document_id": "doc_063",
+            "topic": "Troubleshooting Issues with Company-Issued Desktops",
+            "character_count": 2328,
+            "token_count": 462,
+            "characters_per_token": 5.038961038961039
+        },
+        {
+            "document_id": "doc_064",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Server",
+            "character_count": 2477,
+            "token_count": 475,
+            "characters_per_token": 5.214736842105263
+        },
+        {
+            "document_id": "doc_065",
+            "topic": "Resetting a Computer's DNS Settings",
+            "character_count": 2438,
+            "token_count": 558,
+            "characters_per_token": 4.369175627240144
+        },
+        {
+            "document_id": "doc_066",
+            "topic": "Configuring a Company-Issued Tablet for Accessibility",
+            "character_count": 3101,
+            "token_count": 624,
+            "characters_per_token": 4.969551282051282
+        },
+        {
+            "document_id": "doc_067",
+            "topic": "Troubleshooting Issues with Microsoft PowerPoint",
+            "character_count": 3730,
+            "token_count": 776,
+            "characters_per_token": 4.806701030927835
+        },
+        {
+            "document_id": "doc_068",
+            "topic": "Setting Up a New User's Account in SAP",
+            "character_count": 2535,
+            "token_count": 557,
+            "characters_per_token": 4.551166965888689
+        },
+        {
+            "document_id": "doc_069",
+            "topic": "Creating a New IT Problem Report",
+            "character_count": 2720,
+            "token_count": 582,
+            "characters_per_token": 4.673539518900344
+        },
+        {
+            "document_id": "doc_070",
+            "topic": "Troubleshooting Issues with a Slow-Performing Network",
+            "character_count": 2460,
+            "token_count": 471,
+            "characters_per_token": 5.222929936305732
+        },
+        {
+            "document_id": "doc_071",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Printer",
+            "character_count": 2325,
+            "token_count": 506,
+            "characters_per_token": 4.594861660079052
+        },
+        {
+            "document_id": "doc_072",
+            "topic": "Resetting a Forgotten VPN Password",
+            "character_count": 1606,
+            "token_count": 335,
+            "characters_per_token": 4.794029850746269
+        },
+        {
+            "document_id": "doc_073",
+            "topic": "Configuring a Network Fax Machine",
+            "character_count": 2896,
+            "token_count": 632,
+            "characters_per_token": 4.582278481012659
+        },
+        {
+            "document_id": "doc_074",
+            "topic": "Troubleshooting Issues with Microsoft OneNote",
+            "character_count": 3384,
+            "token_count": 733,
+            "characters_per_token": 4.616643929058663
+        },
+        {
+            "document_id": "doc_075",
+            "topic": "Setting Up a New User's Account in Workday",
+            "character_count": 2329,
+            "token_count": 486,
+            "characters_per_token": 4.792181069958848
+        },
+        {
+            "document_id": "doc_076",
+            "topic": "Creating a New IT Change Request",
+            "character_count": 2309,
+            "token_count": 486,
+            "characters_per_token": 4.751028806584362
+        },
+        {
+            "document_id": "doc_077",
+            "topic": "Troubleshooting Issues with Company-Issued Software",
+            "character_count": 2875,
+            "token_count": 529,
+            "characters_per_token": 5.434782608695652
+        },
+        {
+            "document_id": "doc_078",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Database",
+            "character_count": 2568,
+            "token_count": 489,
+            "characters_per_token": 5.251533742331288
+        },
+        {
+            "document_id": "doc_079",
+            "topic": "Resetting a Computer's DHCP Settings",
+            "character_count": 1928,
+            "token_count": 405,
+            "characters_per_token": 4.760493827160494
+        },
+        {
+            "document_id": "doc_080",
+            "topic": "Configuring a Company-Issued Device for Accessibility",
+            "character_count": 2888,
+            "token_count": 573,
+            "characters_per_token": 5.040139616055846
+        },
+        {
+            "document_id": "doc_081",
+            "topic": "Troubleshooting Issues with Microsoft Project",
+            "character_count": 2586,
+            "token_count": 500,
+            "characters_per_token": 5.172
+        },
+        {
+            "document_id": "doc_082",
+            "topic": "Setting Up a New User's Account in Concur",
+            "character_count": 2345,
+            "token_count": 490,
+            "characters_per_token": 4.785714285714286
+        },
+        {
+            "document_id": "doc_083",
+            "topic": "Creating a New IT Incident",
+            "character_count": 1964,
+            "token_count": 428,
+            "characters_per_token": 4.588785046728972
+        },
+        {
+            "document_id": "doc_084",
+            "topic": "Troubleshooting Issues with a Malfunctioning Keyboard",
+            "character_count": 2525,
+            "token_count": 519,
+            "characters_per_token": 4.865125240847784
+        },
+        {
+            "document_id": "doc_085",
+            "topic": "Setting Up a Secure Connection to a Company-Issued FTP Site",
+            "character_count": 2063,
+            "token_count": 429,
+            "characters_per_token": 4.808857808857809
+        },
+        {
+            "document_id": "doc_086",
+            "topic": "Resetting a Forgotten Computer Password",
+            "character_count": 2245,
+            "token_count": 453,
+            "characters_per_token": 4.955849889624724
+        },
+        {
+            "document_id": "doc_087",
+            "topic": "Configuring a Network Camera",
+            "character_count": 3021,
+            "token_count": 619,
+            "characters_per_token": 4.880452342487883
+        },
+        {
+            "document_id": "doc_088",
+            "topic": "Troubleshooting Issues with Microsoft OneDrive",
+            "character_count": 3023,
+            "token_count": 612,
+            "characters_per_token": 4.939542483660131
+        },
+        {
+            "document_id": "doc_089",
+            "topic": "Setting Up a New User's Account in Box",
+            "character_count": 2548,
+            "token_count": 581,
+            "characters_per_token": 4.385542168674699
+        },
+        {
+            "document_id": "doc_090",
+            "topic": "Creating a New IT Request for a New Employee",
+            "character_count": 2331,
+            "token_count": 487,
+            "characters_per_token": 4.786447638603696
+        },
+        {
+            "document_id": "doc_091",
+            "topic": "Troubleshooting Issues with Company-Issued Hardware",
+            "character_count": 2527,
+            "token_count": 513,
+            "characters_per_token": 4.925925925925926
+        },
+        {
+            "document_id": "doc_092",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Website",
+            "character_count": 2496,
+            "token_count": 488,
+            "characters_per_token": 5.114754098360656
+        },
+        {
+            "document_id": "doc_093",
+            "topic": "Resetting a Computer's DNS Cache",
+            "character_count": 2171,
+            "token_count": 447,
+            "characters_per_token": 4.856823266219239
+        },
+        {
+            "document_id": "doc_094",
+            "topic": "Configuring a Company-Issued Device for International Travel",
+            "character_count": 2666,
+            "token_count": 536,
+            "characters_per_token": 4.973880597014926
+        },
+        {
+            "document_id": "doc_095",
+            "topic": "Troubleshooting Issues with Microsoft SharePoint",
+            "character_count": 3264,
+            "token_count": 671,
+            "characters_per_token": 4.864381520119225
+        },
+        {
+            "document_id": "doc_096",
+            "topic": "Setting Up a New User's Account in Dropbox",
+            "character_count": 2278,
+            "token_count": 498,
+            "characters_per_token": 4.57429718875502
+        },
+        {
+            "document_id": "doc_097",
+            "topic": "Creating a New IT Problem",
+            "character_count": 2844,
+            "token_count": 608,
+            "characters_per_token": 4.677631578947368
+        },
+        {
+            "document_id": "doc_098",
+            "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+            "character_count": 3127,
+            "token_count": 627,
+            "characters_per_token": 4.987240829346092
+        },
+        {
+            "document_id": "doc_099",
+            "topic": "Setting Up a Secure Connection to a Company-Issued Server",
+            "character_count": 2228,
+            "token_count": 449,
+            "characters_per_token": 4.9621380846325165
+        },
+        {
+            "document_id": "doc_100",
+            "topic": "Resetting a Forgotten Network Username.",
+            "character_count": 2132,
+            "token_count": 414,
+            "characters_per_token": 5.14975845410628
+        }
+    ],
+    "estimated_document_chunks": [
+        {
+            "document_id": "doc_001",
+            "token_count": 535,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_002",
+            "token_count": 421,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_003",
+            "token_count": 528,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_004",
+            "token_count": 558,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_005",
+            "token_count": 523,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_006",
+            "token_count": 516,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_007",
+            "token_count": 505,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_008",
+            "token_count": 551,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_009",
+            "token_count": 494,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_010",
+            "token_count": 601,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_011",
+            "token_count": 693,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_012",
+            "token_count": 542,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_013",
+            "token_count": 476,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_014",
+            "token_count": 609,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_015",
+            "token_count": 493,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_016",
+            "token_count": 469,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_017",
+            "token_count": 543,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_018",
+            "token_count": 637,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_019",
+            "token_count": 524,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_020",
+            "token_count": 567,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_021",
+            "token_count": 541,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_022",
+            "token_count": 495,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_023",
+            "token_count": 491,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_024",
+            "token_count": 621,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_025",
+            "token_count": 613,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_026",
+            "token_count": 538,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_027",
+            "token_count": 544,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_028",
+            "token_count": 595,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_029",
+            "token_count": 489,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_030",
+            "token_count": 503,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_031",
+            "token_count": 509,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_032",
+            "token_count": 660,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_033",
+            "token_count": 540,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_034",
+            "token_count": 544,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_035",
+            "token_count": 506,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_036",
+            "token_count": 432,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_037",
+            "token_count": 457,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_038",
+            "token_count": 577,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_039",
+            "token_count": 620,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_040",
+            "token_count": 539,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_041",
+            "token_count": 474,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_042",
+            "token_count": 630,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_043",
+            "token_count": 565,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_044",
+            "token_count": 389,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_045",
+            "token_count": 619,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_046",
+            "token_count": 544,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_047",
+            "token_count": 541,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_048",
+            "token_count": 465,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_049",
+            "token_count": 569,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_050",
+            "token_count": 594,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_051",
+            "token_count": 549,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_052",
+            "token_count": 594,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_053",
+            "token_count": 716,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_054",
+            "token_count": 479,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_055",
+            "token_count": 490,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_056",
+            "token_count": 587,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_057",
+            "token_count": 430,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_058",
+            "token_count": 495,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_059",
+            "token_count": 539,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_060",
+            "token_count": 640,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_061",
+            "token_count": 546,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_062",
+            "token_count": 606,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_063",
+            "token_count": 462,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_064",
+            "token_count": 475,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_065",
+            "token_count": 558,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_066",
+            "token_count": 624,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_067",
+            "token_count": 776,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_068",
+            "token_count": 557,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_069",
+            "token_count": 582,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_070",
+            "token_count": 471,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_071",
+            "token_count": 506,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_072",
+            "token_count": 335,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_073",
+            "token_count": 632,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_074",
+            "token_count": 733,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_075",
+            "token_count": 486,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_076",
+            "token_count": 486,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_077",
+            "token_count": 529,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_078",
+            "token_count": 489,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_079",
+            "token_count": 405,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_080",
+            "token_count": 573,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_081",
+            "token_count": 500,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_082",
+            "token_count": 490,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_083",
+            "token_count": 428,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_084",
+            "token_count": 519,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_085",
+            "token_count": 429,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_086",
+            "token_count": 453,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_087",
+            "token_count": 619,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_088",
+            "token_count": 612,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_089",
+            "token_count": 581,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_090",
+            "token_count": 487,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_091",
+            "token_count": 513,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_092",
+            "token_count": 488,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_093",
+            "token_count": 447,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_094",
+            "token_count": 536,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_095",
+            "token_count": 671,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_096",
+            "token_count": 498,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_097",
+            "token_count": 608,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_098",
+            "token_count": 627,
+            "estimated_chunks": 2
+        },
+        {
+            "document_id": "doc_099",
+            "token_count": 449,
+            "estimated_chunks": 1
+        },
+        {
+            "document_id": "doc_100",
+            "token_count": 414,
+            "estimated_chunks": 1
+        }
+    ]
+}

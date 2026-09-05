@@ -1,0 +1,132 @@
+{
+  "stage": "chunk_quality_analysis",
+  "status": "success",
+  "configuration": {
+    "chunk_size_tokens": 500,
+    "chunk_overlap_tokens": 50,
+    "expected_documents": 100,
+    "expected_chunks": 189
+  },
+  "corpus": {
+    "documents_represented": 100,
+    "total_chunks": 164
+  },
+  "token_statistics": {
+    "minimum": 53,
+    "maximum": 500,
+    "mean": 347,
+    "median": 474.5
+  },
+  "character_statistics": {
+    "minimum": 292,
+    "maximum": 2701,
+    "mean": 1670.658536585366,
+    "median": 2195.5
+  },
+  "document_chunk_distribution": {
+    "one_chunk_documents": 36,
+    "two_chunk_documents": 64,
+    "three_plus_chunk_documents": 0
+  },
+  "small_chunk_analysis": {
+    "tiny_threshold_tokens": 50,
+    "small_threshold_tokens": 100,
+    "tiny_chunks_count": 0,
+    "small_chunks_count": 27
+  },
+  "duplicate_text_groups": 0,
+  "integrity_checks": {
+    "unique_chunk_ids": true,
+    "all_documents_represented": true,
+    "token_boundaries_valid": true,
+    "token_counts_within_limit": true,
+    "overlap_consistent": true,
+    "chunk_numbering_consistent": true
+  },
+  "shortest_chunks": [
+    {
+      "chunk_id": "doc_030_chunk_002",
+      "document_id": "doc_030",
+      "chunk_number": 2,
+      "token_count": 53,
+      "character_count": 292,
+      "text_preview": "the IT helpdesk for guidance.  **Additional Resources:**  * For specific computer model BIOS access keys and settings, refer to the manufacturer's website or documentation. * For further assistance wi"
+    },
+    {
+      "chunk_id": "doc_007_chunk_002",
+      "document_id": "doc_007",
+      "chunk_number": 2,
+      "token_count": 55,
+      "character_count": 308,
+      "text_preview": "error messages. * Provide this information to advanced support if the issue cannot be resolved through these troubleshooting steps.  If none of the above steps resolve the issue, please escalate the i"
+    },
+    {
+      "chunk_id": "doc_035_chunk_002",
+      "document_id": "doc_035",
+      "chunk_number": 2,
+      "token_count": 56,
+      "character_count": 300,
+      "text_preview": "watch's sensors or ports. * If the issue is specific to a particular feature or function, check the user manual or online documentation for troubleshooting guides.  By following these steps, helpdesk "
+    },
+    {
+      "chunk_id": "doc_071_chunk_002",
+      "document_id": "doc_071",
+      "chunk_number": 2,
+      "token_count": 56,
+      "character_count": 296,
+      "text_preview": "check that the printer driver is up to date and that the encryption settings are configured correctly.  By following these steps, you should be able to set up a secure connection to your company-issue"
+    },
+    {
+      "chunk_id": "doc_031_chunk_002",
+      "document_id": "doc_031",
+      "chunk_number": 2,
+      "token_count": 59,
+      "character_count": 324,
+      "text_preview": "list and verify that the new rule has been created. * Ensure that the rule is enabled by checking the box in the \"Enabled\" column.  By following these steps, you have successfully configured a firewal"
+    },
+    {
+      "chunk_id": "doc_091_chunk_002",
+      "document_id": "doc_091",
+      "chunk_number": 2,
+      "token_count": 63,
+      "character_count": 362,
+      "text_preview": "detailed documentation of the troubleshooting steps taken and the results * Work with the user to schedule a repair or replacement of the device, if necessary  By following these steps, you should be "
+    },
+    {
+      "chunk_id": "doc_006_chunk_002",
+      "document_id": "doc_006",
+      "chunk_number": 2,
+      "token_count": 66,
+      "character_count": 358,
+      "text_preview": "from your computer and other electronic devices. * **Versioning**: Consider using a backup software that supports versioning, which allows you to keep multiple versions of your files in case you need "
+    },
+    {
+      "chunk_id": "doc_084_chunk_002",
+      "document_id": "doc_084",
+      "chunk_number": 2,
+      "token_count": 69,
+      "character_count": 349,
+      "text_preview": "changes to your computer, try performing a System Restore to a previous point when the keyboard was functioning correctly.  **Step 5: Escalation**  If none of the above steps resolve the issue, it's p"
+    },
+    {
+      "chunk_id": "doc_005_chunk_002",
+      "document_id": "doc_005",
+      "chunk_number": 2,
+      "token_count": 73,
+      "character_count": 387,
+      "text_preview": "browser or checking your internet connection. * If you experience audio or video issues during the meeting, try restarting your audio or video settings or contacting the IT helpdesk for assistance.  B"
+    },
+    {
+      "chunk_id": "doc_019_chunk_002",
+      "document_id": "doc_019",
+      "chunk_number": 2,
+      "token_count": 74,
+      "character_count": 384,
+      "text_preview": "a final check to ensure all software and settings are installed and configured correctly. Verify the user can log in successfully and access company resources.  **Step 10: Deliver the Computer to the "
+    }
+  ],
+  "paths": {
+    "source_chunks": "E:\\rag\\data\\processed\\rag_chunks.json",
+    "analysis_checkpoint": "E:\\rag\\checkpoints\\chunk_quality_analysis.json"
+  }
+}
