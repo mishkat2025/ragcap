@@ -1,0 +1,98 @@
+{
+  "stage": "embedding_environment_discovery",
+  "status": "success",
+  "python": {
+    "version": "3.11.15",
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "gpu": {
+    "torch_cuda_available": true,
+    "torch_version": "2.5.1",
+    "device_count": 1,
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060 Ti",
+        "total_memory_gb": 16.0
+      }
+    ],
+    "nvidia_smi_available": true
+  },
+  "packages": {
+    "torch": {
+      "installed": true,
+      "version": "2.5.1"
+    },
+    "sentence_transformers": {
+      "installed": true,
+      "version": "6.0.1"
+    },
+    "transformers": {
+      "installed": true,
+      "version": "5.16.1"
+    },
+    "numpy": {
+      "installed": true,
+      "version": "2.0.1"
+    },
+    "requests": {
+      "installed": true,
+      "version": "2.34.2"
+    }
+  },
+  "ollama": {
+    "url": "http://localhost:11434",
+    "available": true,
+    "models": [
+      {
+        "name": "qwen3:8b",
+        "size_bytes": 5225388164,
+        "parameter_size": "8.2B",
+        "quantization": "Q4_K_M"
+      },
+      {
+        "name": "qwen3.8:27b-mtp-q4_K_M",
+        "size_bytes": 17741872154,
+        "parameter_size": "27.3B",
+        "quantization": "Q4_K_M"
+      },
+      {
+        "name": "qwen3.8:27b",
+        "size_bytes": 17741872154,
+        "parameter_size": "27.3B",
+        "quantization": "Q4_K_M"
+      },
+      {
+        "name": "gemma4:12b",
+        "size_bytes": 7556508396,
+        "parameter_size": "11.9B",
+        "quantization": "Q4_K_M"
+      },
+      {
+        "name": "gemma4:26b",
+        "size_bytes": 17987581215,
+        "parameter_size": "25.8B",
+        "quantization": "Q4_K_M"
+      }
+    ],
+    "error": null
+  },
+  "candidate_routes": [
+    {
+      "route": "sentence_transformers",
+      "available": true,
+      "description": "Local Hugging Face/Sentence-Transformers embedding model with optional CUDA."
+    },
+    {
+      "route": "transformers",
+      "available": true,
+      "description": "Direct Transformer-based embedding implementation."
+    },
+    {
+      "route": "ollama",
+      "available": true,
+      "description": "Ollama-based local embedding API."
+    }
+  ]
+}

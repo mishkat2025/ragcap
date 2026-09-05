@@ -1,0 +1,23 @@
+{
+  "stage": "embedding_model_selection",
+  "status": "success",
+  "model": {
+    "name": "BAAI/bge-small-en-v1.5",
+    "framework": "sentence-transformers",
+    "embedding_dimension": 384,
+    "max_sequence_length": 512,
+    "device": "cuda",
+    "normalized_embeddings": true
+  },
+  "verification": {
+    "test_embedding_success": true,
+    "finite_values": true,
+    "expected_vector_norm": 1.0,
+    "observed_vector_norm": 1.0
+  },
+  "next_stage": {
+    "action": "generate_embeddings",
+    "embeddings_generated": false,
+    "vector_index_created": false
+  }
+}

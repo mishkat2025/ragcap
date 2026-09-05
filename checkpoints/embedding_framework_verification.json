@@ -1,0 +1,22 @@
+{
+  "stage": "embedding_framework_verification",
+  "status": "success",
+  "framework": {
+    "name": "sentence-transformers",
+    "version": "6.0.1"
+  },
+  "pytorch": {
+    "version": "2.5.1",
+    "cuda_available": true,
+    "device_count": 1
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4060 Ti",
+    "vram_gb": 16.0
+  },
+  "next_stage": {
+    "action": "select_and_download_embedding_model",
+    "embeddings_generated": false,
+    "vector_index_created": false
+  }
+}

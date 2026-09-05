@@ -1,0 +1,61 @@
+{
+  "stage": "dense_retrieval_test",
+  "status": "success",
+  "query": "What is the purpose of a firewall and how does it protect a network?",
+  "retrieval_method": "dense",
+  "index_type": "IndexFlatIP",
+  "similarity_metric": "inner_product",
+  "cosine_equivalent": true,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimension": 384,
+  "top_k": 5,
+  "query_embedding_norm": 1.0,
+  "results": [
+    {
+      "rank": 1,
+      "score": 0.7168850898742676,
+      "vector_position": 14,
+      "chunk_id": "doc_008_chunk_002",
+      "document_id": "doc_008",
+      "topic": "Setting Up a Secure Wireless Network",
+      "text": "and install firmware updates for your router to ensure you have the latest security patches and features.\n\n**Step 10: Monitor Your Network**\n\nRegularly monitor your network for suspicious activity, such as unknown devices or unusual traffic patterns. Use network monitoring tools or work with your IT team to detect and respond to potential security incidents.\n\nBy following these steps, you can set up a secure wireless network that protects your data and devices from unauthorized access. Remember to regularly review and update your network configuration to ensure ongoing security."
+    },
+    {
+      "rank": 2,
+      "score": 0.7059870362281799,
+      "vector_position": 52,
+      "chunk_id": "doc_031_chunk_001",
+      "document_id": "doc_031",
+      "topic": "Configuring a Firewall Exception",
+      "text": "Configuring a Firewall Exception is a necessary step to allow incoming or outgoing traffic to pass through the firewall and access specific applications or services. Here are the steps to configure a firewall exception:\n\n**Prerequisites:**\n\n* You have administrative privileges on the computer.\n* You have identified the application or service that requires a firewall exception.\n\n**Step 1: Open the Windows Defender Firewall with Advanced Security**\n\n* Click on the Start menu and search for \"Windows Defender Firewall with Advanced Security\".\n* Click on the result to open the Windows Defender Firewall with Advanced Security window.\n\n**Step 2: Click on \"Inbound Rules\"**\n\n* In the Windows Defender Firewall with Advanced Security window, click on \"Inbound Rules\" in the left-hand menu.\n* This will display a list of all inbound rules currently configured on the system.\n\n**Step 3: Click on \"New Rule\"**\n\n* Click on \"New Rule\" in the right-hand \"Actions\" menu.\n* This will launch the \"New Inbound Rule Wizard\".\n\n**Step 4: Select the Rule Type**\n\n* Select \"Rule Type\" as \"Program\" and click \"Next\".\n* This will allow you to specify the application or service that requires the firewall exception.\n\n**Step 5: Specify the Program**\n\n* Click on \"Browse\" and navigate to the location of the application or service executable.\n* Select the executable and click \"Open\".\n* Click \"Next\" to continue.\n\n**Step 6: Specify the Protocol and Local Ports**\n\n* Select the protocol required by the application or service (e.g. TCP, UDP, etc.).\n* Specify the local ports required by the application or service.\n* Click \"Next\" to continue.\n\n**Step 7: Specify the Remote Computers**\n\n* Select \"Any IP address\" to allow incoming traffic from any remote computer.\n* Alternatively, you can specify a specific IP address or range of IP addresses.\n* Click \"Next\" to continue.\n\n**Step 8: Specify the Action**\n\n* Select \"Allow the connection\" to allow incoming traffic to pass through the firewall.\n* Click \"Finish\" to create the new rule.\n\n**Step 9: Verify the Rule**\n\n* Go back to the \"Inbound Rules\" list and verify that the new rule has been created.\n* Ensure that the rule is enabled by checking the box in the \"Enabled\" column.\n\nBy following these steps, you have successfully configured a firewall exception to allow incoming or outgoing traffic to pass through"
+    },
+    {
+      "rank": 3,
+      "score": 0.6707619428634644,
+      "vector_position": 13,
+      "chunk_id": "doc_008_chunk_001",
+      "document_id": "doc_008",
+      "topic": "Setting Up a Secure Wireless Network",
+      "text": "**Step 1: Plan Your Wireless Network**\n\nBefore setting up a secure wireless network, plan your network infrastructure by identifying the number of users, devices, and access points required. Determine the type of encryption and authentication methods to be used. Consider the physical layout of your workspace and the range of your wireless signal.\n\n**Step 2: Choose a Secure Wireless Protocol**\n\nSelect a secure wireless protocol such as WPA2-PSK (AES) or WPA3-PSK (AES-256). Avoid using outdated protocols like WEP or WPA. Ensure that your devices and access points support the chosen protocol.\n\n**Step 3: Set Up a Strong Password**\n\nCreate a strong password for your wireless network. The password should be at least 12 characters long and include a mix of uppercase and lowercase letters, numbers, and special characters. Avoid using easily guessable passwords or common words.\n\n**Step 4: Configure Your Router**\n\nLog in to your router's web interface using a secure connection (HTTPS). Change the default administrator password and network name (SSID). Enable WPA2-PSK or WPA3-PSK encryption and set the password created in Step 3. Save your changes.\n\n**Step 5: Set Up a Guest Network (Optional)**\n\nIf you need to provide wireless access to guests or visitors, set up a separate guest network. This will isolate your main network from potential security risks. Configure the guest network with a different SSID and password.\n\n**Step 6: Configure Firewall Settings**\n\nEnable the firewall on your router and configure it to block incoming and outgoing traffic on unnecessary ports. Restrict access to your network by only allowing necessary incoming traffic.\n\n**Step 7: Set Up Quality of Service (QoS)**\n\nConfigure QoS settings on your router to prioritize critical network traffic, such as video conferencing or VoIP calls. This ensures that critical applications receive sufficient bandwidth.\n\n**Step 8: Implement Network Segmentation**\n\nSegment your network into different zones or subnets to restrict access to sensitive areas of your network. This limits the spread of malware or unauthorized access in case of a breach.\n\n**Step 9: Regularly Update Your Router's Firmware**\n\nRegularly check for and install firmware updates for your router to ensure you have the latest security patches and features.\n\n**Step 10: Monitor Your Network**\n\nRegularly monitor your network for suspicious activity, such as unknown devices or unusual traffic patterns. Use network monitoring tools or"
+    },
+    {
+      "rank": 4,
+      "score": 0.6669695377349854,
+      "vector_position": 53,
+      "chunk_id": "doc_031_chunk_002",
+      "document_id": "doc_031",
+      "topic": "Configuring a Firewall Exception",
+      "text": "list and verify that the new rule has been created.\n* Ensure that the rule is enabled by checking the box in the \"Enabled\" column.\n\nBy following these steps, you have successfully configured a firewall exception to allow incoming or outgoing traffic to pass through the firewall and access specific applications or services."
+    },
+    {
+      "rank": 5,
+      "score": 0.6411401033401489,
+      "vector_position": 44,
+      "chunk_id": "doc_026_chunk_002",
+      "document_id": "doc_026",
+      "topic": "Setting Up a Secure Connection to a Database",
+      "text": "mechanism, such as the `ENCRYPT` function, to encrypt the database password.\n\n**Step 7: Monitor and Audit the Connection**\n\nRegularly monitor and audit the database connection to ensure it remains secure and to detect any potential security breaches.\n\nThis may include logging connection attempts, monitoring database activity, and implementing intrusion detection systems.\n\nBy following these steps, you can establish a secure connection to a database and protect sensitive data from unauthorized access."
+    }
+  ],
+  "created_at": "2026-09-05T23:43:02.299507"
+}

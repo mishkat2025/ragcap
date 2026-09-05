@@ -1,0 +1,26 @@
+{
+  "model": "qwen3:8b",
+  "prompt": "What is a firewall? Answer in one short sentence.",
+  "thinking_disabled": true,
+  "http_status": 200,
+  "elapsed_seconds": 9.058,
+  "response": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+  "thinking": null,
+  "done": true,
+  "done_reason": "stop",
+  "error": null,
+  "raw_response_keys": [
+    "model",
+    "created_at",
+    "response",
+    "done",
+    "done_reason",
+    "context",
+    "total_duration",
+    "load_duration",
+    "prompt_eval_count",
+    "prompt_eval_duration",
+    "eval_count",
+    "eval_duration"
+  ]
+}

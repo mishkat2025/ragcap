@@ -1,0 +1,11 @@
+{
+  "stage": "rag_context_construction",
+  "status": "success",
+  "query": "What is the purpose of a firewall and how does it protect a network?",
+  "top_k": 5,
+  "context_items": 5,
+  "context_character_count": 6974,
+  "context_token_estimate": 1467,
+  "context_path": "E:\\rag\\data\\context\\rag_context_test.json",
+  "created_at": "2026-09-05T23:43:08.340465"
+}

@@ -1,0 +1,23 @@
+{
+  "stage": "reusable_dense_retrieval_engine",
+  "status": "success",
+  "retrieval_method": "dense",
+  "index_type": "IndexFlatIP",
+  "similarity_metric": "inner_product",
+  "cosine_equivalent": true,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimension": 384,
+  "default_top_k": 5,
+  "indexed_vectors": 164,
+  "chunk_count": 164,
+  "device": "cuda",
+  "test_query": "What is the purpose of a firewall and how does it protect a network?",
+  "test_result_chunk_ids": [
+    "doc_008_chunk_002",
+    "doc_031_chunk_001",
+    "doc_008_chunk_001",
+    "doc_031_chunk_002",
+    "doc_026_chunk_002"
+  ],
+  "created_at": "2026-09-05T23:43:08.151411"
+}

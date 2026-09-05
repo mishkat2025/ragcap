@@ -1,0 +1,16 @@
+{
+  "stage": "dense_vector_index_generation",
+  "status": "success",
+  "index_type": "IndexFlatIP",
+  "metric": "inner_product",
+  "cosine_equivalent": true,
+  "normalized_embeddings": true,
+  "model": "BAAI/bge-small-en-v1.5",
+  "dimension": 384,
+  "total_vectors": 164,
+  "max_norm_error": 1.1920928955078125e-07,
+  "faiss_index_path": "E:\\rag\\data\\vector_index\\dense_index.faiss",
+  "manifest_path": "E:\\rag\\data\\vector_index\\dense_index_manifest.json",
+  "source_embeddings": "E:\\rag\\data\\embeddings\\rag_embeddings.json",
+  "created_at": "2026-09-05T23:42:56.347935"
+}

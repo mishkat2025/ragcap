@@ -1,0 +1,831 @@
+{
+  "index_type": "IndexFlatIP",
+  "dimension": 384,
+  "metric": "inner_product",
+  "cosine_equivalent": true,
+  "normalized_embeddings": true,
+  "model": "BAAI/bge-small-en-v1.5",
+  "total_vectors": 164,
+  "vectors": [
+    {
+      "vector_position": 0,
+      "chunk_id": "doc_001_chunk_001",
+      "document_id": "doc_001"
+    },
+    {
+      "vector_position": 1,
+      "chunk_id": "doc_001_chunk_002",
+      "document_id": "doc_001"
+    },
+    {
+      "vector_position": 2,
+      "chunk_id": "doc_002_chunk_001",
+      "document_id": "doc_002"
+    },
+    {
+      "vector_position": 3,
+      "chunk_id": "doc_003_chunk_001",
+      "document_id": "doc_003"
+    },
+    {
+      "vector_position": 4,
+      "chunk_id": "doc_003_chunk_002",
+      "document_id": "doc_003"
+    },
+    {
+      "vector_position": 5,
+      "chunk_id": "doc_004_chunk_001",
+      "document_id": "doc_004"
+    },
+    {
+      "vector_position": 6,
+      "chunk_id": "doc_004_chunk_002",
+      "document_id": "doc_004"
+    },
+    {
+      "vector_position": 7,
+      "chunk_id": "doc_005_chunk_001",
+      "document_id": "doc_005"
+    },
+    {
+      "vector_position": 8,
+      "chunk_id": "doc_005_chunk_002",
+      "document_id": "doc_005"
+    },
+    {
+      "vector_position": 9,
+      "chunk_id": "doc_006_chunk_001",
+      "document_id": "doc_006"
+    },
+    {
+      "vector_position": 10,
+      "chunk_id": "doc_006_chunk_002",
+      "document_id": "doc_006"
+    },
+    {
+      "vector_position": 11,
+      "chunk_id": "doc_007_chunk_001",
+      "document_id": "doc_007"
+    },
+    {
+      "vector_position": 12,
+      "chunk_id": "doc_007_chunk_002",
+      "document_id": "doc_007"
+    },
+    {
+      "vector_position": 13,
+      "chunk_id": "doc_008_chunk_001",
+      "document_id": "doc_008"
+    },
+    {
+      "vector_position": 14,
+      "chunk_id": "doc_008_chunk_002",
+      "document_id": "doc_008"
+    },
+    {
+      "vector_position": 15,
+      "chunk_id": "doc_009_chunk_001",
+      "document_id": "doc_009"
+    },
+    {
+      "vector_position": 16,
+      "chunk_id": "doc_010_chunk_001",
+      "document_id": "doc_010"
+    },
+    {
+      "vector_position": 17,
+      "chunk_id": "doc_010_chunk_002",
+      "document_id": "doc_010"
+    },
+    {
+      "vector_position": 18,
+      "chunk_id": "doc_011_chunk_001",
+      "document_id": "doc_011"
+    },
+    {
+      "vector_position": 19,
+      "chunk_id": "doc_011_chunk_002",
+      "document_id": "doc_011"
+    },
+    {
+      "vector_position": 20,
+      "chunk_id": "doc_012_chunk_001",
+      "document_id": "doc_012"
+    },
+    {
+      "vector_position": 21,
+      "chunk_id": "doc_012_chunk_002",
+      "document_id": "doc_012"
+    },
+    {
+      "vector_position": 22,
+      "chunk_id": "doc_013_chunk_001",
+      "document_id": "doc_013"
+    },
+    {
+      "vector_position": 23,
+      "chunk_id": "doc_014_chunk_001",
+      "document_id": "doc_014"
+    },
+    {
+      "vector_position": 24,
+      "chunk_id": "doc_014_chunk_002",
+      "document_id": "doc_014"
+    },
+    {
+      "vector_position": 25,
+      "chunk_id": "doc_015_chunk_001",
+      "document_id": "doc_015"
+    },
+    {
+      "vector_position": 26,
+      "chunk_id": "doc_016_chunk_001",
+      "document_id": "doc_016"
+    },
+    {
+      "vector_position": 27,
+      "chunk_id": "doc_017_chunk_001",
+      "document_id": "doc_017"
+    },
+    {
+      "vector_position": 28,
+      "chunk_id": "doc_017_chunk_002",
+      "document_id": "doc_017"
+    },
+    {
+      "vector_position": 29,
+      "chunk_id": "doc_018_chunk_001",
+      "document_id": "doc_018"
+    },
+    {
+      "vector_position": 30,
+      "chunk_id": "doc_018_chunk_002",
+      "document_id": "doc_018"
+    },
+    {
+      "vector_position": 31,
+      "chunk_id": "doc_019_chunk_001",
+      "document_id": "doc_019"
+    },
+    {
+      "vector_position": 32,
+      "chunk_id": "doc_019_chunk_002",
+      "document_id": "doc_019"
+    },
+    {
+      "vector_position": 33,
+      "chunk_id": "doc_020_chunk_001",
+      "document_id": "doc_020"
+    },
+    {
+      "vector_position": 34,
+      "chunk_id": "doc_020_chunk_002",
+      "document_id": "doc_020"
+    },
+    {
+      "vector_position": 35,
+      "chunk_id": "doc_021_chunk_001",
+      "document_id": "doc_021"
+    },
+    {
+      "vector_position": 36,
+      "chunk_id": "doc_021_chunk_002",
+      "document_id": "doc_021"
+    },
+    {
+      "vector_position": 37,
+      "chunk_id": "doc_022_chunk_001",
+      "document_id": "doc_022"
+    },
+    {
+      "vector_position": 38,
+      "chunk_id": "doc_023_chunk_001",
+      "document_id": "doc_023"
+    },
+    {
+      "vector_position": 39,
+      "chunk_id": "doc_024_chunk_001",
+      "document_id": "doc_024"
+    },
+    {
+      "vector_position": 40,
+      "chunk_id": "doc_024_chunk_002",
+      "document_id": "doc_024"
+    },
+    {
+      "vector_position": 41,
+      "chunk_id": "doc_025_chunk_001",
+      "document_id": "doc_025"
+    },
+    {
+      "vector_position": 42,
+      "chunk_id": "doc_025_chunk_002",
+      "document_id": "doc_025"
+    },
+    {
+      "vector_position": 43,
+      "chunk_id": "doc_026_chunk_001",
+      "document_id": "doc_026"
+    },
+    {
+      "vector_position": 44,
+      "chunk_id": "doc_026_chunk_002",
+      "document_id": "doc_026"
+    },
+    {
+      "vector_position": 45,
+      "chunk_id": "doc_027_chunk_001",
+      "document_id": "doc_027"
+    },
+    {
+      "vector_position": 46,
+      "chunk_id": "doc_027_chunk_002",
+      "document_id": "doc_027"
+    },
+    {
+      "vector_position": 47,
+      "chunk_id": "doc_028_chunk_001",
+      "document_id": "doc_028"
+    },
+    {
+      "vector_position": 48,
+      "chunk_id": "doc_028_chunk_002",
+      "document_id": "doc_028"
+    },
+    {
+      "vector_position": 49,
+      "chunk_id": "doc_029_chunk_001",
+      "document_id": "doc_029"
+    },
+    {
+      "vector_position": 50,
+      "chunk_id": "doc_030_chunk_001",
+      "document_id": "doc_030"
+    },
+    {
+      "vector_position": 51,
+      "chunk_id": "doc_030_chunk_002",
+      "document_id": "doc_030"
+    },
+    {
+      "vector_position": 52,
+      "chunk_id": "doc_031_chunk_001",
+      "document_id": "doc_031"
+    },
+    {
+      "vector_position": 53,
+      "chunk_id": "doc_031_chunk_002",
+      "document_id": "doc_031"
+    },
+    {
+      "vector_position": 54,
+      "chunk_id": "doc_032_chunk_001",
+      "document_id": "doc_032"
+    },
+    {
+      "vector_position": 55,
+      "chunk_id": "doc_032_chunk_002",
+      "document_id": "doc_032"
+    },
+    {
+      "vector_position": 56,
+      "chunk_id": "doc_033_chunk_001",
+      "document_id": "doc_033"
+    },
+    {
+      "vector_position": 57,
+      "chunk_id": "doc_033_chunk_002",
+      "document_id": "doc_033"
+    },
+    {
+      "vector_position": 58,
+      "chunk_id": "doc_034_chunk_001",
+      "document_id": "doc_034"
+    },
+    {
+      "vector_position": 59,
+      "chunk_id": "doc_034_chunk_002",
+      "document_id": "doc_034"
+    },
+    {
+      "vector_position": 60,
+      "chunk_id": "doc_035_chunk_001",
+      "document_id": "doc_035"
+    },
+    {
+      "vector_position": 61,
+      "chunk_id": "doc_035_chunk_002",
+      "document_id": "doc_035"
+    },
+    {
+      "vector_position": 62,
+      "chunk_id": "doc_036_chunk_001",
+      "document_id": "doc_036"
+    },
+    {
+      "vector_position": 63,
+      "chunk_id": "doc_037_chunk_001",
+      "document_id": "doc_037"
+    },
+    {
+      "vector_position": 64,
+      "chunk_id": "doc_038_chunk_001",
+      "document_id": "doc_038"
+    },
+    {
+      "vector_position": 65,
+      "chunk_id": "doc_038_chunk_002",
+      "document_id": "doc_038"
+    },
+    {
+      "vector_position": 66,
+      "chunk_id": "doc_039_chunk_001",
+      "document_id": "doc_039"
+    },
+    {
+      "vector_position": 67,
+      "chunk_id": "doc_039_chunk_002",
+      "document_id": "doc_039"
+    },
+    {
+      "vector_position": 68,
+      "chunk_id": "doc_040_chunk_001",
+      "document_id": "doc_040"
+    },
+    {
+      "vector_position": 69,
+      "chunk_id": "doc_040_chunk_002",
+      "document_id": "doc_040"
+    },
+    {
+      "vector_position": 70,
+      "chunk_id": "doc_041_chunk_001",
+      "document_id": "doc_041"
+    },
+    {
+      "vector_position": 71,
+      "chunk_id": "doc_042_chunk_001",
+      "document_id": "doc_042"
+    },
+    {
+      "vector_position": 72,
+      "chunk_id": "doc_042_chunk_002",
+      "document_id": "doc_042"
+    },
+    {
+      "vector_position": 73,
+      "chunk_id": "doc_043_chunk_001",
+      "document_id": "doc_043"
+    },
+    {
+      "vector_position": 74,
+      "chunk_id": "doc_043_chunk_002",
+      "document_id": "doc_043"
+    },
+    {
+      "vector_position": 75,
+      "chunk_id": "doc_044_chunk_001",
+      "document_id": "doc_044"
+    },
+    {
+      "vector_position": 76,
+      "chunk_id": "doc_045_chunk_001",
+      "document_id": "doc_045"
+    },
+    {
+      "vector_position": 77,
+      "chunk_id": "doc_045_chunk_002",
+      "document_id": "doc_045"
+    },
+    {
+      "vector_position": 78,
+      "chunk_id": "doc_046_chunk_001",
+      "document_id": "doc_046"
+    },
+    {
+      "vector_position": 79,
+      "chunk_id": "doc_046_chunk_002",
+      "document_id": "doc_046"
+    },
+    {
+      "vector_position": 80,
+      "chunk_id": "doc_047_chunk_001",
+      "document_id": "doc_047"
+    },
+    {
+      "vector_position": 81,
+      "chunk_id": "doc_047_chunk_002",
+      "document_id": "doc_047"
+    },
+    {
+      "vector_position": 82,
+      "chunk_id": "doc_048_chunk_001",
+      "document_id": "doc_048"
+    },
+    {
+      "vector_position": 83,
+      "chunk_id": "doc_049_chunk_001",
+      "document_id": "doc_049"
+    },
+    {
+      "vector_position": 84,
+      "chunk_id": "doc_049_chunk_002",
+      "document_id": "doc_049"
+    },
+    {
+      "vector_position": 85,
+      "chunk_id": "doc_050_chunk_001",
+      "document_id": "doc_050"
+    },
+    {
+      "vector_position": 86,
+      "chunk_id": "doc_050_chunk_002",
+      "document_id": "doc_050"
+    },
+    {
+      "vector_position": 87,
+      "chunk_id": "doc_051_chunk_001",
+      "document_id": "doc_051"
+    },
+    {
+      "vector_position": 88,
+      "chunk_id": "doc_051_chunk_002",
+      "document_id": "doc_051"
+    },
+    {
+      "vector_position": 89,
+      "chunk_id": "doc_052_chunk_001",
+      "document_id": "doc_052"
+    },
+    {
+      "vector_position": 90,
+      "chunk_id": "doc_052_chunk_002",
+      "document_id": "doc_052"
+    },
+    {
+      "vector_position": 91,
+      "chunk_id": "doc_053_chunk_001",
+      "document_id": "doc_053"
+    },
+    {
+      "vector_position": 92,
+      "chunk_id": "doc_053_chunk_002",
+      "document_id": "doc_053"
+    },
+    {
+      "vector_position": 93,
+      "chunk_id": "doc_054_chunk_001",
+      "document_id": "doc_054"
+    },
+    {
+      "vector_position": 94,
+      "chunk_id": "doc_055_chunk_001",
+      "document_id": "doc_055"
+    },
+    {
+      "vector_position": 95,
+      "chunk_id": "doc_056_chunk_001",
+      "document_id": "doc_056"
+    },
+    {
+      "vector_position": 96,
+      "chunk_id": "doc_056_chunk_002",
+      "document_id": "doc_056"
+    },
+    {
+      "vector_position": 97,
+      "chunk_id": "doc_057_chunk_001",
+      "document_id": "doc_057"
+    },
+    {
+      "vector_position": 98,
+      "chunk_id": "doc_058_chunk_001",
+      "document_id": "doc_058"
+    },
+    {
+      "vector_position": 99,
+      "chunk_id": "doc_059_chunk_001",
+      "document_id": "doc_059"
+    },
+    {
+      "vector_position": 100,
+      "chunk_id": "doc_059_chunk_002",
+      "document_id": "doc_059"
+    },
+    {
+      "vector_position": 101,
+      "chunk_id": "doc_060_chunk_001",
+      "document_id": "doc_060"
+    },
+    {
+      "vector_position": 102,
+      "chunk_id": "doc_060_chunk_002",
+      "document_id": "doc_060"
+    },
+    {
+      "vector_position": 103,
+      "chunk_id": "doc_061_chunk_001",
+      "document_id": "doc_061"
+    },
+    {
+      "vector_position": 104,
+      "chunk_id": "doc_061_chunk_002",
+      "document_id": "doc_061"
+    },
+    {
+      "vector_position": 105,
+      "chunk_id": "doc_062_chunk_001",
+      "document_id": "doc_062"
+    },
+    {
+      "vector_position": 106,
+      "chunk_id": "doc_062_chunk_002",
+      "document_id": "doc_062"
+    },
+    {
+      "vector_position": 107,
+      "chunk_id": "doc_063_chunk_001",
+      "document_id": "doc_063"
+    },
+    {
+      "vector_position": 108,
+      "chunk_id": "doc_064_chunk_001",
+      "document_id": "doc_064"
+    },
+    {
+      "vector_position": 109,
+      "chunk_id": "doc_065_chunk_001",
+      "document_id": "doc_065"
+    },
+    {
+      "vector_position": 110,
+      "chunk_id": "doc_065_chunk_002",
+      "document_id": "doc_065"
+    },
+    {
+      "vector_position": 111,
+      "chunk_id": "doc_066_chunk_001",
+      "document_id": "doc_066"
+    },
+    {
+      "vector_position": 112,
+      "chunk_id": "doc_066_chunk_002",
+      "document_id": "doc_066"
+    },
+    {
+      "vector_position": 113,
+      "chunk_id": "doc_067_chunk_001",
+      "document_id": "doc_067"
+    },
+    {
+      "vector_position": 114,
+      "chunk_id": "doc_067_chunk_002",
+      "document_id": "doc_067"
+    },
+    {
+      "vector_position": 115,
+      "chunk_id": "doc_068_chunk_001",
+      "document_id": "doc_068"
+    },
+    {
+      "vector_position": 116,
+      "chunk_id": "doc_068_chunk_002",
+      "document_id": "doc_068"
+    },
+    {
+      "vector_position": 117,
+      "chunk_id": "doc_069_chunk_001",
+      "document_id": "doc_069"
+    },
+    {
+      "vector_position": 118,
+      "chunk_id": "doc_069_chunk_002",
+      "document_id": "doc_069"
+    },
+    {
+      "vector_position": 119,
+      "chunk_id": "doc_070_chunk_001",
+      "document_id": "doc_070"
+    },
+    {
+      "vector_position": 120,
+      "chunk_id": "doc_071_chunk_001",
+      "document_id": "doc_071"
+    },
+    {
+      "vector_position": 121,
+      "chunk_id": "doc_071_chunk_002",
+      "document_id": "doc_071"
+    },
+    {
+      "vector_position": 122,
+      "chunk_id": "doc_072_chunk_001",
+      "document_id": "doc_072"
+    },
+    {
+      "vector_position": 123,
+      "chunk_id": "doc_073_chunk_001",
+      "document_id": "doc_073"
+    },
+    {
+      "vector_position": 124,
+      "chunk_id": "doc_073_chunk_002",
+      "document_id": "doc_073"
+    },
+    {
+      "vector_position": 125,
+      "chunk_id": "doc_074_chunk_001",
+      "document_id": "doc_074"
+    },
+    {
+      "vector_position": 126,
+      "chunk_id": "doc_074_chunk_002",
+      "document_id": "doc_074"
+    },
+    {
+      "vector_position": 127,
+      "chunk_id": "doc_075_chunk_001",
+      "document_id": "doc_075"
+    },
+    {
+      "vector_position": 128,
+      "chunk_id": "doc_076_chunk_001",
+      "document_id": "doc_076"
+    },
+    {
+      "vector_position": 129,
+      "chunk_id": "doc_077_chunk_001",
+      "document_id": "doc_077"
+    },
+    {
+      "vector_position": 130,
+      "chunk_id": "doc_077_chunk_002",
+      "document_id": "doc_077"
+    },
+    {
+      "vector_position": 131,
+      "chunk_id": "doc_078_chunk_001",
+      "document_id": "doc_078"
+    },
+    {
+      "vector_position": 132,
+      "chunk_id": "doc_079_chunk_001",
+      "document_id": "doc_079"
+    },
+    {
+      "vector_position": 133,
+      "chunk_id": "doc_080_chunk_001",
+      "document_id": "doc_080"
+    },
+    {
+      "vector_position": 134,
+      "chunk_id": "doc_080_chunk_002",
+      "document_id": "doc_080"
+    },
+    {
+      "vector_position": 135,
+      "chunk_id": "doc_081_chunk_001",
+      "document_id": "doc_081"
+    },
+    {
+      "vector_position": 136,
+      "chunk_id": "doc_082_chunk_001",
+      "document_id": "doc_082"
+    },
+    {
+      "vector_position": 137,
+      "chunk_id": "doc_083_chunk_001",
+      "document_id": "doc_083"
+    },
+    {
+      "vector_position": 138,
+      "chunk_id": "doc_084_chunk_001",
+      "document_id": "doc_084"
+    },
+    {
+      "vector_position": 139,
+      "chunk_id": "doc_084_chunk_002",
+      "document_id": "doc_084"
+    },
+    {
+      "vector_position": 140,
+      "chunk_id": "doc_085_chunk_001",
+      "document_id": "doc_085"
+    },
+    {
+      "vector_position": 141,
+      "chunk_id": "doc_086_chunk_001",
+      "document_id": "doc_086"
+    },
+    {
+      "vector_position": 142,
+      "chunk_id": "doc_087_chunk_001",
+      "document_id": "doc_087"
+    },
+    {
+      "vector_position": 143,
+      "chunk_id": "doc_087_chunk_002",
+      "document_id": "doc_087"
+    },
+    {
+      "vector_position": 144,
+      "chunk_id": "doc_088_chunk_001",
+      "document_id": "doc_088"
+    },
+    {
+      "vector_position": 145,
+      "chunk_id": "doc_088_chunk_002",
+      "document_id": "doc_088"
+    },
+    {
+      "vector_position": 146,
+      "chunk_id": "doc_089_chunk_001",
+      "document_id": "doc_089"
+    },
+    {
+      "vector_position": 147,
+      "chunk_id": "doc_089_chunk_002",
+      "document_id": "doc_089"
+    },
+    {
+      "vector_position": 148,
+      "chunk_id": "doc_090_chunk_001",
+      "document_id": "doc_090"
+    },
+    {
+      "vector_position": 149,
+      "chunk_id": "doc_091_chunk_001",
+      "document_id": "doc_091"
+    },
+    {
+      "vector_position": 150,
+      "chunk_id": "doc_091_chunk_002",
+      "document_id": "doc_091"
+    },
+    {
+      "vector_position": 151,
+      "chunk_id": "doc_092_chunk_001",
+      "document_id": "doc_092"
+    },
+    {
+      "vector_position": 152,
+      "chunk_id": "doc_093_chunk_001",
+      "document_id": "doc_093"
+    },
+    {
+      "vector_position": 153,
+      "chunk_id": "doc_094_chunk_001",
+      "document_id": "doc_094"
+    },
+    {
+      "vector_position": 154,
+      "chunk_id": "doc_094_chunk_002",
+      "document_id": "doc_094"
+    },
+    {
+      "vector_position": 155,
+      "chunk_id": "doc_095_chunk_001",
+      "document_id": "doc_095"
+    },
+    {
+      "vector_position": 156,
+      "chunk_id": "doc_095_chunk_002",
+      "document_id": "doc_095"
+    },
+    {
+      "vector_position": 157,
+      "chunk_id": "doc_096_chunk_001",
+      "document_id": "doc_096"
+    },
+    {
+      "vector_position": 158,
+      "chunk_id": "doc_097_chunk_001",
+      "document_id": "doc_097"
+    },
+    {
+      "vector_position": 159,
+      "chunk_id": "doc_097_chunk_002",
+      "document_id": "doc_097"
+    },
+    {
+      "vector_position": 160,
+      "chunk_id": "doc_098_chunk_001",
+      "document_id": "doc_098"
+    },
+    {
+      "vector_position": 161,
+      "chunk_id": "doc_098_chunk_002",
+      "document_id": "doc_098"
+    },
+    {
+      "vector_position": 162,
+      "chunk_id": "doc_099_chunk_001",
+      "document_id": "doc_099"
+    },
+    {
+      "vector_position": 163,
+      "chunk_id": "doc_100_chunk_001",
+      "document_id": "doc_100"
+    }
+  ]
+}
