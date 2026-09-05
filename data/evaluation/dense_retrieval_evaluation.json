@@ -1,0 +1,1706 @@
+{
+  "status": "success",
+  "stage": "dense_retrieval_evaluation",
+  "created_at": "2026-09-05 23:48:35",
+  "evaluation_dataset": "E:\\rag\\data\\evaluation\\evaluation_questions.json",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "retrieval_method": "dense",
+  "index_type": "FAISS IndexFlatIP",
+  "similarity_metric": "inner product / cosine similarity for normalized embeddings",
+  "top_k": 5,
+  "evaluation_count": 30,
+  "metrics": {
+    "recall_at_1": 0.966667,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "mrr": 0.983333
+  },
+  "summary": {
+    "hits_at_1": 29,
+    "hits_at_3": 30,
+    "hits_at_5": 30
+  },
+  "elapsed_seconds": 0.281,
+  "results": [
+    {
+      "question_id": "eval_001",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Concur' explain?",
+      "ground_truth_document_ids": [
+        "doc_082"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_082_chunk_001",
+          "document_id": "doc_082",
+          "topic": "Setting Up a New User's Account in Concur",
+          "similarity_score": 0.8464913368225098
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "Setting Up a New User's Computer",
+          "similarity_score": 0.746524453163147
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_068_chunk_001",
+          "document_id": "doc_068",
+          "topic": "Setting Up a New User's Account in SAP",
+          "similarity_score": 0.7412369847297668
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.7399082779884338
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_047_chunk_001",
+          "document_id": "doc_047",
+          "topic": "Setting Up a New User's Account in Salesforce",
+          "similarity_score": 0.7387750148773193
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_082",
+        "doc_019",
+        "doc_068",
+        "doc_089",
+        "doc_047"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_002",
+      "question": "What does the knowledge item about 'Setting Up a Secure FTP Connection' explain?",
+      "ground_truth_document_ids": [
+        "doc_015"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_015_chunk_001",
+          "document_id": "doc_015",
+          "topic": "Setting Up a Secure FTP Connection",
+          "similarity_score": 0.8680095672607422
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_085_chunk_001",
+          "document_id": "doc_085",
+          "topic": "Setting Up a Secure Connection to a Company-Issued FTP Site",
+          "similarity_score": 0.839610755443573
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Website",
+          "similarity_score": 0.7586944699287415
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_008_chunk_001",
+          "document_id": "doc_008",
+          "topic": "Setting Up a Secure Wireless Network",
+          "similarity_score": 0.743675708770752
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_040_chunk_001",
+          "document_id": "doc_040",
+          "topic": "Setting Up a Secure Connection to a SharePoint Site",
+          "similarity_score": 0.7359515428543091
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_015",
+        "doc_085",
+        "doc_092",
+        "doc_008",
+        "doc_040"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_003",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft Office' explain?",
+      "ground_truth_document_ids": [
+        "doc_004"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_004_chunk_001",
+          "document_id": "doc_004",
+          "topic": "Troubleshooting Issues with Microsoft Office",
+          "similarity_score": 0.8470198512077332
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7800271511077881
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_060_chunk_001",
+          "document_id": "doc_060",
+          "topic": "Troubleshooting Issues with Microsoft Word",
+          "similarity_score": 0.7663227915763855
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_004_chunk_002",
+          "document_id": "doc_004",
+          "topic": "Troubleshooting Issues with Microsoft Office",
+          "similarity_score": 0.7662387490272522
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.7653318643569946
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_004",
+        "doc_063",
+        "doc_060",
+        "doc_004",
+        "doc_049"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_004",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft SharePoint' explain?",
+      "ground_truth_document_ids": [
+        "doc_095"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_095_chunk_001",
+          "document_id": "doc_095",
+          "topic": "Troubleshooting Issues with Microsoft SharePoint",
+          "similarity_score": 0.8455495834350586
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7455943822860718
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_004_chunk_001",
+          "document_id": "doc_004",
+          "topic": "Troubleshooting Issues with Microsoft Office",
+          "similarity_score": 0.7397481203079224
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_095_chunk_002",
+          "document_id": "doc_095",
+          "topic": "Troubleshooting Issues with Microsoft SharePoint",
+          "similarity_score": 0.7393101453781128
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_039_chunk_001",
+          "document_id": "doc_039",
+          "topic": "Troubleshooting Issues with Microsoft Access",
+          "similarity_score": 0.7340096235275269
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_095",
+        "doc_063",
+        "doc_004",
+        "doc_095",
+        "doc_039"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_005",
+      "question": "What does the knowledge item about 'Setting Up a New User's Voicemail' explain?",
+      "ground_truth_document_ids": [
+        "doc_036"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_036_chunk_001",
+          "document_id": "doc_036",
+          "topic": "Setting Up a New User's Voicemail",
+          "similarity_score": 0.8445000648498535
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.7306818962097168
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_047_chunk_001",
+          "document_id": "doc_047",
+          "topic": "Setting Up a New User's Account in Salesforce",
+          "similarity_score": 0.7247294783592224
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_090_chunk_001",
+          "document_id": "doc_090",
+          "topic": "Creating a New IT Request for a New Employee",
+          "similarity_score": 0.7132670283317566
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "Setting Up a New User's Computer",
+          "similarity_score": 0.7117205858230591
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_036",
+        "doc_089",
+        "doc_047",
+        "doc_090",
+        "doc_019"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_006",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft Visio' explain?",
+      "ground_truth_document_ids": [
+        "doc_032"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_032_chunk_001",
+          "document_id": "doc_032",
+          "topic": "Troubleshooting Issues with Microsoft Visio",
+          "similarity_score": 0.864092230796814
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_032_chunk_002",
+          "document_id": "doc_032",
+          "topic": "Troubleshooting Issues with Microsoft Visio",
+          "similarity_score": 0.7980306148529053
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7505562901496887
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_077_chunk_001",
+          "document_id": "doc_077",
+          "topic": "Troubleshooting Issues with Company-Issued Software",
+          "similarity_score": 0.7316180467605591
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.7279123067855835
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_032",
+        "doc_032",
+        "doc_063",
+        "doc_077",
+        "doc_049"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_007",
+      "question": "What does the knowledge item about 'Setting Up a New Monitor on a Desktop' explain?",
+      "ground_truth_document_ids": [
+        "doc_029"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_029_chunk_001",
+          "document_id": "doc_029",
+          "topic": "Setting Up a New Monitor on a Desktop",
+          "similarity_score": 0.8324706554412842
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.6803064942359924
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_033_chunk_001",
+          "document_id": "doc_033",
+          "topic": "Setting Up a Remote Desktop Connection",
+          "similarity_score": 0.6794814467430115
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "Setting Up a New User's Computer",
+          "similarity_score": 0.6694515943527222
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_030_chunk_001",
+          "document_id": "doc_030",
+          "topic": "Resetting a Computer's BIOS",
+          "similarity_score": 0.6671253442764282
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_029",
+        "doc_063",
+        "doc_033",
+        "doc_019",
+        "doc_030"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_008",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Java' explain?",
+      "ground_truth_document_ids": [
+        "doc_018"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_018_chunk_001",
+          "document_id": "doc_018",
+          "topic": "Troubleshooting Issues with Java",
+          "similarity_score": 0.8083598613739014
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7332756519317627
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.7296028733253479
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "Troubleshooting Issues with Company-Issued Hardware",
+          "similarity_score": 0.7250521183013916
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_018_chunk_002",
+          "document_id": "doc_018",
+          "topic": "Troubleshooting Issues with Java",
+          "similarity_score": 0.7115186452865601
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_018",
+        "doc_063",
+        "doc_049",
+        "doc_091",
+        "doc_018"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_009",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Audio on a Laptop' explain?",
+      "ground_truth_document_ids": [
+        "doc_014"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_014_chunk_001",
+          "document_id": "doc_014",
+          "topic": "Troubleshooting Issues with Audio on a Laptop",
+          "similarity_score": 0.8753895163536072
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.8001836538314819
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_014_chunk_002",
+          "document_id": "doc_014",
+          "topic": "Troubleshooting Issues with Audio on a Laptop",
+          "similarity_score": 0.7957693338394165
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_025_chunk_001",
+          "document_id": "doc_025",
+          "topic": "Troubleshooting Issues with Company-Issued Headsets",
+          "similarity_score": 0.7866133451461792
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "Troubleshooting Issues with Company-Issued Hardware",
+          "similarity_score": 0.7802190780639648
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_014",
+        "doc_049",
+        "doc_014",
+        "doc_025",
+        "doc_091"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_010",
+      "question": "What does the knowledge item about 'Configuring a Network Camera' explain?",
+      "ground_truth_document_ids": [
+        "doc_087"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_087_chunk_001",
+          "document_id": "doc_087",
+          "topic": "Configuring a Network Camera",
+          "similarity_score": 0.8431040644645691
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_059_chunk_001",
+          "document_id": "doc_059",
+          "topic": "Configuring a Network Scanner",
+          "similarity_score": 0.7274107933044434
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_024_chunk_001",
+          "document_id": "doc_024",
+          "topic": "Configuring a Network Drive",
+          "similarity_score": 0.6966419816017151
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_087_chunk_002",
+          "document_id": "doc_087",
+          "topic": "Configuring a Network Camera",
+          "similarity_score": 0.6882063746452332
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_073_chunk_001",
+          "document_id": "doc_073",
+          "topic": "Configuring a Network Fax Machine",
+          "similarity_score": 0.6823753118515015
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_087",
+        "doc_059",
+        "doc_024",
+        "doc_087",
+        "doc_073"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_011",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with a Slow-Performing Network' explain?",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_070_chunk_001",
+          "document_id": "doc_070",
+          "topic": "Troubleshooting Issues with a Slow-Performing Network",
+          "similarity_score": 0.8543797135353088
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_098_chunk_001",
+          "document_id": "doc_098",
+          "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+          "similarity_score": 0.7871876955032349
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_042_chunk_001",
+          "document_id": "doc_042",
+          "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+          "similarity_score": 0.7576173543930054
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7543991208076477
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "Troubleshooting Issues with Company-Issued Hardware",
+          "similarity_score": 0.7430018782615662
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_070",
+        "doc_098",
+        "doc_042",
+        "doc_063",
+        "doc_091"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_012",
+      "question": "What does the knowledge item about 'Setting Up a New Printer on the Network' explain?",
+      "ground_truth_document_ids": [
+        "doc_012"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_012_chunk_001",
+          "document_id": "doc_012",
+          "topic": "Setting Up a New Printer on the Network",
+          "similarity_score": 0.8525393605232239
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_012_chunk_002",
+          "document_id": "doc_012",
+          "topic": "Setting Up a New Printer on the Network",
+          "similarity_score": 0.8060696125030518
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_045_chunk_001",
+          "document_id": "doc_045",
+          "topic": "Configuring a Network Printer",
+          "similarity_score": 0.7965422868728638
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_071_chunk_001",
+          "document_id": "doc_071",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Printer",
+          "similarity_score": 0.791785478591919
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_045_chunk_002",
+          "document_id": "doc_045",
+          "topic": "Configuring a Network Printer",
+          "similarity_score": 0.7912376523017883
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_012",
+        "doc_012",
+        "doc_045",
+        "doc_071",
+        "doc_045"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_013",
+      "question": "What does the knowledge item about 'Creating a New IT Change Request' explain?",
+      "ground_truth_document_ids": [
+        "doc_076"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_076_chunk_001",
+          "document_id": "doc_076",
+          "topic": "Creating a New IT Change Request",
+          "similarity_score": 0.8807499408721924
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_048_chunk_001",
+          "document_id": "doc_048",
+          "topic": "Creating a New IT Request",
+          "similarity_score": 0.8355564475059509
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_062_chunk_001",
+          "document_id": "doc_062",
+          "topic": "Creating a New IT Service Request",
+          "similarity_score": 0.8151016235351562
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_090_chunk_001",
+          "document_id": "doc_090",
+          "topic": "Creating a New IT Request for a New Employee",
+          "similarity_score": 0.8086084723472595
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_069_chunk_001",
+          "document_id": "doc_069",
+          "topic": "Creating a New IT Problem Report",
+          "similarity_score": 0.7857173681259155
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_076",
+        "doc_048",
+        "doc_062",
+        "doc_090",
+        "doc_069"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_014",
+      "question": "What does the knowledge item about 'Creating a New IT Incident Report' explain?",
+      "ground_truth_document_ids": [
+        "doc_055"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_055_chunk_001",
+          "document_id": "doc_055",
+          "topic": "Creating a New IT Incident Report",
+          "similarity_score": 0.8564164638519287
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_083_chunk_001",
+          "document_id": "doc_083",
+          "topic": "Creating a New IT Incident",
+          "similarity_score": 0.8435484170913696
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_069_chunk_001",
+          "document_id": "doc_069",
+          "topic": "Creating a New IT Problem Report",
+          "similarity_score": 0.7766394019126892
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_069_chunk_002",
+          "document_id": "doc_069",
+          "topic": "Creating a New IT Problem Report",
+          "similarity_score": 0.7378446459770203
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_097_chunk_001",
+          "document_id": "doc_097",
+          "topic": "Creating a New IT Problem",
+          "similarity_score": 0.7268269062042236
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_055",
+        "doc_083",
+        "doc_069",
+        "doc_069",
+        "doc_097"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_015",
+      "question": "What does the knowledge item about 'Setting Up a Conference Call on Cisco Webex' explain?",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_005_chunk_001",
+          "document_id": "doc_005",
+          "topic": "Setting Up a Conference Call on Cisco Webex",
+          "similarity_score": 0.8586825728416443
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_005_chunk_002",
+          "document_id": "doc_005",
+          "topic": "Setting Up a Conference Call on Cisco Webex",
+          "similarity_score": 0.8382933139801025
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_043_chunk_001",
+          "document_id": "doc_043",
+          "topic": "Setting Up a Meeting on Zoom",
+          "similarity_score": 0.710859477519989
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Server",
+          "similarity_score": 0.6913330554962158
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_022_chunk_001",
+          "document_id": "doc_022",
+          "topic": "Setting Up a Meeting on Microsoft Teams",
+          "similarity_score": 0.6866477727890015
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_099",
+        "doc_022"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_016",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with a Slow-Performing Computer' explain?",
+      "ground_truth_document_ids": [
+        "doc_098"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_098_chunk_001",
+          "document_id": "doc_098",
+          "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+          "similarity_score": 0.8420397639274597
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_042_chunk_001",
+          "document_id": "doc_042",
+          "topic": "Troubleshooting Issues with a Slow-Performing Computer",
+          "similarity_score": 0.8247606754302979
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_070_chunk_001",
+          "document_id": "doc_070",
+          "topic": "Troubleshooting Issues with a Slow-Performing Network",
+          "similarity_score": 0.7850667238235474
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.7788045406341553
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7786165475845337
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_042",
+        "doc_070",
+        "doc_049",
+        "doc_063"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_017",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Box' explain?",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.8224188685417175
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_089_chunk_002",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.8147721290588379
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_096_chunk_001",
+          "document_id": "doc_096",
+          "topic": "Setting Up a New User's Account in Dropbox",
+          "similarity_score": 0.786017119884491
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "Setting Up a New User's Computer",
+          "similarity_score": 0.7677271962165833
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_047_chunk_001",
+          "document_id": "doc_047",
+          "topic": "Setting Up a New User's Account in Salesforce",
+          "similarity_score": 0.7545530796051025
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_096",
+        "doc_019",
+        "doc_047"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_018",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Skype for Business' explain?",
+      "ground_truth_document_ids": [
+        "doc_028"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_028_chunk_001",
+          "document_id": "doc_028",
+          "topic": "Troubleshooting Issues with Skype for Business",
+          "similarity_score": 0.8511970043182373
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_028_chunk_002",
+          "document_id": "doc_028",
+          "topic": "Troubleshooting Issues with Skype for Business",
+          "similarity_score": 0.7940733432769775
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "Troubleshooting Issues with Company-Issued Laptops",
+          "similarity_score": 0.7498350143432617
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "Troubleshooting Issues with Company-Issued Desktops",
+          "similarity_score": 0.7447254657745361
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "Troubleshooting Issues with Company-Issued Hardware",
+          "similarity_score": 0.7277165651321411
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_028",
+        "doc_028",
+        "doc_049",
+        "doc_063",
+        "doc_091"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_019",
+      "question": "What does the knowledge item about 'Resetting a Computer's BIOS' explain?",
+      "ground_truth_document_ids": [
+        "doc_030"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_030_chunk_001",
+          "document_id": "doc_030",
+          "topic": "Resetting a Computer's BIOS",
+          "similarity_score": 0.7957233190536499
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_034_chunk_001",
+          "document_id": "doc_034",
+          "topic": "Creating a System Restore Point",
+          "similarity_score": 0.699306309223175
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_030_chunk_002",
+          "document_id": "doc_030",
+          "topic": "Resetting a Computer's BIOS",
+          "similarity_score": 0.6948288083076477
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_086_chunk_001",
+          "document_id": "doc_086",
+          "topic": "Resetting a Forgotten Computer Password",
+          "similarity_score": 0.6867874264717102
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_002_chunk_001",
+          "document_id": "doc_002",
+          "topic": "Resetting a Forgotten PIN",
+          "similarity_score": 0.682735800743103
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_030",
+        "doc_034",
+        "doc_030",
+        "doc_086",
+        "doc_002"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_020",
+      "question": "What does the knowledge item about 'Resetting a Computer's DNS Settings' explain?",
+      "ground_truth_document_ids": [
+        "doc_065"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_065_chunk_001",
+          "document_id": "doc_065",
+          "topic": "Resetting a Computer's DNS Settings",
+          "similarity_score": 0.8652216196060181
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_093_chunk_001",
+          "document_id": "doc_093",
+          "topic": "Resetting a Computer's DNS Cache",
+          "similarity_score": 0.8184796571731567
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_051_chunk_001",
+          "document_id": "doc_051",
+          "topic": "Resetting a Computer's IP Address",
+          "similarity_score": 0.7914499044418335
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_051_chunk_002",
+          "document_id": "doc_051",
+          "topic": "Resetting a Computer's IP Address",
+          "similarity_score": 0.7853225469589233
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_065_chunk_002",
+          "document_id": "doc_065",
+          "topic": "Resetting a Computer's DNS Settings",
+          "similarity_score": 0.7781662940979004
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_065",
+        "doc_093",
+        "doc_051",
+        "doc_051",
+        "doc_065"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_021",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Company-Issued Database' explain?",
+      "ground_truth_document_ids": [
+        "doc_078"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_078_chunk_001",
+          "document_id": "doc_078",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Database",
+          "similarity_score": 0.8742195963859558
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Website",
+          "similarity_score": 0.8116998672485352
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_026_chunk_001",
+          "document_id": "doc_026",
+          "topic": "Setting Up a Secure Connection to a Database",
+          "similarity_score": 0.7955790758132935
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Server",
+          "similarity_score": 0.785710334777832
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_050_chunk_001",
+          "document_id": "doc_050",
+          "topic": "Setting Up a Secure Connection to a Database Server",
+          "similarity_score": 0.7746974229812622
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_078",
+        "doc_092",
+        "doc_026",
+        "doc_099",
+        "doc_050"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_022",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Company-Issued FTP Site' explain?",
+      "ground_truth_document_ids": [
+        "doc_085"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_085_chunk_001",
+          "document_id": "doc_085",
+          "topic": "Setting Up a Secure Connection to a Company-Issued FTP Site",
+          "similarity_score": 0.8696877956390381
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_015_chunk_001",
+          "document_id": "doc_015",
+          "topic": "Setting Up a Secure FTP Connection",
+          "similarity_score": 0.827937126159668
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Website",
+          "similarity_score": 0.8217690587043762
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_078_chunk_001",
+          "document_id": "doc_078",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Database",
+          "similarity_score": 0.759401798248291
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Server",
+          "similarity_score": 0.7509099245071411
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_085",
+        "doc_015",
+        "doc_092",
+        "doc_078",
+        "doc_099"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_023",
+      "question": "What does the knowledge item about 'Resetting a Forgotten VPN Password' explain?",
+      "ground_truth_document_ids": [
+        "doc_072"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_072_chunk_001",
+          "document_id": "doc_072",
+          "topic": "Resetting a Forgotten VPN Password",
+          "similarity_score": 0.8505433201789856
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_058_chunk_001",
+          "document_id": "doc_058",
+          "topic": "Resetting a Forgotten Network Password",
+          "similarity_score": 0.8108513355255127
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_002_chunk_001",
+          "document_id": "doc_002",
+          "topic": "Resetting a Forgotten PIN",
+          "similarity_score": 0.7754215002059937
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_086_chunk_001",
+          "document_id": "doc_086",
+          "topic": "Resetting a Forgotten Computer Password",
+          "similarity_score": 0.7742156982421875
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_037_chunk_001",
+          "document_id": "doc_037",
+          "topic": "Resetting a Forgotten Security Question",
+          "similarity_score": 0.7658209204673767
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_072",
+        "doc_058",
+        "doc_002",
+        "doc_086",
+        "doc_037"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_024",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Database' explain?",
+      "ground_truth_document_ids": [
+        "doc_026"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_078_chunk_001",
+          "document_id": "doc_078",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Database",
+          "similarity_score": 0.847219705581665
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_026_chunk_001",
+          "document_id": "doc_026",
+          "topic": "Setting Up a Secure Connection to a Database",
+          "similarity_score": 0.8236820101737976
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_026_chunk_002",
+          "document_id": "doc_026",
+          "topic": "Setting Up a Secure Connection to a Database",
+          "similarity_score": 0.7926117777824402
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_050_chunk_001",
+          "document_id": "doc_050",
+          "topic": "Setting Up a Secure Connection to a Database Server",
+          "similarity_score": 0.7913981080055237
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_050_chunk_002",
+          "document_id": "doc_050",
+          "topic": "Setting Up a Secure Connection to a Database Server",
+          "similarity_score": 0.789073646068573
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_078",
+        "doc_026",
+        "doc_026",
+        "doc_050",
+        "doc_050"
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question_id": "eval_025",
+      "question": "What does the knowledge item about 'Creating a New IT Request for a New Employee' explain?",
+      "ground_truth_document_ids": [
+        "doc_090"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_090_chunk_001",
+          "document_id": "doc_090",
+          "topic": "Creating a New IT Request for a New Employee",
+          "similarity_score": 0.8866404294967651
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_048_chunk_001",
+          "document_id": "doc_048",
+          "topic": "Creating a New IT Request",
+          "similarity_score": 0.8232775926589966
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_062_chunk_001",
+          "document_id": "doc_062",
+          "topic": "Creating a New IT Service Request",
+          "similarity_score": 0.8050161600112915
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_076_chunk_001",
+          "document_id": "doc_076",
+          "topic": "Creating a New IT Change Request",
+          "similarity_score": 0.803108274936676
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_069_chunk_001",
+          "document_id": "doc_069",
+          "topic": "Creating a New IT Problem Report",
+          "similarity_score": 0.7623932361602783
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_090",
+        "doc_048",
+        "doc_062",
+        "doc_076",
+        "doc_069"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_026",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in JIRA' explain?",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_054_chunk_001",
+          "document_id": "doc_054",
+          "topic": "Setting Up a New User's Account in JIRA",
+          "similarity_score": 0.8744571208953857
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_068_chunk_001",
+          "document_id": "doc_068",
+          "topic": "Setting Up a New User's Account in SAP",
+          "similarity_score": 0.7516812086105347
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_082_chunk_001",
+          "document_id": "doc_082",
+          "topic": "Setting Up a New User's Account in Concur",
+          "similarity_score": 0.7472071647644043
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_075_chunk_001",
+          "document_id": "doc_075",
+          "topic": "Setting Up a New User's Account in Workday",
+          "similarity_score": 0.7375316619873047
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.7367362976074219
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_082",
+        "doc_075",
+        "doc_089"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_027",
+      "question": "What does the knowledge item about 'Configuring a Company-Issued Device for International Travel' explain?",
+      "ground_truth_document_ids": [
+        "doc_094"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_094_chunk_001",
+          "document_id": "doc_094",
+          "topic": "Configuring a Company-Issued Device for International Travel",
+          "similarity_score": 0.8278158903121948
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_052_chunk_001",
+          "document_id": "doc_052",
+          "topic": "Configuring a Company-Issued Smartphone for International Travel",
+          "similarity_score": 0.8158703446388245
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_094_chunk_002",
+          "document_id": "doc_094",
+          "topic": "Configuring a Company-Issued Device for International Travel",
+          "similarity_score": 0.792883038520813
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_038_chunk_001",
+          "document_id": "doc_038",
+          "topic": "Configuring a Company-Issued Tablet for International Travel",
+          "similarity_score": 0.7729530930519104
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_038_chunk_002",
+          "document_id": "doc_038",
+          "topic": "Configuring a Company-Issued Tablet for International Travel",
+          "similarity_score": 0.7406013011932373
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_094",
+        "doc_052",
+        "doc_094",
+        "doc_038",
+        "doc_038"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_028",
+      "question": "What does the knowledge item about 'Resetting a Forgotten Network Password' explain?",
+      "ground_truth_document_ids": [
+        "doc_058"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_058_chunk_001",
+          "document_id": "doc_058",
+          "topic": "Resetting a Forgotten Network Password",
+          "similarity_score": 0.8264302611351013
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_086_chunk_001",
+          "document_id": "doc_086",
+          "topic": "Resetting a Forgotten Computer Password",
+          "similarity_score": 0.7980402708053589
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_002_chunk_001",
+          "document_id": "doc_002",
+          "topic": "Resetting a Forgotten PIN",
+          "similarity_score": 0.784690260887146
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_100_chunk_001",
+          "document_id": "doc_100",
+          "topic": "Resetting a Forgotten Network Username.",
+          "similarity_score": 0.7705545425415039
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_037_chunk_001",
+          "document_id": "doc_037",
+          "topic": "Resetting a Forgotten Security Question",
+          "similarity_score": 0.747673749923706
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_058",
+        "doc_086",
+        "doc_002",
+        "doc_100",
+        "doc_037"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_029",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Dropbox' explain?",
+      "ground_truth_document_ids": [
+        "doc_096"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_096_chunk_001",
+          "document_id": "doc_096",
+          "topic": "Setting Up a New User's Account in Dropbox",
+          "similarity_score": 0.8551323413848877
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.7820442318916321
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_089_chunk_002",
+          "document_id": "doc_089",
+          "topic": "Setting Up a New User's Account in Box",
+          "similarity_score": 0.7540478706359863
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "Setting Up a New User's Computer",
+          "similarity_score": 0.7216156125068665
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_068_chunk_001",
+          "document_id": "doc_068",
+          "topic": "Setting Up a New User's Account in SAP",
+          "similarity_score": 0.7092713713645935
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_096",
+        "doc_089",
+        "doc_089",
+        "doc_019",
+        "doc_068"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question_id": "eval_030",
+      "question": "What does the knowledge item about 'Setting Up a Mobile Device for Company Email' explain?",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "doc_001_chunk_001",
+          "document_id": "doc_001",
+          "topic": "Setting Up a Mobile Device for Company Email",
+          "similarity_score": 0.8543590903282166
+        },
+        {
+          "rank": 2,
+          "chunk_id": "doc_001_chunk_002",
+          "document_id": "doc_001",
+          "topic": "Setting Up a Mobile Device for Company Email",
+          "similarity_score": 0.8146145343780518
+        },
+        {
+          "rank": 3,
+          "chunk_id": "doc_017_chunk_001",
+          "document_id": "doc_017",
+          "topic": "Configuring a Company-Issued Smartphone",
+          "similarity_score": 0.791826069355011
+        },
+        {
+          "rank": 4,
+          "chunk_id": "doc_010_chunk_001",
+          "document_id": "doc_010",
+          "topic": "Configuring Email on an Android Device",
+          "similarity_score": 0.7605350017547607
+        },
+        {
+          "rank": 5,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "Setting Up a Secure Connection to a Company-Issued Website",
+          "similarity_score": 0.7121443748474121
+        }
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_092"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

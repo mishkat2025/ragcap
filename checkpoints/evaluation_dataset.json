@@ -1,0 +1,8 @@
+{
+  "stage": "evaluation_dataset_preparation",
+  "status": "success",
+  "evaluation_count": 30,
+  "source_document_count": 100,
+  "random_seed": 42,
+  "output_path": "E:\\rag\\data\\evaluation\\evaluation_questions.json"
+}

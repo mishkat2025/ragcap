@@ -1,0 +1,311 @@
+{
+  "status": "success",
+  "stage": "evaluation_dataset_preparation",
+  "created_at": "2026-09-05T23:47:34.035664",
+  "random_seed": 42,
+  "evaluation_count": 30,
+  "source_document_count": 100,
+  "evaluation_type": "document_grounded retrieval evaluation",
+  "questions": [
+    {
+      "question_id": "eval_001",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Concur' explain?",
+      "relevant_document_ids": [
+        "doc_082"
+      ],
+      "source_topic": "Setting Up a New User's Account in Concur",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_002",
+      "question": "What does the knowledge item about 'Setting Up a Secure FTP Connection' explain?",
+      "relevant_document_ids": [
+        "doc_015"
+      ],
+      "source_topic": "Setting Up a Secure FTP Connection",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_003",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft Office' explain?",
+      "relevant_document_ids": [
+        "doc_004"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft Office",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_004",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft SharePoint' explain?",
+      "relevant_document_ids": [
+        "doc_095"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft SharePoint",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_005",
+      "question": "What does the knowledge item about 'Setting Up a New User's Voicemail' explain?",
+      "relevant_document_ids": [
+        "doc_036"
+      ],
+      "source_topic": "Setting Up a New User's Voicemail",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_006",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Microsoft Visio' explain?",
+      "relevant_document_ids": [
+        "doc_032"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft Visio",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_007",
+      "question": "What does the knowledge item about 'Setting Up a New Monitor on a Desktop' explain?",
+      "relevant_document_ids": [
+        "doc_029"
+      ],
+      "source_topic": "Setting Up a New Monitor on a Desktop",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_008",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Java' explain?",
+      "relevant_document_ids": [
+        "doc_018"
+      ],
+      "source_topic": "Troubleshooting Issues with Java",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_009",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Audio on a Laptop' explain?",
+      "relevant_document_ids": [
+        "doc_014"
+      ],
+      "source_topic": "Troubleshooting Issues with Audio on a Laptop",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_010",
+      "question": "What does the knowledge item about 'Configuring a Network Camera' explain?",
+      "relevant_document_ids": [
+        "doc_087"
+      ],
+      "source_topic": "Configuring a Network Camera",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_011",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with a Slow-Performing Network' explain?",
+      "relevant_document_ids": [
+        "doc_070"
+      ],
+      "source_topic": "Troubleshooting Issues with a Slow-Performing Network",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_012",
+      "question": "What does the knowledge item about 'Setting Up a New Printer on the Network' explain?",
+      "relevant_document_ids": [
+        "doc_012"
+      ],
+      "source_topic": "Setting Up a New Printer on the Network",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_013",
+      "question": "What does the knowledge item about 'Creating a New IT Change Request' explain?",
+      "relevant_document_ids": [
+        "doc_076"
+      ],
+      "source_topic": "Creating a New IT Change Request",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_014",
+      "question": "What does the knowledge item about 'Creating a New IT Incident Report' explain?",
+      "relevant_document_ids": [
+        "doc_055"
+      ],
+      "source_topic": "Creating a New IT Incident Report",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_015",
+      "question": "What does the knowledge item about 'Setting Up a Conference Call on Cisco Webex' explain?",
+      "relevant_document_ids": [
+        "doc_005"
+      ],
+      "source_topic": "Setting Up a Conference Call on Cisco Webex",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_016",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with a Slow-Performing Computer' explain?",
+      "relevant_document_ids": [
+        "doc_098"
+      ],
+      "source_topic": "Troubleshooting Issues with a Slow-Performing Computer",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_017",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Box' explain?",
+      "relevant_document_ids": [
+        "doc_089"
+      ],
+      "source_topic": "Setting Up a New User's Account in Box",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_018",
+      "question": "What does the knowledge item about 'Troubleshooting Issues with Skype for Business' explain?",
+      "relevant_document_ids": [
+        "doc_028"
+      ],
+      "source_topic": "Troubleshooting Issues with Skype for Business",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_019",
+      "question": "What does the knowledge item about 'Resetting a Computer's BIOS' explain?",
+      "relevant_document_ids": [
+        "doc_030"
+      ],
+      "source_topic": "Resetting a Computer's BIOS",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_020",
+      "question": "What does the knowledge item about 'Resetting a Computer's DNS Settings' explain?",
+      "relevant_document_ids": [
+        "doc_065"
+      ],
+      "source_topic": "Resetting a Computer's DNS Settings",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_021",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Company-Issued Database' explain?",
+      "relevant_document_ids": [
+        "doc_078"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Company-Issued Database",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_022",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Company-Issued FTP Site' explain?",
+      "relevant_document_ids": [
+        "doc_085"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Company-Issued FTP Site",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_023",
+      "question": "What does the knowledge item about 'Resetting a Forgotten VPN Password' explain?",
+      "relevant_document_ids": [
+        "doc_072"
+      ],
+      "source_topic": "Resetting a Forgotten VPN Password",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_024",
+      "question": "What does the knowledge item about 'Setting Up a Secure Connection to a Database' explain?",
+      "relevant_document_ids": [
+        "doc_026"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Database",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_025",
+      "question": "What does the knowledge item about 'Creating a New IT Request for a New Employee' explain?",
+      "relevant_document_ids": [
+        "doc_090"
+      ],
+      "source_topic": "Creating a New IT Request for a New Employee",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_026",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in JIRA' explain?",
+      "relevant_document_ids": [
+        "doc_054"
+      ],
+      "source_topic": "Setting Up a New User's Account in JIRA",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_027",
+      "question": "What does the knowledge item about 'Configuring a Company-Issued Device for International Travel' explain?",
+      "relevant_document_ids": [
+        "doc_094"
+      ],
+      "source_topic": "Configuring a Company-Issued Device for International Travel",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_028",
+      "question": "What does the knowledge item about 'Resetting a Forgotten Network Password' explain?",
+      "relevant_document_ids": [
+        "doc_058"
+      ],
+      "source_topic": "Resetting a Forgotten Network Password",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_029",
+      "question": "What does the knowledge item about 'Setting Up a New User's Account in Dropbox' explain?",
+      "relevant_document_ids": [
+        "doc_096"
+      ],
+      "source_topic": "Setting Up a New User's Account in Dropbox",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    },
+    {
+      "question_id": "eval_030",
+      "question": "What does the knowledge item about 'Setting Up a Mobile Device for Company Email' explain?",
+      "relevant_document_ids": [
+        "doc_001"
+      ],
+      "source_topic": "Setting Up a Mobile Device for Company Email",
+      "evaluation_type": "document_grounded",
+      "created_from": "rag_documents.json"
+    }
+  ]
+}

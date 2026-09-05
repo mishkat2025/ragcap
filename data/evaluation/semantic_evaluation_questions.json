@@ -1,0 +1,373 @@
+{
+  "status": "success",
+  "stage": "semantic_evaluation_dataset_preparation",
+  "created_at": "2026-09-05T23:51:15.184668",
+  "random_seed": 42,
+  "evaluation_count": 30,
+  "source_document_count": 100,
+  "evaluation_type": "semantic content-grounded retrieval",
+  "query_generation_method": "Alternative knowledge text with exact source topic removed",
+  "retrieval_corpus": "Baseline ki_text documents/chunks",
+  "questions": [
+    {
+      "question_id": "semantic_eval_001",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new user's account in Concur, follow these steps: **Step 1: Gather Required Information** Before , you will need to gather the following information: * The user's first and last name * Their Widgetco email address * Their job title and department * Their manager's name and email address * Any applicable cost centers or budgets **Step 2: Log in to Concur** Log in to Concur using your administrator credentials. If you need assistance with logging in, please contact the Widgetco IT helpdesk. **Step 3: Navigate to the User Management Page** Once logged in, navigate to the User Management page by clicking on the \"Administration\" tab and selecting \"User Management\" from the dropdown menu. **Step 4: Click on \"Add New User\"** On the User Management page, click on the \"Add New User\" button. **Step 5: Enter User Information** Enter the user's information gathered in Step 1, including their name, email address, job title, department, and manager's information. **Step 6: Set Up Login",
+      "relevant_document_ids": [
+        "doc_082"
+      ],
+      "source_topic": "Setting Up a New User's Account in Concur",
+      "source_row_index": 81,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_002",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a secure FTP connection, follow these steps: **Step 1: Install an FTP Client** Download and install an FTP client that supports secure connections, such as FileZilla. You can download FileZilla from the Widgetco-approved software list. **Step 2: Obtain FTP Credentials** Obtain your FTP credentials from the Widgetco IT department. These credentials will include a username, password, and FTP server address. **Step 3: Configure the FTP Client** Launch FileZilla and enter the following settings: * Host: Enter the FTP server address provided by the IT department. * Username: Enter your assigned username. * Password: Enter your assigned password. * Port: 22 (this is the default port for secure FTP connections) * Protocol: Select SFTP (SSH File Transfer Protocol) **Step 4: Connect to the FTP Server** Click the \"Quickconnect\" button to establish a connection to the FTP server. If prompted, accept the SSL certificate. **Step 5: Verify the Connection** Once connected, verify that you",
+      "relevant_document_ids": [
+        "doc_015"
+      ],
+      "source_topic": "Setting Up a Secure FTP Connection",
+      "source_row_index": 14,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_003",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When , follow these steps to identify and resolve common problems: **Step 1: Restart Microsoft Office and the Computer** Before proceeding with troubleshooting, try restarting Microsoft Office and the computer. This often resolves issues caused by temporary glitches or corrupted memory. **Step 2: Check for Updates** Ensure Microsoft Office is up-to-date by checking for updates through the Microsoft Update tool or the Office application itself. Outdated software can cause compatibility issues and errors. **Step 3: Disable Add-ins** Add-ins can sometimes interfere with Microsoft Office functionality. Try disabling all add-ins and then re-enabling them one by one to identify the problematic add-in. To disable add-ins in Microsoft Office: * Open the Office application (e.g., Word, Excel, PowerPoint) * Click on \"File\" > \"Options\" > \"Add-ins\" * Uncheck the boxes next to each add-in to disable them * Click \"OK\" to save changes **Step 4: Check for Conflicting Programs** Other programs running",
+      "relevant_document_ids": [
+        "doc_004"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft Office",
+      "source_row_index": 3,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_004",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When at Widgetco, follow these steps to identify and resolve common problems: **Step 1: Gather Information** * Collect details about the issue, including the error message, screen shots, and the steps leading up to the problem. * Identify the affected users, sites, or libraries. * Determine if the issue is specific to a particular browser or device. **Step 2: Check SharePoint Uptime** * Verify that SharePoint is available and accessible by checking the Widgetco SharePoint portal. * Check the Widgetco IT Services status page for any reported outages or maintenance schedules. **Step 3: Authenticate and Authorize** * Ensure the user is properly authenticated by checking their Widgetco login credentials. * Verify that the user has the necessary permissions to access the affected site, library, or content. * Check if the user is a member of the correct SharePoint groups. **Step 4: Browser and Plugin Check** * Verify that the user's browser is compatible with SharePoint and meets the",
+      "relevant_document_ids": [
+        "doc_095"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft SharePoint",
+      "source_row_index": 94,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_005",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new user's voicemail, follow these steps: **Step 1: Verify the User's Phone Extension** Before , ensure that their phone extension is active and configured correctly. You can do this by checking the Widgetco phone directory or contacting the Telecommunications team. **Step 2: Log in to the Voicemail System** Log in to the voicemail system using your own credentials. You can access the voicemail system through the Widgetco intranet or by dialing the voicemail access number. **Step 3: Create a New Voicemail Box** Click on the \"Create New Voicemail Box\" button and enter the new user's name, phone extension, and department. Fill in any additional required fields, such as the user's job title or manager's name. **Step 4: Set Up the Voicemail Greeting** Create a default voicemail greeting for the new user. You can record a custom greeting or use the standard Widgetco voicemail greeting. Make sure to include the user's name and department in the greeting. **Step 5: Configure",
+      "relevant_document_ids": [
+        "doc_036"
+      ],
+      "source_topic": "Setting Up a New User's Voicemail",
+      "source_row_index": 35,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_006",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When , follow these steps to identify and resolve common problems: **Step 1: Restart Visio and the Computer** Sometimes, a simple restart can resolve the issue. Close all instances of Visio and restart the computer. This will ensure that any temporary files or system resources are released, and Visio is reinitialized. **Step 2: Check for Updates** Ensure Visio is up-to-date by checking for updates through the Microsoft Update Center or the Widgetco Software Update portal. Installing the latest updates may resolve known issues. **Step 3: Disable Add-ins** Visio add-ins can sometimes cause conflicts or issues. Disable all add-ins and restart Visio. If the issue resolves, re-enable add-ins one by one to identify the problematic add-in. **Step 4: Check File Associations** Verify that Visio is set as the default application for .vsd and .vsdx file types. Right-click on a Visio file, select \"Open with,\" and choose Visio as the default program. **Step 5: Run Visio in Safe Mode** Run Visio in",
+      "relevant_document_ids": [
+        "doc_032"
+      ],
+      "source_topic": "Troubleshooting Issues with Microsoft Visio",
+      "source_row_index": 31,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_007",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new monitor on a desktop at Widgetco, follow these steps: **Step 1: Prepare the New Monitor** Before connecting the new monitor, ensure it is properly unpacked and all cables are included. Check the monitor's documentation for any specific requirements or recommendations for setup. **Step 2: Identify the Available Video Ports** Check the desktop computer's video ports to determine which types are available. Common video ports include VGA, DVI, HDMI, and DisplayPort. Make note of the available ports and the type of cable required for each. **Step 3: Connect the Monitor Cables** Connect the monitor cables to the corresponding video ports on the desktop computer. If using a VGA cable, ensure it is securely screwed into place. For DVI, HDMI, or DisplayPort cables, simply plug them in. **Step 4: Power On the Monitor** Turn on the new monitor and ensure it is set to the correct input. This is usually done by pressing a button on the monitor and selecting the correct input (e.g.,",
+      "relevant_document_ids": [
+        "doc_029"
+      ],
+      "source_topic": "Setting Up a New Monitor on a Desktop",
+      "source_row_index": 28,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_008",
+      "question": "What guidance is provided regarding the following IT-related task or issue? **** Java is a critical component of many business applications used at Widgetco, including our custom-built enterprise software and various third-party tools. Occasionally, users may encounter issues with Java, such as errors, freezes, or slow performance. provides a step-by-step guide to troubleshooting common Java-related problems. **Step 1: Verify Java Installation** 1. Check if Java is installed on the user's machine by going to **Start** > **Control Panel** > **Programs and Features** (for Windows) or **Applications** > **Utilities** > **Java** (for Mac). 2. Ensure the installed version of Java is compatible with the application or system experiencing issues. You can check the version by going to **Java.com** and clicking on **Do I have Java?** 3. If Java is not installed or the version is outdated, direct the user to download and install the latest version from the official Oracle website. **Step 2: Disable Java in Browser** 1. If the issue is related to a web-based",
+      "relevant_document_ids": [
+        "doc_018"
+      ],
+      "source_topic": "Troubleshooting Issues with Java",
+      "source_row_index": 17,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_009",
+      "question": "What guidance is provided regarding the following IT-related task or issue? **** As a Widgetco employee, you rely on your laptop's audio to stay productive and connected with colleagues. However, audio issues can be frustrating and disrupt your work. provides step-by-step troubleshooting guides to help you resolve common audio problems on your laptop. **Step 1: Check the Basics** 1. Ensure your laptop's volume is turned up and not muted. You can do this by clicking on the speaker icon in the system tray (usually located in the bottom right corner of the screen) and adjusting the slider. 2. Verify that your audio cables are securely connected to the laptop and any external devices, such as speakers or headphones. 3. Check if the audio issue is specific to a particular application or occurs across all applications. **Step 2: Disable and Re-enable Audio Devices** 1. Press the Windows key + X and select Device Manager. 2. In the Device Manager, expand the Sound, video and game controllers section. 3. Right-click on the audio device (e.g., Realtek Audio or Intel",
+      "relevant_document_ids": [
+        "doc_014"
+      ],
+      "source_topic": "Troubleshooting Issues with Audio on a Laptop",
+      "source_row_index": 13,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_010",
+      "question": "What guidance is provided regarding the following IT-related task or issue? Widgetco's IT department recommends the following steps to configure a network camera for use within the company's network. **Prerequisites:** * The network camera is physically installed and powered on. * The camera is connected to the Widgetco network via an Ethernet cable or Wi-Fi (if supported by the camera model). * You have administrative access to the camera's web interface. **Step 1: Access the Camera's Web Interface** 1. Open a web browser and type the camera's IP address in the address bar. The IP address can be found on the camera's packaging or in the documentation provided by the manufacturer. 2. Press Enter to access the camera's web interface. You may be prompted to log in with a username and password. The default login credentials can be found in the camera's documentation. **Step 2: Change the Default Password** 1. Once logged in, navigate to the camera's settings or configuration page. 2. Look for the password or security settings section and update the default",
+      "relevant_document_ids": [
+        "doc_087"
+      ],
+      "source_topic": "Configuring a Network Camera",
+      "source_row_index": 86,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_011",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When experiencing issues with a slow-performing network at Widgetco, follow these troubleshooting steps to identify and potentially resolve the problem. **Step 1: Gather Information** * Identify the affected area or department to determine if the issue is localized or widespread. * Ask the user to describe the symptoms they are experiencing, such as slow file transfers, delayed webpage loading, or poor video streaming quality. * Check the Widgetco Network Status page to see if there are any known outages or maintenance schedules that may be contributing to the issue. **Step 2: Check Network Connectivity** * Verify that the user's device is connected to the correct network (e.g., Widgetco-WiFi or Widgetco-LAN). * Check the network cable or Wi-Fi signal strength to ensure a stable connection. * Restart the device and router (if applicable) to ensure a fresh connection. **Step 3: Investigate Network Congestion** * Use network monitoring tools (e.g., NetScout or SolarWinds) to check for",
+      "relevant_document_ids": [
+        "doc_070"
+      ],
+      "source_topic": "Troubleshooting Issues with a Slow-Performing Network",
+      "source_row_index": 69,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_012",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new printer on the Widgetco network, follow these steps: **Step 1: Unboxing and Physical Installation** 1. Unpack the printer and all included accessories from the box. 2. Place the printer in its designated location and ensure it is plugged into a power outlet. 3. Connect the printer to the network using an Ethernet cable. Note: Wireless printers are not supported on the Widgetco network for security reasons. **Step 2: Installing Printer Drivers** 1. Go to the Widgetco Software Repository (https://software.widgetco.com) and search for \"printer drivers\". 2. Select the correct driver for your printer model and operating system (Windows or macOS). 3. Download and install the driver on your computer. 4. Follow the on-screen instructions to complete the installation. **Step 3: Adding the Printer to the Network** 1. Open the Printer Settings or Devices and Printers control panel on your computer. 2. Click \"Add a printer\" and select \"Network printer\". 3. Enter the printer's IP",
+      "relevant_document_ids": [
+        "doc_012"
+      ],
+      "source_topic": "Setting Up a New Printer on the Network",
+      "source_row_index": 11,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_013",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To create a new IT change request in Widgetco's IT service management system, follow these steps: **Step 1: Log in to the IT Service Management System** Open a web browser and navigate to [https://itsm.widgetco.com](https://itsm.widgetco.com). Log in using your Widgetco credentials. **Step 2: Access the Change Request Module** Once logged in, click on the \"Change\" tab located at the top of the page. This will take you to the Change Request module. **Step 3: Click on \"Create New Change\"** In the Change Request module, click on the \"Create New Change\" button located in the top right corner of the page. **Step 4: Select the Change Type** Select the type of change you want to create from the drop-down list. The types of changes include: * Hardware/Software Upgrade * New Service Request * Configuration Change * Other (please specify) **Step 5: Enter Change Details** Enter a brief description of the change in the \"Summary\" field. This should include the reason for the change and the",
+      "relevant_document_ids": [
+        "doc_076"
+      ],
+      "source_topic": "Creating a New IT Change Request",
+      "source_row_index": 75,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_014",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To create a new IT incident report, follow these steps: **Step 1: Access the IT Service Management Portal** Open a web browser and navigate to the Widgetco IT Service Management Portal at [https://itsm.widgetco.com](https://itsm.widgetco.com). Log in using your Widgetco credentials. **Step 2: Click on the \"Create Incident\" Button** On the portal homepage, click on the \"Create Incident\" button located in the top right-hand corner of the screen. **Step 3: Select the Incident Type** In the \"Create Incident\" form, select the type of incident you are reporting from the drop-down list. Options include: * Hardware issue * Software issue * Network issue * Other (please specify) **Step 4: Provide Incident Details** In the \"Incident Details\" section, provide a brief description of the issue you are experiencing. Please include as much detail as possible, such as: * The symptoms of the issue * Any error messages or beeps * Any troubleshooting steps you have already taken * The impact of the",
+      "relevant_document_ids": [
+        "doc_055"
+      ],
+      "source_topic": "Creating a New IT Incident Report",
+      "source_row_index": 54,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_015",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a conference call on Cisco Webex, follow these steps: **Step 1: Log in to Cisco Webex** Open a web browser and navigate to [https://webex.widgetco.com](https://webex.widgetco.com). Enter your Widgetco credentials to log in to the Cisco Webex portal. **Step 2: Click on \"Meetings\"** Once logged in, click on the \"Meetings\" tab on the top navigation bar. This will take you to the Meetings page, where you can schedule a new meeting. **Step 3: Click on \"New Meeting\"** Click on the \"New Meeting\" button to create a new meeting. Enter a meeting topic, start and end time, and select the meeting type as \"Conference Call\". **Step 4: Add Participants** Enter the email addresses of the participants you want to invite to the conference call. You can add participants from your Widgetco address book or enter external email addresses. **Step 5: Choose Audio Options** Select the audio options for the conference call. You can choose from the following options: * Webex Audio: This option allows",
+      "relevant_document_ids": [
+        "doc_005"
+      ],
+      "source_topic": "Setting Up a Conference Call on Cisco Webex",
+      "source_row_index": 4,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_016",
+      "question": "What guidance is provided regarding the following IT-related task or issue? **** As a Widgetco employee, a slow-performing computer can hinder your productivity and impact your work. provides a step-by-step guide to help you troubleshoot and resolve common issues that may be causing your computer to slow down. **Step 1: Restart Your Computer** The simplest and most effective troubleshooting step is to restart your computer. This will close all running applications, clear out memory, and may resolve any temporary issues. Before proceeding with further troubleshooting, restart your computer and see if the issue persists. **Step 2: Check for Resource-Intensive Programs** Open the Task Manager (Windows key + Shift + Esc or Command + Option + Esc on Mac) to see which programs are consuming the most resources. Check for any programs that are using excessive CPU, memory, or disk space. Close any unnecessary programs or background applications that may be slowing down your computer. **Step 3: Update Your Operating System and Software** Ensure your operating system",
+      "relevant_document_ids": [
+        "doc_098"
+      ],
+      "source_topic": "Troubleshooting Issues with a Slow-Performing Computer",
+      "source_row_index": 97,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_017",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new user's account in Box, follow these steps: **Step 1: Create a New User Account in Widgetco's Active Directory** * Log in to the Widgetco Active Directory (AD) portal using your administrator credentials. * Click on \"Users\" and then \"Add New User\". * Fill in the required information, including the user's first and last name, email address, and job title. * Set the user's password and configure any additional settings as required by Widgetco's IT policies. **Step 2: Assign the User to the Correct Box Group** * Log in to the Box admin console using your administrator credentials. * Click on \"Groups\" and then \"Add New Group Member\". * Search for the user you created in Step 1 and add them to the appropriate Box group (e.g. \"Widgetco All Employees\" or a specific departmental group). * Ensure the user has the correct permissions and access levels within the group. **Step 3: Provision the User's Box Account** * In the Box admin console, click on \"Users\" and then \"Provision",
+      "relevant_document_ids": [
+        "doc_089"
+      ],
+      "source_topic": "Setting Up a New User's Account in Box",
+      "source_row_index": 88,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_018",
+      "question": "What guidance is provided regarding the following IT-related task or issue? **** Skype for Business is a critical communication tool used by Widgetco employees to connect with colleagues, partners, and customers. However, like any software, it's not immune to issues. provides step-by-step troubleshooting guides to help you resolve common problems with Skype for Business. **Issue 1: Unable to Sign In** If you're having trouble signing in to Skype for Business, try the following: 1. Ensure you're using your correct Widgetco credentials (username and password). If you've forgotten your password, reset it using the Widgetco Self-Service Password Reset tool. 2. Check that your computer's date and time are set correctly. Skype for Business relies on accurate system clock settings to authenticate. 3. Verify that your network connection is stable. Try disconnecting and reconnecting to the network or switching to a different Wi-Fi network. 4. If you're using a Virtual Private Network (VPN), try disconnecting from the VPN and signing in to Skype for Business again.",
+      "relevant_document_ids": [
+        "doc_028"
+      ],
+      "source_topic": "Troubleshooting Issues with Skype for Business",
+      "source_row_index": 27,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_019",
+      "question": "What guidance is provided regarding the following IT-related task or issue? is a troubleshooting step that can resolve various hardware-related issues at Widgetco. will guide you through the process of . **Important:** Before proceeding, ensure you have administrative access to the computer and have backed up any important data, as resetting the BIOS will erase all customized settings. **Step 1: Shut Down the Computer** Completely power down the computer. This is essential to prevent any accidental changes to the BIOS settings while you're in the process of resetting. **Step 2: Locate the BIOS Reset Button or Jumper** The location of the BIOS reset button or jumper varies depending on the computer model. For Widgetco-issued laptops, you can find the reset button on the bottom or side of the laptop, near the battery compartment. For desktops, the reset jumper is usually located on the motherboard, near the BIOS battery. Refer to the computer's documentation or manufacturer's website if you're unsure about the location. **Step 3: Use the BIOS Reset Button or",
+      "relevant_document_ids": [
+        "doc_030"
+      ],
+      "source_topic": "Resetting a Computer's BIOS",
+      "source_row_index": 29,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_020",
+      "question": "What guidance is provided regarding the following IT-related task or issue? can resolve issues with accessing internal Widgetco resources or connecting to the internet. Follow these steps to reset DNS settings on a Windows or macOS device: **Windows:** 1. Press the Windows key + R to open the Run dialog box. 2. Type `cmd` and press Enter to open the Command Prompt. 3. Type `ipconfig /flushdns` and press Enter. This will clear the DNS cache. 4. Type `ipconfig /registerdns` and press Enter. This will re-register the DNS client. 5. Type `ipconfig /release` and press Enter. This will release the current IP address configuration. 6. Type `ipconfig /renew` and press Enter. This will renew the IP address configuration and obtain new DNS settings from the DHCP server. **macOS:** 1. Click the Apple menu and select System Preferences. 2. Click Network. 3. Select the active network connection (e.g., Wi-Fi or Ethernet) from the left-hand menu. 4. Click Advanced. 5. Click TCP/IP. 6. Click Renew DHCP Lease. 7. Click OK to close the Network preferences window. 8. Open the",
+      "relevant_document_ids": [
+        "doc_065"
+      ],
+      "source_topic": "Resetting a Computer's DNS Settings",
+      "source_row_index": 64,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_021",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a secure connection to a company-issued database, follow these steps: **Prerequisites:** * You have been granted access to the database by the Widgetco Database Administration team. * You have a Widgetco-issued laptop or desktop with the required software and configurations. **Step 1: Install the Required Software** * Open the Widgetco Software Portal and download the latest version of the database client software. * Follow the on-screen instructions to install the software. * Ensure that you select the correct database version and architecture (32-bit or 64-bit) that matches your system configuration. **Step 2: Configure the Database Connection** * Launch the database client software and click on \"Create a New Connection\" or \"Add a New Database\" depending on the software version. * Enter the database server name, username, and password provided by the Widgetco Database Administration team. * Select the encryption method as \"TLS 1.2\" and ensure that the \"Trust Server",
+      "relevant_document_ids": [
+        "doc_078"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Company-Issued Database",
+      "source_row_index": 77,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_022",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a secure connection to a company-issued FTP site, follow these steps: **Prerequisites:** * You have a valid Widgetco network account and password. * You have been granted access to the FTP site by your manager or department administrator. * You have a compatible FTP client software installed on your device (e.g., FileZilla, Cyberduck). **Step 1: Obtain the FTP Site Credentials** * Contact your manager or department administrator to obtain the FTP site URL, username, and password. * Make sure to store these credentials securely, as they will be required to access the FTP site. **Step 2: Configure Your FTP Client** * Open your FTP client software and create a new connection profile. * Enter the FTP site URL, username, and password provided in Step 1. * Ensure that the connection type is set to \"SFTP\" (Secure File Transfer Protocol) or \"FTP over TLS\" to establish a secure connection. **Step 3: Enable Encryption** * In your FTP client software, navigate to the \"Advanced\" or",
+      "relevant_document_ids": [
+        "doc_085"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Company-Issued FTP Site",
+      "source_row_index": 84,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_023",
+      "question": "What guidance is provided regarding the following IT-related task or issue? If you have forgotten your VPN password, you can reset it using the following steps: **Step 1: Access the VPN Portal** Open a web browser and navigate to the Widgetco VPN portal at [https://vpn.widgetco.com](https://vpn.widgetco.com). Click on the \"Forgot Password\" link located below the login credentials field. **Step 2: Enter Your Username** Enter your Widgetco username in the \"Username\" field and click \"Next\". This will redirect you to the password reset page. **Step 3: Authenticate with MFA** You will be prompted to authenticate using your Multi-Factor Authentication (MFA) method. Follow the instructions to complete the MFA challenge. This is an additional security measure to ensure the security of your account. **Step 4: Enter New Password** Once you have successfully authenticated with MFA, you will be prompted to enter a new password. Enter a strong and unique password that meets the Widgetco password policy requirements. Re-enter the new password in the \"Confirm Password\"",
+      "relevant_document_ids": [
+        "doc_072"
+      ],
+      "source_topic": "Resetting a Forgotten VPN Password",
+      "source_row_index": 71,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_024",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a secure connection to a database at Widgetco, follow these steps: **Step 1: Obtain the Required Information** Before , you need to obtain the following information from the database administrator or the database documentation: * Database server name or IP address * Database name * Username and password for the database * SSL/TLS certificate (if required) **Step 2: Install the Required Software** Ensure you have the necessary software installed on your machine to connect to the database securely. This may include: * A compatible database client software (e.g., SQL Server Management Studio, Oracle Client, etc.) * SSL/TLS certificate management software (e.g., OpenSSL, etc.) **Step 3: Configure the Database Connection** Configure the database connection using the obtained information. This may involve: * Creating a new connection profile in the database client software * Entering the database server name or IP address, database name, username, and password * Selecting the",
+      "relevant_document_ids": [
+        "doc_026"
+      ],
+      "source_topic": "Setting Up a Secure Connection to a Database",
+      "source_row_index": 25,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_025",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When a new employee joins Widgetco, it's essential to ensure they have the necessary IT resources to perform their job duties efficiently. As a helpdesk specialist, you play a crucial role in setting up their IT environment. outlines the steps to create a new IT request for a new employee. **Step 1: Gather Employee Information** Before creating the IT request, gather the following information about the new employee: * Employee ID * First and last name * Job title * Department * Manager's name and email * Start date * Any specific IT requirements for their role (e.g., software, hardware, or access to specific systems) **Step 2: Create a New IT Request** Log in to the IT service management platform and click on \"Create New Request.\" Select \"New Employee\" as the request type. **Step 3: Fill in the Request Form** Complete the request form with the gathered information. Ensure you provide accurate details, as this will help the IT team to set up the new employee's IT environment correctly.",
+      "relevant_document_ids": [
+        "doc_090"
+      ],
+      "source_topic": "Creating a New IT Request for a New Employee",
+      "source_row_index": 89,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_026",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new user's account in JIRA, follow these steps: **Step 1: Create a New User Account** 1. Log in to the JIRA portal using your administrator credentials. 2. Click on the \"Users\" tab in the top navigation bar. 3. Click on the \"Create User\" button. 4. Enter the new user's information, including their name, email address, and username. The username should follow the Widgetco standard format of \"first initial last name\" (e.g., \"jdoe\" for John Doe). 5. Set the user's password and ensure it meets the Widgetco password policy requirements. 6. Click \"Create User\" to create the new account. **Step 2: Assign the User to a Group** 1. In the \"Users\" tab, search for the new user's username. 2. Click on the user's name to open their profile page. 3. Click on the \"Groups\" tab. 4. Assign the user to the relevant groups based on their role and department. For example, if the user is part of the Marketing team, assign them to the \"Marketing\" group. 5. Click \"Update\" to save the changes.",
+      "relevant_document_ids": [
+        "doc_054"
+      ],
+      "source_topic": "Setting Up a New User's Account in JIRA",
+      "source_row_index": 53,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_027",
+      "question": "What guidance is provided regarding the following IT-related task or issue? When traveling internationally with a company-issued device, it's essential to take certain precautions to ensure secure and compliant use of Widgetco's resources. Follow these steps to configure your device for international travel: **Step 1: Notify the Widgetco IT Helpdesk** Before leaving, notify the Widgetco IT Helpdesk of your travel plans, including your destination and dates of travel. This will ensure that our team is aware of your situation and can provide guidance and support as needed. **Step 2: Update Your Device's OS and Software** Make sure your device's operating system and software are up-to-date. This will ensure you have the latest security patches and features to protect against potential threats. **Step 3: Enable International Roaming** Contact your carrier to enable international roaming on your device. This will allow you to receive calls, send texts, and access data while abroad. Be aware of any additional fees associated with international roaming. **Step 4:",
+      "relevant_document_ids": [
+        "doc_094"
+      ],
+      "source_topic": "Configuring a Company-Issued Device for International Travel",
+      "source_row_index": 93,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_028",
+      "question": "What guidance is provided regarding the following IT-related task or issue? If you have forgotten your network password, you can reset it using the self-service password reset tool available on the Widgetco intranet. Here are the steps to follow: **Step 1: Access the Self-Service Password Reset Tool** Open a web browser and navigate to [https://intranet.widgetco.com/passwordreset](https://intranet.widgetco.com/passwordreset). This will take you to the self-service password reset tool. **Step 2: Enter Your Username** Enter your Widgetco username in the required field. This is the same username you use to log in to your computer and access Widgetco resources. **Step 3: Authenticate with Your Security Questions** You will be prompted to answer your security questions. These questions were set up by you when you first created your account. Answer the questions correctly to proceed. **Step 4: Set a New Password** Once you have successfully answered your security questions, you will be prompted to set a new password. Enter a new password that meets the Widgetco",
+      "relevant_document_ids": [
+        "doc_058"
+      ],
+      "source_topic": "Resetting a Forgotten Network Password",
+      "source_row_index": 57,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_029",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a new user's account in Dropbox, follow these steps: **Prerequisites:** * The new user must have a Widgetco email address and be listed in the company's Active Directory. * The IT helpdesk specialist setting up the account must have administrative access to Dropbox. **Step 1: Create a New User in Dropbox** 1. Log in to the Dropbox admin console using your administrative credentials. 2. Click on the \"Users\" tab and then click on \"Invite users\" in the top right corner. 3. Enter the new user's Widgetco email address and select their role (e.g., \"Member\" or \"Admin\"). 4. Click \"Invite\" to send the invitation to the new user. **Step 2: Configure Dropbox Settings** 1. Once the new user has accepted the invitation, click on their name in the \"Users\" tab to access their profile. 2. Click on the \"Settings\" tab and ensure that the following settings are configured correctly: * \"Two-step verification\" is set to \"Required\" to ensure the user has an additional layer of security. * \"File",
+      "relevant_document_ids": [
+        "doc_096"
+      ],
+      "source_topic": "Setting Up a New User's Account in Dropbox",
+      "source_row_index": 95,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    },
+    {
+      "question_id": "semantic_eval_030",
+      "question": "What guidance is provided regarding the following IT-related task or issue? To set up a mobile device for company email, follow these steps: **Step 1: Ensure Your Device is Compatible** Before setting up your mobile device for company email, ensure it meets Widgetco's minimum requirements. Currently, we support devices running iOS 12 or later, and Android 10 or later. If your device does not meet these requirements, you may need to upgrade or use an alternative device. **Step 2: Enable Encryption** To access company email on your mobile device, you must enable encryption. On iOS devices, go to Settings > Face ID/Touch ID & Passcode and toggle on \"Turn Passcode On.\" On Android devices, go to Settings > Security > Screen lock and set up a PIN, pattern, or password. **Step 3: Install the Widgetco Email App** Download and install the Widgetco Email app from the App Store (for iOS devices) or Google Play Store (for Android devices). You can search for \"Widgetco Email\" to find the app. **Step 4: Configure Email Settings** Open the Widgetco Email app and tap \"Add",
+      "relevant_document_ids": [
+        "doc_001"
+      ],
+      "source_topic": "Setting Up a Mobile Device for Company Email",
+      "source_row_index": 0,
+      "evaluation_type": "semantic_content_grounded",
+      "query_source": "alt_ki_text_without_exact_topic",
+      "retrieval_corpus_source": "ki_text_baseline"
+    }
+  ]
+}

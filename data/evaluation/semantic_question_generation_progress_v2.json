@@ -1,0 +1,282 @@
+{
+  "stage": "semantic_question_generation",
+  "status": "success",
+  "generator": "qwen3:8b",
+  "sample_size": 30,
+  "random_seed": 42,
+  "completed_questions": 30,
+  "failed_questions": 0,
+  "questions": {
+    "semantic_eval_001": {
+      "evaluation_id": "semantic_eval_001",
+      "original_row_index": 83,
+      "document_id": "doc_084",
+      "question": "How can I determine if my keyboard is not working properly?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:55:49.991478",
+      "status": "success"
+    },
+    "semantic_eval_002": {
+      "evaluation_id": "semantic_eval_002",
+      "original_row_index": 53,
+      "document_id": "doc_054",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:55:52.799033",
+      "status": "success"
+    },
+    "semantic_eval_003": {
+      "evaluation_id": "semantic_eval_003",
+      "original_row_index": 70,
+      "document_id": "doc_071",
+      "question": "How do I securely connect to my company printer using my credentials and network settings?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:55:55.563303",
+      "status": "success"
+    },
+    "semantic_eval_004": {
+      "evaluation_id": "semantic_eval_004",
+      "original_row_index": 45,
+      "document_id": "doc_046",
+      "question": "How can I fix unexpected errors when using Microsoft Publisher?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:55:58.218715",
+      "status": "success"
+    },
+    "semantic_eval_005": {
+      "evaluation_id": "semantic_eval_005",
+      "original_row_index": 44,
+      "document_id": "doc_045",
+      "question": "How do I set up a network printer on my Windows or Mac computer?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:01.005037",
+      "status": "success"
+    },
+    "semantic_eval_006": {
+      "evaluation_id": "semantic_eval_006",
+      "original_row_index": 39,
+      "document_id": "doc_040",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:03.811333",
+      "status": "success"
+    },
+    "semantic_eval_007": {
+      "evaluation_id": "semantic_eval_007",
+      "original_row_index": 22,
+      "document_id": "doc_023",
+      "question": "How do I fix my device's failed fingerprint or facial recognition login?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:06.519839",
+      "status": "success"
+    },
+    "semantic_eval_008": {
+      "evaluation_id": "semantic_eval_008",
+      "original_row_index": 80,
+      "document_id": "doc_081",
+      "question": "How can I fix Microsoft Project if it's not responding or crashing frequently?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:09.312018",
+      "status": "success"
+    },
+    "semantic_eval_009": {
+      "evaluation_id": "semantic_eval_009",
+      "original_row_index": 10,
+      "document_id": "doc_011",
+      "question": "How can I fix my Citrix connection issues when I'm working remotely?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:12.160633",
+      "status": "success"
+    },
+    "semantic_eval_010": {
+      "evaluation_id": "semantic_eval_010",
+      "original_row_index": 0,
+      "document_id": "doc_001",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:14.880197",
+      "status": "success"
+    },
+    "semantic_eval_011": {
+      "evaluation_id": "semantic_eval_011",
+      "original_row_index": 18,
+      "document_id": "doc_019",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:17.755786",
+      "status": "success"
+    },
+    "semantic_eval_012": {
+      "evaluation_id": "semantic_eval_012",
+      "original_row_index": 30,
+      "document_id": "doc_031",
+      "question": "How do I allow a specific application to receive incoming network traffic through the firewall?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:20.577487",
+      "status": "success"
+    },
+    "semantic_eval_013": {
+      "evaluation_id": "semantic_eval_013",
+      "original_row_index": 73,
+      "document_id": "doc_074",
+      "question": "Why is OneNote not syncing my notes across devices?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:23.329670",
+      "status": "success"
+    },
+    "semantic_eval_014": {
+      "evaluation_id": "semantic_eval_014",
+      "original_row_index": 33,
+      "document_id": "doc_034",
+      "question": "How do I create a restore point to revert my system if it malfunctions?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:26.128774",
+      "status": "success"
+    },
+    "semantic_eval_015": {
+      "evaluation_id": "semantic_eval_015",
+      "original_row_index": 90,
+      "document_id": "doc_091",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:28.851711",
+      "status": "success"
+    },
+    "semantic_eval_016": {
+      "evaluation_id": "semantic_eval_016",
+      "original_row_index": 4,
+      "document_id": "doc_005",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:31.727529",
+      "status": "success"
+    },
+    "semantic_eval_017": {
+      "evaluation_id": "semantic_eval_017",
+      "original_row_index": 76,
+      "document_id": "doc_077",
+      "question": "Why is my company software not working properly despite being installed and licensed?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:34.443855",
+      "status": "success"
+    },
+    "semantic_eval_018": {
+      "evaluation_id": "semantic_eval_018",
+      "original_row_index": 77,
+      "document_id": "doc_078",
+      "question": "How do I securely connect to the company database from my workstation?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:37.130090",
+      "status": "success"
+    },
+    "semantic_eval_019": {
+      "evaluation_id": "semantic_eval_019",
+      "original_row_index": 12,
+      "document_id": "doc_013",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:39.906407",
+      "status": "success"
+    },
+    "semantic_eval_020": {
+      "evaluation_id": "semantic_eval_020",
+      "original_row_index": 31,
+      "document_id": "doc_032",
+      "question": "How can I fix Visio if it's not working properly?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:42.673635",
+      "status": "success"
+    },
+    "semantic_eval_021": {
+      "evaluation_id": "semantic_eval_021",
+      "original_row_index": 55,
+      "document_id": "doc_056",
+      "question": "How do I safely clear a paper jam from my copier and prevent future issues?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:45.493008",
+      "status": "success"
+    },
+    "semantic_eval_022": {
+      "evaluation_id": "semantic_eval_022",
+      "original_row_index": 88,
+      "document_id": "doc_089",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:48.222561",
+      "status": "success"
+    },
+    "semantic_eval_023": {
+      "evaluation_id": "semantic_eval_023",
+      "original_row_index": 26,
+      "document_id": "doc_027",
+      "question": "How do I create a helpful and organized knowledge base article for our system?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:51.004573",
+      "status": "success"
+    },
+    "semantic_eval_024": {
+      "evaluation_id": "semantic_eval_024",
+      "original_row_index": 42,
+      "document_id": "doc_043",
+      "question": "How do I schedule a Zoom meeting with specific participants and set the time zone?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:53.807261",
+      "status": "success"
+    },
+    "semantic_eval_025": {
+      "evaluation_id": "semantic_eval_025",
+      "original_row_index": 69,
+      "document_id": "doc_070",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:56.544454",
+      "status": "success"
+    },
+    "semantic_eval_026": {
+      "evaluation_id": "semantic_eval_026",
+      "original_row_index": 15,
+      "document_id": "doc_016",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:56:59.397689",
+      "status": "success"
+    },
+    "semantic_eval_027": {
+      "evaluation_id": "semantic_eval_027",
+      "original_row_index": 40,
+      "document_id": "doc_041",
+      "question": "How do I create a new folder in the company's file system while following naming rules and access settings?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:57:02.338622",
+      "status": "success"
+    },
+    "semantic_eval_028": {
+      "evaluation_id": "semantic_eval_028",
+      "original_row_index": 96,
+      "document_id": "doc_097",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:57:05.089247",
+      "status": "success"
+    },
+    "semantic_eval_029": {
+      "evaluation_id": "semantic_eval_029",
+      "original_row_index": 9,
+      "document_id": "doc_010",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:57:07.985091",
+      "status": "success"
+    },
+    "semantic_eval_030": {
+      "evaluation_id": "semantic_eval_030",
+      "original_row_index": 72,
+      "document_id": "doc_073",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "generator": "qwen3:8b",
+      "generated_at": "2026-09-05T23:57:10.757171",
+      "status": "success"
+    }
+  },
+  "updated_at": "2026-09-05T23:57:10.764670"
+}

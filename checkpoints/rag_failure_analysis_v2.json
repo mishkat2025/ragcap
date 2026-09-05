@@ -1,0 +1,2090 @@
+{
+  "stage": "rag_failure_analysis",
+  "status": "success",
+  "evaluation_source": "rag_answer_quality_evaluation_v2.json",
+  "evaluation_count": 30,
+  "aggregate": {
+    "total_cases": 30,
+    "hallucination_cases": 12,
+    "hallucination_rate": 0.4,
+    "unsupported_claims": 13,
+    "low_completeness_cases": 11,
+    "low_correctness_cases": 2,
+    "low_faithfulness_cases": 2,
+    "ground_truth_retrieved_top5": 30,
+    "ground_truth_not_retrieved": 0,
+    "ground_truth_not_rank1": 5,
+    "mean_ground_truth_rank": 1.267,
+    "failure_category_counts": {
+      "generation_faithfulness_failure": 11,
+      "no_major_failure": 18,
+      "retrieval_ranking_failure": 1
+    }
+  },
+  "hallucination_cases": [
+    {
+      "evaluation_id": "semantic_eval_001",
+      "question": "How can I determine if my keyboard is not working properly?",
+      "answer": "To determine if your keyboard is not working properly, follow these steps:\n\n1. Check if the keyboard is properly connected to your computer. If it's a wireless keyboard, ensure the battery is charged and the keyboard is paired correctly with the receiver.\n2. Try using the keyboard on a different computer to see if the issue is with the keyboard itself or your current system.\n3. Look for any physical blockages, such as dust or debris, that might be preventing certain keys from functioning.\n4. Restart your computer, as this can sometimes resolve temporary software issues.\n5. Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac).\n6. Ensure the keyboard is set as the default input device in your system settings.\n7. If the keyboard still isn't working, it may be a hardware issue, and you may need to contact the IT helpdesk for further assistance or a replacement.",
+      "ground_truth_document_ids": [
+        "doc_084"
+      ],
+      "retrieved_document_ids": [
+        "doc_084",
+        "doc_084",
+        "doc_049",
+        "doc_063",
+        "doc_091"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_084",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 4.0,
+      "overall_score": 4.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Ensure the keyboard is set as the default input device in your system settings.",
+        "Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac)."
+      ],
+      "unsupported_claim_count": 2,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_002",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "answer": "To set up a new user's account in JIRA with the correct permissions and access, follow these steps:\n\n1. **Verify the User's Information**: Ensure you have the user's full name, email address, job title, department, and any necessary permissions or access levels.\n\n2. **Log in to JIRA**: Use your administrator credentials to log in to the JIRA dashboard.\n\n3. **Access the User Management Page**: Click on the gear icon in the top right corner of the JIRA dashboard and select \"Issues and Projects\" > \"User Management\".\n\n4. **Create a New User**: Click the \"Create User\" button at the top right corner of the User Management page.\n\n5. **Enter User Information**: Fill in the required details for the new user, including their username (typically their email address or a unique identifier), full name, email address, password (a temporary password that the user will change on their first login), and optional fields like job title and department.\n\n6. **Assign Permissions**: Choose the appropriate permission level for the user based on their role. Options include:\n   - **Administrator**: Full access to manage users, projects, and workflows.\n   - **Project Administrator**: Access to manage projects, including creating and editing issues, workflows",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_089",
+        "doc_082",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_054",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Options include: Administrator, Project Administrator, and User."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_006",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "answer": "To ensure your connection to a SharePoint site is secure and properly authenticated, follow these steps:\n\n1. **Use the Correct URL**: Ensure the SharePoint site URL starts with \"https\" to establish an encrypted connection.\n\n2. **Verify the SSL Certificate**: Click on the padlock icon in your browser's address bar to check the site's security certificate. Confirm that the certificate is valid, not expired, and issued to the correct domain.\n\n3. **Install the Security Certificate (If Required)**: If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings.\n\n4. **Configure Browser Settings**: Enable certificate revocation checks in your browser settings. For Internet Explorer, go to \"Tools\" > \"Internet Options\" > \"Security\" and ensure \"Check for server certificate revocation\" is enabled. For Chrome, go to \"Settings\" > \"Advanced\" > \"Privacy and security\" and enable \"Check for certificate revocation.\"\n\n5. **Authenticate with Your Credentials**: Enter your username and password when prompted. If Single Sign-On (SSO) or another authentication method is used, follow the on-screen instructions to authenticate.\n\n6. **Verify the Secure Connection**:",
+      "ground_truth_document_ids": [
+        "doc_040"
+      ],
+      "retrieved_document_ids": [
+        "doc_040",
+        "doc_040",
+        "doc_092",
+        "doc_050",
+        "doc_078"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_040",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Install the Security Certificate (If Required): If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_010",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "answer": "To configure your mobile device to access company email securely, follow these steps:\n\n1. Ensure that your mobile device has a supported operating system (iOS, Android, or Windows) and that you have your company email account credentials.\n\n2. If your company requires a Mobile Device Management (MDM) profile, make sure it is installed on your device. This profile allows your device to connect to the company network and access company email. If you are unsure whether MDM is required, contact your IT department for assistance.\n\n3. Set up your email account on your mobile device by going to the Settings app, selecting \"Mail\" or \"Email,\" and tapping \"Add Account\" or \"Create a new account.\" Choose \"Exchange\" or \"Corporate\" as the account type, then enter your company email address and password. If prompted, enter the company's email server address.\n\n4. In the email account settings, select the \"Advanced\" or \"Security\" option. Ensure that \"Use SSL/TLS\" or \"Use secure connection\" is enabled. Set the authentication method to \"Username and Password\" or \"Domain\\Username.\" If prompted, enter your company's email domain.\n\n5. Wait for the email account to synchronize with the company email server. Send a test email",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_017"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_001",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If prompted, enter your company's email domain."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_011",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "answer": "To set up a new user's computer with the correct account and network settings, follow these steps:\n\n1. Ensure the user's account is created and active in the company's directory, verifying their login credentials, email address, and phone number. If the account is not already created, follow the process outlined in \"Creating a New User Account.\"\n\n2. Obtain the new user's computer and confirm that the serial number and asset tag match the information in the company's asset management system.\n\n3. Install the company-approved image, which includes the operating system, core applications, and security software. Ensure the installation is completed successfully and the computer restarts automatically.\n\n4. Connect the computer to the company network using a wired Ethernet connection. Configure the IP address, subnet mask, default gateway, and DNS settings according to the company's network configuration guidelines.\n\n5. Join the computer to the company domain by opening the System Properties window, selecting \"Domain,\" entering the company domain name, and authenticating with a domain admin account.\n\n6. Install any additional software required by the user's role using the company's software distribution tool.\n\n7. Configure the user's email client and phone settings, including the email address, password, server settings, phone number, and voicemail password.\n\n8.",
+      "ground_truth_document_ids": [
+        "doc_019"
+      ],
+      "retrieved_document_ids": [
+        "doc_019",
+        "doc_089",
+        "doc_019",
+        "doc_089",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_019",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the account is not already created, follow the process outlined in 'Creating a New User Account.'"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_005",
+      "correctness": 3.0,
+      "relevance": 5.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.5,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_022",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "answer": "To grant a new user access to specific folders in Box, follow these steps:\n\n1. Log in to the Box admin console using your administrator credentials.\n2. Click on the \"Users\" tab and select the new user's account.\n3. Click on \"Edit Folder Settings\" for the specific folder you want to grant access to.\n4. Add the new user to the folder permissions and choose the appropriate permission level (e.g., Editor, Viewer).\n5. Click \"Save\" to apply the changes.\n\nOnce the user has been granted access, notify them of their login credentials and provide any additional information they may need to access the folders. If the user is unable to access a folder, verify that they have been assigned the correct permissions.",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_041",
+        "doc_096",
+        "doc_019"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_089",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Notify them of their login credentials and provide any additional information they may need to access the folders."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "answer": "A slow internet connection can be caused by various factors, and here are some steps you can take to address the issue:\n\n1. **Check Network Connectivity**: Ensure your device is connected to the correct network (wired or wireless). Check the network cable or Wi-Fi connection for damage or interference. Make sure the device's network settings are configured correctly.\n\n2. **Restart Your Device and Router**: Restart your device to clear any temporary issues. If the issue persists, restart your router or modem to refresh the network connection.\n\n3. **Run Network Diagnostics**: Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues. You can also run a speed test using a tool like Speedtest.net to determine the current network speed.\n\n4. **Check for Resource Intensive Applications**: Identify any applications or background processes that may be consuming significant network resources, such as video streaming or file transfers. Close unnecessary applications or background processes.\n\n5. **Check for Malware**: Run a full scan with your antivirus software to detect and remove any malware that may be consuming network resources.\n\n6. **Investigate Network Congestion**: Use tools like Network Monitor or Wireshark to check network utilization and identify any bottlenecks or high-traffic",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Check for OneDrive Updates"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_026",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "answer": "If you've forgotten your username and cannot access the self-service portal, you should contact the IT helpdesk for assistance. Provide your full name, email address, and a brief description of the issue. A helpdesk specialist will verify your identity and guide you through the process of resetting your username. You may be required to answer security questions or provide additional information to confirm your identity. Once verified, they will assist you in resetting your username and may also help you set up a new password if needed. Make sure to update any saved login credentials with your new username after the reset.",
+      "ground_truth_document_ids": [
+        "doc_016"
+      ],
+      "retrieved_document_ids": [
+        "doc_016",
+        "doc_037",
+        "doc_044",
+        "doc_100",
+        "doc_002"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_016",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "You may be required to answer security questions or provide additional information to confirm your identity."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "answer": "To properly report an IT issue and ensure quick support, follow these steps:\n\n1. **Access the IT Helpdesk Portal**: Navigate to the IT Helpdesk Portal using the provided link or through the company intranet.\n\n2. **Log in to the Portal**: Enter your company credentials to log in. If you have trouble, contact the IT Helpdesk.\n\n3. **Create a New Request**: Click on the \"Create a New Request\" or \"Create a New Problem\" button, depending on the portal.\n\n4. **Select the Request Type**: Choose \"IT Problem Report\" or \"IT Problem\" as the request type.\n\n5. **Enter the Problem Description**: Provide a detailed description of the issue, including any error messages, symptoms, steps taken to resolve the issue, and relevant system or application information.\n\n6. **Add Attachments (Optional)**: Attach any supporting documents such as screenshots or logs that may help in troubleshooting.\n\n7. **Select the Category and Subcategory**: Choose the category and subcategory that best describe the issue. This helps in routing the request to the correct team.\n\n8. **Enter Your Contact Information**: Provide your name, email address, and phone number so the IT Helpdesk can contact you for further information or updates.\n\n9.",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "ground_truth_rank": 5,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_069",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Click on the 'Create a New Request' or 'Create a New Problem' button, depending on the portal."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_030",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "answer": "To set up your fax machine on the company network, follow these steps:\n\n1. Connect the fax machine to the network using an Ethernet cable, ensuring it is turned off before connecting.\n2. Obtain a static IP address assigned by the IT department and access the fax machine's administration interface by typing its current IP address in a web browser. Use the default administrator credentials (Username: admin, Password: password) to log in.\n3. Navigate to the **Network Settings** section and select **TCP/IP**. Enter the assigned static IP address, subnet mask, default gateway, and DNS server addresses. Save the changes and restart the fax machine.\n4. Access the administration interface again and navigate to the **Fax Settings** section. Set the **Fax Mode** to **Network Fax**, enter the company's fax domain (e.g., fax.example.com), set the **Fax Resolution** to **Fine**, and the **Fax Compression** to **MH**. Save the changes.\n5. If you want to enable email notifications for incoming faxes, navigate to the **Email Settings** section. Enter the company's email server address (e.g., mail.example.com), set the **Email Protocol** to **SMTP**, and enter the fax machine's email address (e.g",
+      "ground_truth_document_ids": [
+        "doc_073"
+      ],
+      "retrieved_document_ids": [
+        "doc_073",
+        "doc_073",
+        "doc_019",
+        "doc_059",
+        "doc_012"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_073",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Enter the fax machine's email address (e.g,"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    }
+  ],
+  "low_completeness_cases": [
+    {
+      "evaluation_id": "semantic_eval_002",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "answer": "To set up a new user's account in JIRA with the correct permissions and access, follow these steps:\n\n1. **Verify the User's Information**: Ensure you have the user's full name, email address, job title, department, and any necessary permissions or access levels.\n\n2. **Log in to JIRA**: Use your administrator credentials to log in to the JIRA dashboard.\n\n3. **Access the User Management Page**: Click on the gear icon in the top right corner of the JIRA dashboard and select \"Issues and Projects\" > \"User Management\".\n\n4. **Create a New User**: Click the \"Create User\" button at the top right corner of the User Management page.\n\n5. **Enter User Information**: Fill in the required details for the new user, including their username (typically their email address or a unique identifier), full name, email address, password (a temporary password that the user will change on their first login), and optional fields like job title and department.\n\n6. **Assign Permissions**: Choose the appropriate permission level for the user based on their role. Options include:\n   - **Administrator**: Full access to manage users, projects, and workflows.\n   - **Project Administrator**: Access to manage projects, including creating and editing issues, workflows",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_089",
+        "doc_082",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_054",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Options include: Administrator, Project Administrator, and User."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_006",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "answer": "To ensure your connection to a SharePoint site is secure and properly authenticated, follow these steps:\n\n1. **Use the Correct URL**: Ensure the SharePoint site URL starts with \"https\" to establish an encrypted connection.\n\n2. **Verify the SSL Certificate**: Click on the padlock icon in your browser's address bar to check the site's security certificate. Confirm that the certificate is valid, not expired, and issued to the correct domain.\n\n3. **Install the Security Certificate (If Required)**: If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings.\n\n4. **Configure Browser Settings**: Enable certificate revocation checks in your browser settings. For Internet Explorer, go to \"Tools\" > \"Internet Options\" > \"Security\" and ensure \"Check for server certificate revocation\" is enabled. For Chrome, go to \"Settings\" > \"Advanced\" > \"Privacy and security\" and enable \"Check for certificate revocation.\"\n\n5. **Authenticate with Your Credentials**: Enter your username and password when prompted. If Single Sign-On (SSO) or another authentication method is used, follow the on-screen instructions to authenticate.\n\n6. **Verify the Secure Connection**:",
+      "ground_truth_document_ids": [
+        "doc_040"
+      ],
+      "retrieved_document_ids": [
+        "doc_040",
+        "doc_040",
+        "doc_092",
+        "doc_050",
+        "doc_078"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_040",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Install the Security Certificate (If Required): If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_010",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "answer": "To configure your mobile device to access company email securely, follow these steps:\n\n1. Ensure that your mobile device has a supported operating system (iOS, Android, or Windows) and that you have your company email account credentials.\n\n2. If your company requires a Mobile Device Management (MDM) profile, make sure it is installed on your device. This profile allows your device to connect to the company network and access company email. If you are unsure whether MDM is required, contact your IT department for assistance.\n\n3. Set up your email account on your mobile device by going to the Settings app, selecting \"Mail\" or \"Email,\" and tapping \"Add Account\" or \"Create a new account.\" Choose \"Exchange\" or \"Corporate\" as the account type, then enter your company email address and password. If prompted, enter the company's email server address.\n\n4. In the email account settings, select the \"Advanced\" or \"Security\" option. Ensure that \"Use SSL/TLS\" or \"Use secure connection\" is enabled. Set the authentication method to \"Username and Password\" or \"Domain\\Username.\" If prompted, enter your company's email domain.\n\n5. Wait for the email account to synchronize with the company email server. Send a test email",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_017"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_001",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If prompted, enter your company's email domain."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_011",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "answer": "To set up a new user's computer with the correct account and network settings, follow these steps:\n\n1. Ensure the user's account is created and active in the company's directory, verifying their login credentials, email address, and phone number. If the account is not already created, follow the process outlined in \"Creating a New User Account.\"\n\n2. Obtain the new user's computer and confirm that the serial number and asset tag match the information in the company's asset management system.\n\n3. Install the company-approved image, which includes the operating system, core applications, and security software. Ensure the installation is completed successfully and the computer restarts automatically.\n\n4. Connect the computer to the company network using a wired Ethernet connection. Configure the IP address, subnet mask, default gateway, and DNS settings according to the company's network configuration guidelines.\n\n5. Join the computer to the company domain by opening the System Properties window, selecting \"Domain,\" entering the company domain name, and authenticating with a domain admin account.\n\n6. Install any additional software required by the user's role using the company's software distribution tool.\n\n7. Configure the user's email client and phone settings, including the email address, password, server settings, phone number, and voicemail password.\n\n8.",
+      "ground_truth_document_ids": [
+        "doc_019"
+      ],
+      "retrieved_document_ids": [
+        "doc_019",
+        "doc_089",
+        "doc_019",
+        "doc_089",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_019",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the account is not already created, follow the process outlined in 'Creating a New User Account.'"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_005",
+      "correctness": 3.0,
+      "relevance": 5.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.5,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_022",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "answer": "To grant a new user access to specific folders in Box, follow these steps:\n\n1. Log in to the Box admin console using your administrator credentials.\n2. Click on the \"Users\" tab and select the new user's account.\n3. Click on \"Edit Folder Settings\" for the specific folder you want to grant access to.\n4. Add the new user to the folder permissions and choose the appropriate permission level (e.g., Editor, Viewer).\n5. Click \"Save\" to apply the changes.\n\nOnce the user has been granted access, notify them of their login credentials and provide any additional information they may need to access the folders. If the user is unable to access a folder, verify that they have been assigned the correct permissions.",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_041",
+        "doc_096",
+        "doc_019"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_089",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Notify them of their login credentials and provide any additional information they may need to access the folders."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "answer": "A slow internet connection can be caused by various factors, and here are some steps you can take to address the issue:\n\n1. **Check Network Connectivity**: Ensure your device is connected to the correct network (wired or wireless). Check the network cable or Wi-Fi connection for damage or interference. Make sure the device's network settings are configured correctly.\n\n2. **Restart Your Device and Router**: Restart your device to clear any temporary issues. If the issue persists, restart your router or modem to refresh the network connection.\n\n3. **Run Network Diagnostics**: Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues. You can also run a speed test using a tool like Speedtest.net to determine the current network speed.\n\n4. **Check for Resource Intensive Applications**: Identify any applications or background processes that may be consuming significant network resources, such as video streaming or file transfers. Close unnecessary applications or background processes.\n\n5. **Check for Malware**: Run a full scan with your antivirus software to detect and remove any malware that may be consuming network resources.\n\n6. **Investigate Network Congestion**: Use tools like Network Monitor or Wireshark to check network utilization and identify any bottlenecks or high-traffic",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Check for OneDrive Updates"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_026",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "answer": "If you've forgotten your username and cannot access the self-service portal, you should contact the IT helpdesk for assistance. Provide your full name, email address, and a brief description of the issue. A helpdesk specialist will verify your identity and guide you through the process of resetting your username. You may be required to answer security questions or provide additional information to confirm your identity. Once verified, they will assist you in resetting your username and may also help you set up a new password if needed. Make sure to update any saved login credentials with your new username after the reset.",
+      "ground_truth_document_ids": [
+        "doc_016"
+      ],
+      "retrieved_document_ids": [
+        "doc_016",
+        "doc_037",
+        "doc_044",
+        "doc_100",
+        "doc_002"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_016",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "You may be required to answer security questions or provide additional information to confirm your identity."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "answer": "To properly report an IT issue and ensure quick support, follow these steps:\n\n1. **Access the IT Helpdesk Portal**: Navigate to the IT Helpdesk Portal using the provided link or through the company intranet.\n\n2. **Log in to the Portal**: Enter your company credentials to log in. If you have trouble, contact the IT Helpdesk.\n\n3. **Create a New Request**: Click on the \"Create a New Request\" or \"Create a New Problem\" button, depending on the portal.\n\n4. **Select the Request Type**: Choose \"IT Problem Report\" or \"IT Problem\" as the request type.\n\n5. **Enter the Problem Description**: Provide a detailed description of the issue, including any error messages, symptoms, steps taken to resolve the issue, and relevant system or application information.\n\n6. **Add Attachments (Optional)**: Attach any supporting documents such as screenshots or logs that may help in troubleshooting.\n\n7. **Select the Category and Subcategory**: Choose the category and subcategory that best describe the issue. This helps in routing the request to the correct team.\n\n8. **Enter Your Contact Information**: Provide your name, email address, and phone number so the IT Helpdesk can contact you for further information or updates.\n\n9.",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "ground_truth_rank": 5,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_069",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Click on the 'Create a New Request' or 'Create a New Problem' button, depending on the portal."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_030",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "answer": "To set up your fax machine on the company network, follow these steps:\n\n1. Connect the fax machine to the network using an Ethernet cable, ensuring it is turned off before connecting.\n2. Obtain a static IP address assigned by the IT department and access the fax machine's administration interface by typing its current IP address in a web browser. Use the default administrator credentials (Username: admin, Password: password) to log in.\n3. Navigate to the **Network Settings** section and select **TCP/IP**. Enter the assigned static IP address, subnet mask, default gateway, and DNS server addresses. Save the changes and restart the fax machine.\n4. Access the administration interface again and navigate to the **Fax Settings** section. Set the **Fax Mode** to **Network Fax**, enter the company's fax domain (e.g., fax.example.com), set the **Fax Resolution** to **Fine**, and the **Fax Compression** to **MH**. Save the changes.\n5. If you want to enable email notifications for incoming faxes, navigate to the **Email Settings** section. Enter the company's email server address (e.g., mail.example.com), set the **Email Protocol** to **SMTP**, and enter the fax machine's email address (e.g",
+      "ground_truth_document_ids": [
+        "doc_073"
+      ],
+      "retrieved_document_ids": [
+        "doc_073",
+        "doc_073",
+        "doc_019",
+        "doc_059",
+        "doc_012"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_073",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Enter the fax machine's email address (e.g,"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    }
+  ],
+  "low_correctness_cases": [
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_005",
+      "correctness": 3.0,
+      "relevance": 5.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.5,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    }
+  ],
+  "low_faithfulness_cases": [
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_005",
+      "correctness": 3.0,
+      "relevance": 5.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.5,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    }
+  ],
+  "ranking_failure_cases": [
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_019",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "answer": "To protect your system from data loss by creating a restore point in Windows, follow these steps:\n\n1. Open System Properties by right-clicking on **Computer** or **This PC** and selecting **Properties**, or by pressing the Windows key + Pause/Break.\n\n2. In the System Properties window, click on the **System Protection** tab.\n\n3. Select the drive you want to use for system restore points (usually the C: drive) and adjust the **Max Usage** slider to set the amount of disk space allocated for restore points.\n\n4. Click the **Create** button at the bottom of the window. Enter a description for the restore point, such as \"Before installing new software,\" and click **Create**.\n\n5. Wait for the system to create the restore point, which may take a few minutes. A progress bar will indicate the status.\n\n6. Verify the restore point by checking the list of available restore points in the **System Protection** tab. The newly created restore point will be listed with the current date and time.\n\nCreating a restore point is a good practice before making significant changes to your system, such as installing new software or drivers. It ensures that you can revert your system to a stable state if any issues arise.",
+      "ground_truth_document_ids": [
+        "doc_013"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_006",
+        "doc_006"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_034",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "answer": "A slow internet connection can be caused by various factors, and here are some steps you can take to address the issue:\n\n1. **Check Network Connectivity**: Ensure your device is connected to the correct network (wired or wireless). Check the network cable or Wi-Fi connection for damage or interference. Make sure the device's network settings are configured correctly.\n\n2. **Restart Your Device and Router**: Restart your device to clear any temporary issues. If the issue persists, restart your router or modem to refresh the network connection.\n\n3. **Run Network Diagnostics**: Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues. You can also run a speed test using a tool like Speedtest.net to determine the current network speed.\n\n4. **Check for Resource Intensive Applications**: Identify any applications or background processes that may be consuming significant network resources, such as video streaming or file transfers. Close unnecessary applications or background processes.\n\n5. **Check for Malware**: Run a full scan with your antivirus software to detect and remove any malware that may be consuming network resources.\n\n6. **Investigate Network Congestion**: Use tools like Network Monitor or Wireshark to check network utilization and identify any bottlenecks or high-traffic",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Check for OneDrive Updates"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "answer": "To properly report an IT issue and ensure quick support, follow these steps:\n\n1. **Access the IT Helpdesk Portal**: Navigate to the IT Helpdesk Portal using the provided link or through the company intranet.\n\n2. **Log in to the Portal**: Enter your company credentials to log in. If you have trouble, contact the IT Helpdesk.\n\n3. **Create a New Request**: Click on the \"Create a New Request\" or \"Create a New Problem\" button, depending on the portal.\n\n4. **Select the Request Type**: Choose \"IT Problem Report\" or \"IT Problem\" as the request type.\n\n5. **Enter the Problem Description**: Provide a detailed description of the issue, including any error messages, symptoms, steps taken to resolve the issue, and relevant system or application information.\n\n6. **Add Attachments (Optional)**: Attach any supporting documents such as screenshots or logs that may help in troubleshooting.\n\n7. **Select the Category and Subcategory**: Choose the category and subcategory that best describe the issue. This helps in routing the request to the correct team.\n\n8. **Enter Your Contact Information**: Provide your name, email address, and phone number so the IT Helpdesk can contact you for further information or updates.\n\n9.",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "ground_truth_rank": 5,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_069",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Click on the 'Create a New Request' or 'Create a New Problem' button, depending on the portal."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_029",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "answer": "If automatic setup fails when configuring your company email on your Android phone, follow these steps:\n\n1. Open the Email app on your Android device.\n2. Tap \"Add account\" or \"Add email account.\"\n3. Select \"Email\" or \"Corporate\" as the account type.\n4. Enter your company email address and password.\n5. Tap \"Next.\" If automatic setup fails, tap \"Manual setup\" or \"Advanced setup.\"\n6. Enter the following server settings:\n   - Incoming server: [company email server address]\n   - Port: [company email port]\n   - Security type: [SSL/TLS or similar]\n   - Username: [your email address]\n   - Password: [your email password]\n7. Tap \"Next\" to proceed.\n8. Enter the outgoing server settings using the same details as the incoming server.\n9. Configure additional account options such as sync frequency, sync size, and whether to delete emails from the server after syncing.\n10. Tap \"Next\" and then \"Done\" to complete the setup.\n\nIf you continue to experience issues, ensure your internet connection is stable and your email credentials are correct. If problems persist, contact your IT department for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_010"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_010",
+        "doc_017",
+        "doc_010",
+        "doc_001"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_001",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1"
+      ]
+    }
+  ],
+  "retrieval_failure_cases": [],
+  "all_cases": [
+    {
+      "evaluation_id": "semantic_eval_001",
+      "question": "How can I determine if my keyboard is not working properly?",
+      "answer": "To determine if your keyboard is not working properly, follow these steps:\n\n1. Check if the keyboard is properly connected to your computer. If it's a wireless keyboard, ensure the battery is charged and the keyboard is paired correctly with the receiver.\n2. Try using the keyboard on a different computer to see if the issue is with the keyboard itself or your current system.\n3. Look for any physical blockages, such as dust or debris, that might be preventing certain keys from functioning.\n4. Restart your computer, as this can sometimes resolve temporary software issues.\n5. Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac).\n6. Ensure the keyboard is set as the default input device in your system settings.\n7. If the keyboard still isn't working, it may be a hardware issue, and you may need to contact the IT helpdesk for further assistance or a replacement.",
+      "ground_truth_document_ids": [
+        "doc_084"
+      ],
+      "retrieved_document_ids": [
+        "doc_084",
+        "doc_084",
+        "doc_049",
+        "doc_063",
+        "doc_091"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_084",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 4.0,
+      "overall_score": 4.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Ensure the keyboard is set as the default input device in your system settings.",
+        "Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac)."
+      ],
+      "unsupported_claim_count": 2,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_002",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "answer": "To set up a new user's account in JIRA with the correct permissions and access, follow these steps:\n\n1. **Verify the User's Information**: Ensure you have the user's full name, email address, job title, department, and any necessary permissions or access levels.\n\n2. **Log in to JIRA**: Use your administrator credentials to log in to the JIRA dashboard.\n\n3. **Access the User Management Page**: Click on the gear icon in the top right corner of the JIRA dashboard and select \"Issues and Projects\" > \"User Management\".\n\n4. **Create a New User**: Click the \"Create User\" button at the top right corner of the User Management page.\n\n5. **Enter User Information**: Fill in the required details for the new user, including their username (typically their email address or a unique identifier), full name, email address, password (a temporary password that the user will change on their first login), and optional fields like job title and department.\n\n6. **Assign Permissions**: Choose the appropriate permission level for the user based on their role. Options include:\n   - **Administrator**: Full access to manage users, projects, and workflows.\n   - **Project Administrator**: Access to manage projects, including creating and editing issues, workflows",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_089",
+        "doc_082",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_054",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Options include: Administrator, Project Administrator, and User."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_003",
+      "question": "How do I securely connect to my company printer using my credentials and network settings?",
+      "answer": "To securely connect to your company printer using your credentials and network settings, follow these steps:\n\n1. Ensure you have the printer's IP address or hostname, your company-issued username, and password ready.\n2. Install the printer driver specific to your printer model from the company's software repository.\n3. Add the printer to your device by entering the printer's IP address or hostname and selecting the appropriate driver.\n4. Configure the printer connection by enabling encryption and selecting \"Username and password\" as the authentication method. Enter your company-issued username and password in the respective fields.\n5. Test the printer connection by printing a test page to ensure it is working properly.\n\nIf you encounter any issues, check that your credentials are correct, the printer is connected to the network, and the printer driver is up to date. If problems persist, contact the IT helpdesk for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_071"
+      ],
+      "retrieved_document_ids": [
+        "doc_071",
+        "doc_071",
+        "doc_012",
+        "doc_045",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_071",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_004",
+      "question": "How can I fix unexpected errors when using Microsoft Publisher?",
+      "answer": "To fix unexpected errors when using Microsoft Publisher, you can follow these steps:\n\n1. **Restart Microsoft Publisher**: Close all instances of Publisher, wait for 30 seconds, and then reopen the application. This can resolve issues caused by temporary glitches or corrupted files.\n\n2. **Check for Updates**: Ensure that Microsoft Publisher is up-to-date by checking for updates in the Microsoft Store or through the built-in update feature within Publisher.\n\n3. **Disable Add-ins**: Third-party plugins can cause conflicts and errors. Try disabling all add-ins and then restart Publisher. If the issue persists, re-enable add-ins one by one to identify the problematic plugin.\n\n4. **Check File Integrity**: Corrupted files can cause issues in Publisher. Try opening a different file or creating a new one to isolate the problem. If the issue persists, try repairing the file using the built-in repair tool or by saving the file in a different format.\n\n5. **Check Printer Settings**: Printer settings can affect how Publisher interacts with your printer. Ensure that the printer is properly configured and that the correct paper size and orientation are selected.\n\n6. **Check for Conflicting Programs**: Other applications may be interfering with Publisher's functionality. Try closing all other applications and background programs, then restart Publisher.\n\n7.",
+      "ground_truth_document_ids": [
+        "doc_046"
+      ],
+      "retrieved_document_ids": [
+        "doc_046",
+        "doc_046",
+        "doc_004",
+        "doc_081",
+        "doc_067"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_046",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_005",
+      "question": "How do I set up a network printer on my Windows or Mac computer?",
+      "answer": "To set up a network printer on your Windows or Mac computer, follow these steps:\n\n**Windows:**\n\n1. Locate the printer's IP address from your department's printer list or by contacting your IT representative.\n2. Open the **Devices and Printers** window by clicking the Start menu and selecting **Devices and Printers**.\n3. Click on **Add a printer** in the top menu bar.\n4. Choose **Add a network, wireless or Bluetooth printer** and click **Next**.\n5. Enter the printer's IP address in the **Hostname or IP address** field and click **Next**.\n6. Select the printer driver from the list of available drivers. If the driver is not listed, you may need to download and install it from the manufacturer's website.\n7. Follow the prompts to complete the installation of the printer driver.\n8. Optionally, set the printer as your default printer by right-clicking on the printer and selecting **Set as default printer**.\n\n**Mac:**\n\n1. Locate the printer's IP address from your department's printer list or by contacting your IT representative.\n2. Open the **Printers & Scanners** window by clicking the Apple menu, selecting **System Preferences**, and then clicking **Printers & Scanners",
+      "ground_truth_document_ids": [
+        "doc_045"
+      ],
+      "retrieved_document_ids": [
+        "doc_045",
+        "doc_045",
+        "doc_012",
+        "doc_071",
+        "doc_059"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_045",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_006",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "answer": "To ensure your connection to a SharePoint site is secure and properly authenticated, follow these steps:\n\n1. **Use the Correct URL**: Ensure the SharePoint site URL starts with \"https\" to establish an encrypted connection.\n\n2. **Verify the SSL Certificate**: Click on the padlock icon in your browser's address bar to check the site's security certificate. Confirm that the certificate is valid, not expired, and issued to the correct domain.\n\n3. **Install the Security Certificate (If Required)**: If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings.\n\n4. **Configure Browser Settings**: Enable certificate revocation checks in your browser settings. For Internet Explorer, go to \"Tools\" > \"Internet Options\" > \"Security\" and ensure \"Check for server certificate revocation\" is enabled. For Chrome, go to \"Settings\" > \"Advanced\" > \"Privacy and security\" and enable \"Check for certificate revocation.\"\n\n5. **Authenticate with Your Credentials**: Enter your username and password when prompted. If Single Sign-On (SSO) or another authentication method is used, follow the on-screen instructions to authenticate.\n\n6. **Verify the Secure Connection**:",
+      "ground_truth_document_ids": [
+        "doc_040"
+      ],
+      "retrieved_document_ids": [
+        "doc_040",
+        "doc_040",
+        "doc_092",
+        "doc_050",
+        "doc_078"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_040",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Install the Security Certificate (If Required): If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_007",
+      "question": "How do I fix my device's failed fingerprint or facial recognition login?",
+      "answer": "If you are experiencing issues with your device's failed fingerprint or facial recognition login, follow these steps:\n\n1. Ensure you are using a trusted device that has been registered with the IT department. If you are using a personal device, confirm it meets the company's security requirements.\n\n2. Access the biometric login settings. On a Windows device, press the Windows key + I to open Settings, then navigate to \"Accounts\" > \"Sign-in options.\" On a Mac device, click the Apple menu, select \"System Preferences,\" then \"Users & Groups,\" and choose \"Login Options.\"\n\n3. Remove the existing biometric data by locating the section related to your biometric login method (e.g., Fingerprint, Face ID) and clicking the \"Remove\" or \"Delete\" button.\n\n4. Restart your device to ensure the changes take effect.\n\n5. Re-enroll your biometric data by returning to the biometric login settings and following the prompts to re-scan your fingerprint or re-register your facial recognition data.\n\n6. Test your biometric login to ensure it is working correctly. If you continue to experience issues, contact the IT helpdesk for further assistance.\n\nMake sure your device's biometric sensor is clean and free of obstructions. If you have recently",
+      "ground_truth_document_ids": [
+        "doc_023"
+      ],
+      "retrieved_document_ids": [
+        "doc_023",
+        "doc_091",
+        "doc_100",
+        "doc_035",
+        "doc_007"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_023",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_008",
+      "question": "How can I fix Microsoft Project if it's not responding or crashing frequently?",
+      "answer": "If Microsoft Project is not responding or crashing frequently, follow these steps to troubleshoot the issue:\n\n1. **Verify the Installation**: Ensure that Microsoft Project is properly installed on your machine. If it is not installed, install it from the company's software repository or contact the IT department for assistance.\n\n2. **Check for Updates**: Go to **File** > **Account** > **Update Options** > **Update Now** to check for and install any available updates. Restart the application after the update.\n\n3. **Disable Add-ins**: Go to **File** > **Options** > **Add-ins**, and uncheck the boxes next to each add-in. Restart Microsoft Project to see if the issue is resolved. If the issue is resolved, re-enable the add-ins one by one to identify the problematic one.\n\n4. **Check Project File Integrity**: Try opening a different project file to determine if the issue is specific to a particular file. If the issue occurs with a specific file, use **File** > **Info** > **Organizer** > **Repair** to repair the file.\n\n5. **Check for Conflicting Applications**: Close all other applications and restart Microsoft Project. If the issue resolves, re-open other applications one by one to identify any conflicting programs",
+      "ground_truth_document_ids": [
+        "doc_081"
+      ],
+      "retrieved_document_ids": [
+        "doc_081",
+        "doc_004",
+        "doc_053",
+        "doc_067",
+        "doc_088"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_081",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_009",
+      "question": "How can I fix my Citrix connection issues when I'm working remotely?",
+      "answer": "To fix Citrix connection issues when working remotely, follow these steps:\n\n1. **Verify Citrix Server Connection**: Ensure your device is connected to the company's network and has a stable internet connection. Confirm that you are connected to the company's VPN if working remotely.\n\n2. **Check Citrix Receiver Version**: Make sure you are using the latest version of Citrix Receiver. On Windows, check via **Control Panel > Programs and Features**, and on Mac, check via **Applications > Citrix Receiver > About Citrix Receiver**. Update if necessary.\n\n3. **Verify Authentication**: Ensure your credentials are correct and that you are using the appropriate authentication method (e.g., username/password, smart card, or biometric). Try logging in again with accurate details.\n\n4. **Check Resource Availability**: Confirm that the Citrix resource you are trying to access is available. You can check the Citrix Resource Monitoring dashboard or contact the resource owner for confirmation.\n\n5. **Clear Citrix Cache**: Delete the contents of the Citrix cache folder. On Windows, go to **C:\\Users\\<username>\\AppData\\Local\\Citrix\\CtxCache**, and on Mac, go to **~/Library/Application Support/Citrix/CtxCache**. Restart the Citrix",
+      "ground_truth_document_ids": [
+        "doc_011"
+      ],
+      "retrieved_document_ids": [
+        "doc_011",
+        "doc_011",
+        "doc_033",
+        "doc_003",
+        "doc_033"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_011",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_010",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "answer": "To configure your mobile device to access company email securely, follow these steps:\n\n1. Ensure that your mobile device has a supported operating system (iOS, Android, or Windows) and that you have your company email account credentials.\n\n2. If your company requires a Mobile Device Management (MDM) profile, make sure it is installed on your device. This profile allows your device to connect to the company network and access company email. If you are unsure whether MDM is required, contact your IT department for assistance.\n\n3. Set up your email account on your mobile device by going to the Settings app, selecting \"Mail\" or \"Email,\" and tapping \"Add Account\" or \"Create a new account.\" Choose \"Exchange\" or \"Corporate\" as the account type, then enter your company email address and password. If prompted, enter the company's email server address.\n\n4. In the email account settings, select the \"Advanced\" or \"Security\" option. Ensure that \"Use SSL/TLS\" or \"Use secure connection\" is enabled. Set the authentication method to \"Username and Password\" or \"Domain\\Username.\" If prompted, enter your company's email domain.\n\n5. Wait for the email account to synchronize with the company email server. Send a test email",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_017"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_001",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If prompted, enter your company's email domain."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_011",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "answer": "To set up a new user's computer with the correct account and network settings, follow these steps:\n\n1. Ensure the user's account is created and active in the company's directory, verifying their login credentials, email address, and phone number. If the account is not already created, follow the process outlined in \"Creating a New User Account.\"\n\n2. Obtain the new user's computer and confirm that the serial number and asset tag match the information in the company's asset management system.\n\n3. Install the company-approved image, which includes the operating system, core applications, and security software. Ensure the installation is completed successfully and the computer restarts automatically.\n\n4. Connect the computer to the company network using a wired Ethernet connection. Configure the IP address, subnet mask, default gateway, and DNS settings according to the company's network configuration guidelines.\n\n5. Join the computer to the company domain by opening the System Properties window, selecting \"Domain,\" entering the company domain name, and authenticating with a domain admin account.\n\n6. Install any additional software required by the user's role using the company's software distribution tool.\n\n7. Configure the user's email client and phone settings, including the email address, password, server settings, phone number, and voicemail password.\n\n8.",
+      "ground_truth_document_ids": [
+        "doc_019"
+      ],
+      "retrieved_document_ids": [
+        "doc_019",
+        "doc_089",
+        "doc_019",
+        "doc_089",
+        "doc_061"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_019",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the account is not already created, follow the process outlined in 'Creating a New User Account.'"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_012",
+      "question": "How do I allow a specific application to receive incoming network traffic through the firewall?",
+      "answer": "To allow a specific application to receive incoming network traffic through the firewall, follow these steps:\n\n1. Open the Windows Defender Firewall with Advanced Security by searching for it in the Start menu and clicking the result.\n2. Click on \"Inbound Rules\" in the left-hand menu to view the list of existing inbound rules.\n3. Click on \"New Rule\" in the right-hand \"Actions\" menu to start the \"New Inbound Rule Wizard.\"\n4. Select \"Rule Type\" as \"Program\" and click \"Next.\"\n5. Click \"Browse\" to locate the executable file of the application you want to allow, then click \"Open\" and \"Next.\"\n6. Select the protocol required by the application (e.g., TCP, UDP) and specify any local ports if needed, then click \"Next.\"\n7. Choose \"Any IP address\" to allow traffic from any remote computer, or specify a particular IP address or range if needed, then click \"Next.\"\n8. Select \"Allow the connection\" to permit incoming traffic, then click \"Finish.\"\n9. Verify that the new rule appears in the \"Inbound Rules\" list and ensure it is enabled by checking the \"Enabled\" column.",
+      "ground_truth_document_ids": [
+        "doc_031"
+      ],
+      "retrieved_document_ids": [
+        "doc_031",
+        "doc_031",
+        "doc_008",
+        "doc_008",
+        "doc_070"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_031",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_013",
+      "question": "Why is OneNote not syncing my notes across devices?",
+      "answer": "OneNote may not be syncing your notes across devices due to several potential issues. First, ensure your internet connection is stable and working correctly. Next, verify that you are signed in to the correct Microsoft account associated with your OneNote notebooks. Check the notebook settings to confirm it is set to sync with the correct location, such as OneDrive, SharePoint, or a local computer. You can also try initiating a manual sync by clicking the Sync button in the top right corner of the OneNote window. If the issue persists, ensure that OneNote is up to date and consider checking for conflicts by closing and reopening the notebook. If these steps do not resolve the issue, contact your IT support team for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_074"
+      ],
+      "retrieved_document_ids": [
+        "doc_074",
+        "doc_074",
+        "doc_088",
+        "doc_088",
+        "doc_001"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_074",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_014",
+      "question": "How do I create a restore point to revert my system if it malfunctions?",
+      "answer": "To create a restore point on your Windows system, follow these steps:\n\n1. Open System Properties by right-clicking on **This PC** or **Computer** and selecting **Properties**, or by pressing the Windows key + Pause/Break.\n2. In the System Properties window, click on the **System Protection** tab.\n3. Select the drive you want to use for system restore points (usually the C: drive) and adjust the **Max Usage** slider if needed.\n4. Click the **Create** button at the bottom of the window.\n5. Enter a description for the restore point (e.g., \"Before installing new software\") and click **Create**.\n6. Wait for the system to create the restore point, which may take a few minutes.\n7. Verify the restore point by checking the list of available restore points in the **System Protection** tab.\n\nIt is recommended to create a restore point before making significant changes to your system, such as installing new software or drivers. Ensure you have sufficient disk space available, as restore points can take up a significant amount of storage.",
+      "ground_truth_document_ids": [
+        "doc_034"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_049",
+        "doc_030"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_034",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 3.0,
+      "relevance": 4.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.25,
+      "hallucination": true,
+      "unsupported_claims": [
+        "If the issue persists after these steps, it may be necessary to escalate the issue"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "retrieval_ranking_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_005",
+      "correctness": 3.0,
+      "relevance": 5.0,
+      "faithfulness": 3.0,
+      "completeness": 3.0,
+      "overall_score": 3.5,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness",
+        "low_correctness",
+        "low_faithfulness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_017",
+      "question": "Why is my company software not working properly despite being installed and licensed?",
+      "answer": "The software may not be working properly due to several potential issues. First, ensure that the software is properly installed and licensed by checking the installation directory and verifying the license key or subscription status. Next, confirm that your system meets the minimum requirements for the software, such as operating system, processor speed, and memory. \n\nCheck for any conflicting software, such as antivirus or firewall programs, that may be interfering with the application. Clearing cache and temporary files can also help resolve issues. Ensure the software is up-to-date with the latest patches and updates. If the problem persists, consult the software's documentation or online resources for additional troubleshooting steps. If these steps do not resolve the issue, escalate it to advanced support for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_077"
+      ],
+      "retrieved_document_ids": [
+        "doc_077",
+        "doc_077",
+        "doc_063",
+        "doc_046",
+        "doc_081"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_077",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_018",
+      "question": "How do I securely connect to the company database from my workstation?",
+      "answer": "To securely connect to the company database from your workstation, follow these steps:\n\n1. Ensure you have the necessary database client software installed on your machine. This software can be downloaded from the company's internal software repository.\n2. Obtain the database connection details, including the database server name or IP address, port number, database username and password, and database name or schema. Contact the database administrator or refer to the database documentation for this information.\n3. Configure your database client software by creating a new connection profile. Enter the server name, port number, and database name or schema in the respective fields. Select the encryption method required by the company's security policy, such as SSL/TLS.\n4. Enter your database username and password in the client software.\n5. Click the \"Connect\" or \"Login\" button to establish a connection to the database. If prompted, accept the security certificate or trust the connection.\n6. Verify that the connection is encrypted by checking the connection status or properties.\n7. Test the connection by executing a simple query, such as \"SELECT 1,\" to ensure it returns the expected results.\n\nAdditionally, ensure your database client software and operating system are up to date with the latest security patches. Avoid storing database credentials in plain text and use strong passwords",
+      "ground_truth_document_ids": [
+        "doc_078"
+      ],
+      "retrieved_document_ids": [
+        "doc_078",
+        "doc_092",
+        "doc_099",
+        "doc_050",
+        "doc_064"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_078",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_019",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "answer": "To protect your system from data loss by creating a restore point in Windows, follow these steps:\n\n1. Open System Properties by right-clicking on **Computer** or **This PC** and selecting **Properties**, or by pressing the Windows key + Pause/Break.\n\n2. In the System Properties window, click on the **System Protection** tab.\n\n3. Select the drive you want to use for system restore points (usually the C: drive) and adjust the **Max Usage** slider to set the amount of disk space allocated for restore points.\n\n4. Click the **Create** button at the bottom of the window. Enter a description for the restore point, such as \"Before installing new software,\" and click **Create**.\n\n5. Wait for the system to create the restore point, which may take a few minutes. A progress bar will indicate the status.\n\n6. Verify the restore point by checking the list of available restore points in the **System Protection** tab. The newly created restore point will be listed with the current date and time.\n\nCreating a restore point is a good practice before making significant changes to your system, such as installing new software or drivers. It ensures that you can revert your system to a stable state if any issues arise.",
+      "ground_truth_document_ids": [
+        "doc_013"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_006",
+        "doc_006"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_034",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_020",
+      "question": "How can I fix Visio if it's not working properly?",
+      "answer": "If Visio is not working properly, you can try the following steps:\n\n1. Restart Visio and your computer to resolve any temporary system glitches or corrupted files.\n2. Check for updates by opening Visio, going to **File** > **Account** > **Update Options**, and clicking **Update Now** to install any available updates.\n3. Disable all add-ins by going to **File** > **Options** > **Add-ins**, unchecking each add-in, and restarting Visio. If the issue persists, re-enable add-ins one by one to identify the problematic one.\n4. Close all other applications and restart Visio. If the issue continues, consider uninstalling recently installed software or updates.\n5. Ensure your system meets the minimum requirements for running Visio, including sufficient RAM, processor speed, and disk space.\n6. Repair or reinstall Visio by going to **Control Panel** > **Programs and Features** (Windows 10/8) or **Control Panel** > **Add or Remove Programs** (Windows 7), uninstalling Microsoft Visio, and then reinstalling it from the Microsoft website or your company's software repository.\n7. If none of the above steps resolve the issue, contact IT support for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_032"
+      ],
+      "retrieved_document_ids": [
+        "doc_032",
+        "doc_032",
+        "doc_035",
+        "doc_084",
+        "doc_088"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_032",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_021",
+      "question": "How do I safely clear a paper jam from my copier and prevent future issues?",
+      "answer": "To safely clear a paper jam from your copier and prevent future issues, follow these steps:\n\n1. **Identify the Error Message or Symptom**: Check the copier's control panel for any error messages such as \"Paper Jam,\" \"Misfeed,\" or \"Output Tray Full.\"\n\n2. **Turn Off and Unplug the Copier**: Switch off the copier using the power button, then unplug it from the power outlet to ensure your safety and prevent accidental startup.\n\n3. **Locate the Jam**: Use the copier's control panel or visually inspect the exterior and interior to find the jammed area.\n\n4. **Open the Copier**: Open the top cover, front cover, or both, depending on your model. Refer to the user manual if unsure.\n\n5. **Remove Any Visible Paper Debris**: Gently pull out any visible paper scraps or torn pages from the jammed area. Avoid pushing the paper further into the copier.\n\n6. **Check for and Remove Any Obstructing Objects**: Inspect the jammed area for objects like paper clips, staples, or torn paper fragments and remove them.\n\n7. **Check and Clean the Paper Path**: Inspect the paper path for dust, dirt, or debris. Use a soft",
+      "ground_truth_document_ids": [
+        "doc_056"
+      ],
+      "retrieved_document_ids": [
+        "doc_056",
+        "doc_056",
+        "doc_009",
+        "doc_074",
+        "doc_004"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_056",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 4.0,
+      "overall_score": 4.75,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_022",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "answer": "To grant a new user access to specific folders in Box, follow these steps:\n\n1. Log in to the Box admin console using your administrator credentials.\n2. Click on the \"Users\" tab and select the new user's account.\n3. Click on \"Edit Folder Settings\" for the specific folder you want to grant access to.\n4. Add the new user to the folder permissions and choose the appropriate permission level (e.g., Editor, Viewer).\n5. Click \"Save\" to apply the changes.\n\nOnce the user has been granted access, notify them of their login credentials and provide any additional information they may need to access the folders. If the user is unable to access a folder, verify that they have been assigned the correct permissions.",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_041",
+        "doc_096",
+        "doc_019"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_089",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Notify them of their login credentials and provide any additional information they may need to access the folders."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_023",
+      "question": "How do I create a helpful and organized knowledge base article for our system?",
+      "answer": "To create a helpful and organized knowledge base article, follow these steps:\n\n1. **Determine the Need for a New Article**: Search the knowledge base to ensure a similar article does not already exist, avoiding duplication and maintaining an organized structure.\n\n2. **Gather Information**: Collect all relevant details about the topic. This may involve consulting internal resources, external sources, subject matter experts, and existing documentation.\n\n3. **Plan the Article Structure**: Organize the content into sections such as a title, summary, prerequisites, steps to resolve, troubleshooting tips, and related articles.\n\n4. **Write the Article**: Present the information clearly and concisely, using simple language and formatting like bullet points and headings to improve readability.\n\n5. **Add Relevant Media**: Include images, videos, or diagrams to enhance understanding and provide visual support for complex topics.\n\n6. **Review and Edit**: Check the article for accuracy, completeness, and clarity, ensuring it meets the required standards for quality and usability.\n\n7. **Obtain Approval**: Get approval from a supervisor or peer reviewer to confirm the article is ready for publication.\n\n8. **Publish the Article**: Once approved, publish the article to the knowledge base, ensuring it is properly categorized and tagged with relevant keywords for easy retrieval.",
+      "ground_truth_document_ids": [
+        "doc_027"
+      ],
+      "retrieved_document_ids": [
+        "doc_027",
+        "doc_027",
+        "doc_069",
+        "doc_048",
+        "doc_097"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_027",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_024",
+      "question": "How do I schedule a Zoom meeting with specific participants and set the time zone?",
+      "answer": "To schedule a Zoom meeting with specific participants and set the time zone, follow these steps:\n\n1. Log in to your Zoom account through the Zoom client or web portal.\n2. Click on \"New Meeting.\"\n3. Enter a topic for your meeting in the \"Topic\" field.\n4. Set the start and end times for your meeting in the \"Start\" and \"End\" fields.\n5. Select the time zone for your meeting from the \"Time Zone\" dropdown menu.\n6. Add participants by entering their email addresses in the \"Invitees\" field, or use the \"Directory\" tab to add participants from your company's directory.\n7. Configure any additional meeting settings such as audio/video options, screen sharing, or recording.\n8. Click \"Save\" to save your meeting settings, then click \"Send Invitation\" to send the meeting details to the participants.\n\nThe meeting invitations will be sent to the participants' email addresses with a link to join the meeting.",
+      "ground_truth_document_ids": [
+        "doc_043"
+      ],
+      "retrieved_document_ids": [
+        "doc_043",
+        "doc_022",
+        "doc_043",
+        "doc_005",
+        "doc_052"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_043",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "answer": "A slow internet connection can be caused by various factors, and here are some steps you can take to address the issue:\n\n1. **Check Network Connectivity**: Ensure your device is connected to the correct network (wired or wireless). Check the network cable or Wi-Fi connection for damage or interference. Make sure the device's network settings are configured correctly.\n\n2. **Restart Your Device and Router**: Restart your device to clear any temporary issues. If the issue persists, restart your router or modem to refresh the network connection.\n\n3. **Run Network Diagnostics**: Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues. You can also run a speed test using a tool like Speedtest.net to determine the current network speed.\n\n4. **Check for Resource Intensive Applications**: Identify any applications or background processes that may be consuming significant network resources, such as video streaming or file transfers. Close unnecessary applications or background processes.\n\n5. **Check for Malware**: Run a full scan with your antivirus software to detect and remove any malware that may be consuming network resources.\n\n6. **Investigate Network Congestion**: Use tools like Network Monitor or Wireshark to check network utilization and identify any bottlenecks or high-traffic",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_098",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Check for OneDrive Updates"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_026",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "answer": "If you've forgotten your username and cannot access the self-service portal, you should contact the IT helpdesk for assistance. Provide your full name, email address, and a brief description of the issue. A helpdesk specialist will verify your identity and guide you through the process of resetting your username. You may be required to answer security questions or provide additional information to confirm your identity. Once verified, they will assist you in resetting your username and may also help you set up a new password if needed. Make sure to update any saved login credentials with your new username after the reset.",
+      "ground_truth_document_ids": [
+        "doc_016"
+      ],
+      "retrieved_document_ids": [
+        "doc_016",
+        "doc_037",
+        "doc_044",
+        "doc_100",
+        "doc_002"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_016",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "You may be required to answer security questions or provide additional information to confirm your identity."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_027",
+      "question": "How do I create a new folder in the company's file system while following naming rules and access settings?",
+      "answer": "To create a new folder in the company's file system while following naming rules and access settings, follow these steps:\n\n1. Access the file system through the company's intranet portal by typing [intranet.company.com](http://intranet.company.com) into your web browser and logging in with your network credentials.\n\n2. Navigate to the desired location where you want to create the new folder, such as your personal drive, a departmental share, or a project-specific folder.\n\n3. Click the \"New Folder\" button, which is represented by a folder icon with a plus sign (+) overlay.\n\n4. Enter the folder name, ensuring it follows the company's naming conventions and avoids special characters or spaces.\n\n5. Optionally, add a description to the folder to provide context or explain its purpose.\n\n6. If you need to restrict access, set permissions for specific users or groups by clicking the \"Permissions\" tab and adding or removing users and groups as needed.\n\n7. Click the \"Create\" button to create the new folder in the specified location.\n\n8. Verify that the folder has been created successfully by checking the folder tree or testing it by uploading a file or creating a subfolder. \n\nIf you encounter any issues or have questions, contact the IT",
+      "ground_truth_document_ids": [
+        "doc_041"
+      ],
+      "retrieved_document_ids": [
+        "doc_041",
+        "doc_089",
+        "doc_019",
+        "doc_048",
+        "doc_024"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_041",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": []
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "answer": "To properly report an IT issue and ensure quick support, follow these steps:\n\n1. **Access the IT Helpdesk Portal**: Navigate to the IT Helpdesk Portal using the provided link or through the company intranet.\n\n2. **Log in to the Portal**: Enter your company credentials to log in. If you have trouble, contact the IT Helpdesk.\n\n3. **Create a New Request**: Click on the \"Create a New Request\" or \"Create a New Problem\" button, depending on the portal.\n\n4. **Select the Request Type**: Choose \"IT Problem Report\" or \"IT Problem\" as the request type.\n\n5. **Enter the Problem Description**: Provide a detailed description of the issue, including any error messages, symptoms, steps taken to resolve the issue, and relevant system or application information.\n\n6. **Add Attachments (Optional)**: Attach any supporting documents such as screenshots or logs that may help in troubleshooting.\n\n7. **Select the Category and Subcategory**: Choose the category and subcategory that best describe the issue. This helps in routing the request to the correct team.\n\n8. **Enter Your Contact Information**: Provide your name, email address, and phone number so the IT Helpdesk can contact you for further information or updates.\n\n9.",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "ground_truth_rank": 5,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_069",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Click on the 'Create a New Request' or 'Create a New Problem' button, depending on the portal."
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1",
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_029",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "answer": "If automatic setup fails when configuring your company email on your Android phone, follow these steps:\n\n1. Open the Email app on your Android device.\n2. Tap \"Add account\" or \"Add email account.\"\n3. Select \"Email\" or \"Corporate\" as the account type.\n4. Enter your company email address and password.\n5. Tap \"Next.\" If automatic setup fails, tap \"Manual setup\" or \"Advanced setup.\"\n6. Enter the following server settings:\n   - Incoming server: [company email server address]\n   - Port: [company email port]\n   - Security type: [SSL/TLS or similar]\n   - Username: [your email address]\n   - Password: [your email password]\n7. Tap \"Next\" to proceed.\n8. Enter the outgoing server settings using the same details as the incoming server.\n9. Configure additional account options such as sync frequency, sync size, and whether to delete emails from the server after syncing.\n10. Tap \"Next\" and then \"Done\" to complete the setup.\n\nIf you continue to experience issues, ensure your internet connection is stable and your email credentials are correct. If problems persist, contact your IT department for further assistance.",
+      "ground_truth_document_ids": [
+        "doc_010"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_010",
+        "doc_017",
+        "doc_010",
+        "doc_001"
+      ],
+      "ground_truth_rank": 2,
+      "ground_truth_top1": false,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_001",
+      "correctness": 5.0,
+      "relevance": 5.0,
+      "faithfulness": 5.0,
+      "completeness": 5.0,
+      "overall_score": 5.0,
+      "hallucination": false,
+      "unsupported_claims": [],
+      "unsupported_claim_count": 0,
+      "failure_category": "no_major_failure",
+      "diagnostic_tags": [
+        "ground_truth_not_rank_1"
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_030",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "answer": "To set up your fax machine on the company network, follow these steps:\n\n1. Connect the fax machine to the network using an Ethernet cable, ensuring it is turned off before connecting.\n2. Obtain a static IP address assigned by the IT department and access the fax machine's administration interface by typing its current IP address in a web browser. Use the default administrator credentials (Username: admin, Password: password) to log in.\n3. Navigate to the **Network Settings** section and select **TCP/IP**. Enter the assigned static IP address, subnet mask, default gateway, and DNS server addresses. Save the changes and restart the fax machine.\n4. Access the administration interface again and navigate to the **Fax Settings** section. Set the **Fax Mode** to **Network Fax**, enter the company's fax domain (e.g., fax.example.com), set the **Fax Resolution** to **Fine**, and the **Fax Compression** to **MH**. Save the changes.\n5. If you want to enable email notifications for incoming faxes, navigate to the **Email Settings** section. Enter the company's email server address (e.g., mail.example.com), set the **Email Protocol** to **SMTP**, and enter the fax machine's email address (e.g",
+      "ground_truth_document_ids": [
+        "doc_073"
+      ],
+      "retrieved_document_ids": [
+        "doc_073",
+        "doc_073",
+        "doc_019",
+        "doc_059",
+        "doc_012"
+      ],
+      "ground_truth_rank": 1,
+      "ground_truth_top1": true,
+      "ground_truth_in_top5": true,
+      "top_retrieved_document": "doc_073",
+      "correctness": 4.0,
+      "relevance": 5.0,
+      "faithfulness": 4.0,
+      "completeness": 3.0,
+      "overall_score": 4.0,
+      "hallucination": true,
+      "unsupported_claims": [
+        "Enter the fax machine's email address (e.g,"
+      ],
+      "unsupported_claim_count": 1,
+      "failure_category": "generation_faithfulness_failure",
+      "diagnostic_tags": [
+        "unsupported_claims",
+        "low_completeness"
+      ]
+    }
+  ],
+  "created_at": "2026-09-06T00:25:10.575901"
+}

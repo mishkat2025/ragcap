@@ -1,0 +1,145 @@
+{
+  "stage": "semantic_retrieval_failure_analysis",
+  "status": "success",
+  "evaluation_source": "semantic_dense_retrieval_evaluation_v2.json",
+  "retrieval_method": "dense",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "top_k": 5,
+  "summary": {
+    "total_evaluation_questions": 30,
+    "total_r_at_1_failures": 5,
+    "ranking_failures": 5,
+    "retrieval_failures": 0,
+    "mean_top_vs_relevant_score_gap": 0.008861,
+    "minimum_score_gap": 0.002258,
+    "maximum_score_gap": 0.017285
+  },
+  "failures": [
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "top_result": {
+        "rank": 1,
+        "document_id": "doc_098",
+        "chunk_id": "doc_098_chunk_001",
+        "topic": "",
+        "score": 0.7476048469543457
+      },
+      "relevant_result": {
+        "rank": 2,
+        "document_id": "doc_091",
+        "chunk_id": "doc_091_chunk_001",
+        "topic": "",
+        "score": 0.7453464269638062
+      },
+      "score_gap_top_vs_relevant": 0.0022584199905395508,
+      "failure_type": "ranking_failure",
+      "top_chunk_text": "**Troubleshooting Issues with a Slow-Performing Computer**\n\nIf you're experiencing issues with a slow-performing computer, follow these steps to troubleshoot and potentially resolve the problem.\n\n**Step 1: Restart the Computer**\n\nThe simplest and most effective solution to many computer issues is to restart the computer. This can clear out temporary files, close unnecessary programs, and refresh the system. Before proceeding with further troubleshooting, restart the computer and see if the issue persists.\n\n**Step 2: Check for Resource Intensive Programs**\n\nOpen the Task Manager (Windows key + X > Task Manager or right-click on the taskbar and select Task Manager) and sort the processes by CPU or Memory usage. Identify any programs consuming high resources and close them if possible. You can also check the Startup programs and disable any unnecessary ones.\n\n**Step 3: Update Operating System and Software**\n\nEnsure the operating system and all installed software are up-to-date. Outdated software can cause compatibility issues and slow down the computer. Check for updates in the Settings app (Windows) or System Preferences (Mac).\n\n**Step 4: Disable Unnecessary Startup Programs**\n\nSome programs may be set to launch at startup, consuming system resources without your knowledge. Press the Windows key + R, type \"msconfig,\" and press Enter. In the Startup tab, disable any unnecessary programs.\n\n**Step 5: Check for Malware**\n\nRun a full scan with your antivirus software to detect and remove any malware. Make sure the antivirus software is updated with the latest definitions.\n\n**Step 6: Clear Temporary Files**\n\nTemporary files can take up disk space and slow down the computer. Press the Windows key + R, type \"%temp%,\" and press Enter. Delete any temporary files and folders you find.\n\n**Step 7: Check Disk Space**\n\nLow disk space can cause slow performance. Check the available disk space by opening File Explorer (Windows) or Finder (Mac). If the disk space is low, consider deleting unnecessary files or expanding your storage capacity.\n\n**Step 8: Check for Drivers Updates**\n\nOutdated drivers can cause system slowdowns. Open the Device Manager (Windows key + X > Device Manager), expand each category, and look for devices with a yellow exclamation mark. Right-click on these devices and select \"Update driver\" to search for updates.\n\n**Step 9: Consider Disk Defragmentation**\n\nIf you're using a traditional hard drive, disk fragmentation can cause slow performance. Open the Disk",
+      "relevant_chunk_text": "**Troubleshooting Issues with Company-Issued Hardware**\n\nThis article outlines the steps to troubleshoot common issues with company-issued hardware, including laptops, desktops, and mobile devices. Following these steps will help you identify and potentially resolve hardware-related problems, reducing the need for escalation to advanced support teams.\n\n**Step 1: Gather Information**\n\n* Ask the user to provide details about the issue, including:\n\t+ The type of hardware experiencing the problem\n\t+ The exact error message or symptom\n\t+ When the issue started\n\t+ Any recent changes or updates made to the device\n* Verify the user's identity and check their device's warranty status\n\n**Step 2: Basic Troubleshooting**\n\n* Have the user restart their device to ensure the issue is not resolved by a simple reboot\n* Check for loose connections or faulty cables (e.g., power cord, USB devices)\n* Ensure the device is running the latest BIOS or firmware version\n* Run a virus scan to detect and remove any malware\n\n**Step 3: Hardware-Specific Troubleshooting**\n\n* For laptop issues:\n\t+ Check the battery health and calibration\n\t+ Ensure the laptop is properly ventilated to prevent overheating\n\t+ Run a diagnostic test on the hard drive or solid-state drive\n* For desktop issues:\n\t+ Verify the power supply is functioning correctly\n\t+ Check for signs of physical damage or wear on components\n\t+ Run a diagnostic test on the RAM and CPU\n* For mobile device issues:\n\t+ Check for software updates and ensure the device is running the latest version\n\t+ Perform a forced restart or reset\n\t+ Check for water damage or physical damage to the device\n\n**Step 4: Advanced Troubleshooting**\n\n* If the issue persists, use diagnostic tools provided by the hardware manufacturer to run advanced tests on the device\n* Check the device's event logs for error messages or system crashes\n* Use remote desktop tools (if applicable) to access the device and troubleshoot the issue remotely\n\n**Step 5: Escalation and Resolution**\n\n* If the issue cannot be resolved through troubleshooting, escalate the issue to the advanced support team or hardware vendor for further assistance\n* Provide detailed documentation of the troubleshooting steps taken and the results\n* Work with the user to schedule a repair or replacement of the device, if necessary\n\nBy following these steps, you should be able to identify and resolve common hardware-related issues, improving the overall"
+    },
+    {
+      "evaluation_id": "semantic_eval_019",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "ground_truth_document_ids": [
+        "doc_013"
+      ],
+      "top_result": {
+        "rank": 1,
+        "document_id": "doc_034",
+        "chunk_id": "doc_034_chunk_001",
+        "topic": "",
+        "score": 0.863142728805542
+      },
+      "relevant_result": {
+        "rank": 2,
+        "document_id": "doc_013",
+        "chunk_id": "doc_013_chunk_001",
+        "topic": "",
+        "score": 0.856985330581665
+      },
+      "score_gap_top_vs_relevant": 0.006157398223876953,
+      "failure_type": "ranking_failure",
+      "top_chunk_text": "**Creating a System Restore Point**\n\nCreating a system restore point is a crucial step in maintaining your computer's stability and ensuring that you can recover your system in case of a failure or malfunction. This article will guide you through the process of creating a system restore point on your Windows-based computer.\n\n**Step 1: Access the System Properties**\n\nTo create a system restore point, you need to access the System Properties window. You can do this in one of two ways:\n\n* Right-click on **Computer** or **This PC** (depending on your Windows version) and select **Properties**.\n* Press the Windows key + Pause/Break on your keyboard.\n\n**Step 2: Navigate to the System Protection Tab**\n\nIn the System Properties window, click on the **System Protection** tab on the left side of the window.\n\n**Step 3: Configure System Protection**\n\nIn the System Protection tab, you will see a list of available drives on your computer. Check the box next to the drive you want to use for system restore points (usually the C: drive). You can also adjust the **Max Usage** slider to set the amount of disk space allocated for system restore points.\n\n**Step 4: Create a Restore Point**\n\nClick on the **Create** button at the bottom of the window. You will be prompted to enter a description for the restore point (e.g., \"Before installing new software\"). Enter a brief description and click **Create**.\n\n**Step 5: Wait for the Restore Point to be Created**\n\nThe system will now create a restore point, which may take a few minutes. You will see a progress bar indicating the status of the creation process.\n\n**Step 6: Verify the Restore Point**\n\nOnce the restore point is created, you will see a confirmation message. You can verify that the restore point has been created by clicking on the **System Restore** button in the System Protection tab. You will see a list of available restore points, including the one you just created.\n\n**Tips and Best Practices**\n\n* It's a good idea to create a system restore point before making any significant changes to your system, such as installing new software or drivers.\n* You can also set Windows to automatically create system restore points at regular intervals (e.g., daily or weekly).\n* System restore points can take up a significant amount of disk space, so be sure to monitor your available disk space and adjust the **Max Usage** setting accordingly.\n\nBy following these steps,",
+      "relevant_chunk_text": "Creating a restore point on a Windows machine is a crucial step in ensuring that your system can be restored to a previous point in time in case of system failures, software installations, or other issues. Here's a step-by-step guide on how to create a restore point on a Windows machine:\n\n**Prerequisites:**\n\n* You must have administrative privileges on the Windows machine to create a restore point.\n* Ensure that System Protection is enabled on the machine.\n\n**Step 1: Open System Properties**\n\n1. Click on the Start button and type \"System\" in the search bar.\n2. Click on \"System\" from the search results to open System Properties.\n3. Alternatively, you can also press the Windows key + Pause/Break to open System Properties.\n\n**Step 2: Open System Protection**\n\n1. In the System Properties window, click on the \"System Protection\" tab.\n2. Click on the \"Create\" button under \"System Protection\" to open the \"Create a restore point\" window.\n\n**Step 3: Create a Restore Point**\n\n1. In the \"Create a restore point\" window, click on the \"Create\" button to create a new restore point.\n2. Windows will create a restore point and display a confirmation message.\n\n**Step 4: Verify the Restore Point**\n\n1. Click on the \"System Protection\" tab again to view the list of available restore points.\n2. Verify that the newly created restore point is listed with the current date and time.\n\n**Tips and Best Practices:**\n\n* It's recommended to create a restore point before making any significant changes to your system, such as installing new software or drivers.\n* You can also schedule Windows to create restore points automatically at regular intervals.\n* Restore points are saved on the system drive (usually C:), so ensure that you have sufficient disk space available.\n* You can also use the \"System Restore\" feature to restore your system to a previous point in time using the created restore points.\n\n**Troubleshooting:**\n\n* If you encounter any issues while creating a restore point, check the Event Viewer logs for errors or warnings.\n* Ensure that the System Protection feature is enabled and configured correctly.\n\nBy following these steps, you can create a restore point on a Windows machine and ensure that your system can be restored to a previous point in time in case of any issues."
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "top_result": {
+        "rank": 1,
+        "document_id": "doc_098",
+        "chunk_id": "doc_098_chunk_001",
+        "topic": "",
+        "score": 0.715917706489563
+      },
+      "relevant_result": {
+        "rank": 2,
+        "document_id": "doc_070",
+        "chunk_id": "doc_070_chunk_001",
+        "topic": "",
+        "score": 0.7083829045295715
+      },
+      "score_gap_top_vs_relevant": 0.007534801959991455,
+      "failure_type": "ranking_failure",
+      "top_chunk_text": "**Troubleshooting Issues with a Slow-Performing Computer**\n\nIf you're experiencing issues with a slow-performing computer, follow these steps to troubleshoot and potentially resolve the problem.\n\n**Step 1: Restart the Computer**\n\nThe simplest and most effective solution to many computer issues is to restart the computer. This can clear out temporary files, close unnecessary programs, and refresh the system. Before proceeding with further troubleshooting, restart the computer and see if the issue persists.\n\n**Step 2: Check for Resource Intensive Programs**\n\nOpen the Task Manager (Windows key + X > Task Manager or right-click on the taskbar and select Task Manager) and sort the processes by CPU or Memory usage. Identify any programs consuming high resources and close them if possible. You can also check the Startup programs and disable any unnecessary ones.\n\n**Step 3: Update Operating System and Software**\n\nEnsure the operating system and all installed software are up-to-date. Outdated software can cause compatibility issues and slow down the computer. Check for updates in the Settings app (Windows) or System Preferences (Mac).\n\n**Step 4: Disable Unnecessary Startup Programs**\n\nSome programs may be set to launch at startup, consuming system resources without your knowledge. Press the Windows key + R, type \"msconfig,\" and press Enter. In the Startup tab, disable any unnecessary programs.\n\n**Step 5: Check for Malware**\n\nRun a full scan with your antivirus software to detect and remove any malware. Make sure the antivirus software is updated with the latest definitions.\n\n**Step 6: Clear Temporary Files**\n\nTemporary files can take up disk space and slow down the computer. Press the Windows key + R, type \"%temp%,\" and press Enter. Delete any temporary files and folders you find.\n\n**Step 7: Check Disk Space**\n\nLow disk space can cause slow performance. Check the available disk space by opening File Explorer (Windows) or Finder (Mac). If the disk space is low, consider deleting unnecessary files or expanding your storage capacity.\n\n**Step 8: Check for Drivers Updates**\n\nOutdated drivers can cause system slowdowns. Open the Device Manager (Windows key + X > Device Manager), expand each category, and look for devices with a yellow exclamation mark. Right-click on these devices and select \"Update driver\" to search for updates.\n\n**Step 9: Consider Disk Defragmentation**\n\nIf you're using a traditional hard drive, disk fragmentation can cause slow performance. Open the Disk",
+      "relevant_chunk_text": "To troubleshoot issues with a slow-performing network, follow these steps:\n\n**Step 1: Gather Information**\n\n* Identify the scope of the issue: Is the slowness affecting a single user, a department, or the entire organization?\n* Determine the type of devices and operating systems affected\n* Ask the user to describe the symptoms of the issue, including error messages or specific behaviors they are experiencing\n\n**Step 2: Check Network Connectivity**\n\n* Verify that the user's device is connected to the correct network (wired or wireless)\n* Check the network cable or Wi-Fi connection for damage or interference\n* Ensure the device's network settings are configured correctly (e.g., IP address, subnet mask, gateway)\n\n**Step 3: Restart Devices and Routers**\n\n* Have the user restart their device to clear any temporary issues\n* If the issue persists, restart the router or switch to refresh the network connection\n\n**Step 4: Run Network Diagnostics**\n\n* Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues\n* Run a speed test using a tool like Speedtest.net to determine the current network speed\n* Check for any firmware or driver updates for the network adapter or router\n\n**Step 5: Check for Resource Intensive Applications**\n\n* Identify any resource-intensive applications running on the user's device, such as video streaming or file transfers\n* Ask the user to close unnecessary applications or background processes\n* Check for any malware or viruses that may be consuming network resources\n\n**Step 6: Investigate Network Congestion**\n\n* Check network utilization using tools like Network Monitor or Wireshark\n* Identify any bottlenecks or high-traffic areas in the network\n* Consider implementing Quality of Service (QoS) policies to prioritize critical network traffic\n\n**Step 7: Escalate if Necessary**\n\n* If the issue persists after completing the above steps, escalate the issue to the network infrastructure team for further investigation\n* Provide detailed documentation of the troubleshooting steps taken and any diagnostic results\n\nBy following these steps, helpdesk specialists should be able to identify and resolve common issues contributing to slow network performance. If the issue cannot be resolved through these steps, further investigation by the network infrastructure team may be necessary to identify and address underlying network infrastructure issues."
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "top_result": {
+        "rank": 1,
+        "document_id": "doc_069",
+        "chunk_id": "doc_069_chunk_001",
+        "topic": "",
+        "score": 0.7943493127822876
+      },
+      "relevant_result": {
+        "rank": 5,
+        "document_id": "doc_097",
+        "chunk_id": "doc_097_chunk_001",
+        "topic": "",
+        "score": 0.777064323425293
+      },
+      "score_gap_top_vs_relevant": 0.01728498935699463,
+      "failure_type": "ranking_failure",
+      "top_chunk_text": "**Creating a New IT Problem Report**\n\nAs a user, you can create a new IT Problem Report to report an IT-related issue or request assistance from the IT Helpdesk. This article will guide you through the steps to create a new IT Problem Report.\n\n**Step 1: Access the IT Helpdesk Portal**\n\nTo create a new IT Problem Report, navigate to the IT Helpdesk Portal by clicking on the following link: [insert link]. You can also access the portal through the company intranet.\n\n**Step 2: Log in to the Portal**\n\nEnter your company credentials to log in to the portal. If you are having trouble logging in, please contact the IT Helpdesk for assistance.\n\n**Step 3: Click on \"Create a New Request\"**\n\nOnce logged in, click on the \"Create a New Request\" button located on the top right corner of the portal homepage.\n\n**Step 4: Select the Request Type**\n\nSelect \"IT Problem Report\" as the request type from the dropdown menu. This will allow you to report an IT-related issue or request assistance from the IT Helpdesk.\n\n**Step 5: Enter the Problem Description**\n\nIn the \"Problem Description\" field, provide a detailed description of the issue you are experiencing. Please include any relevant information, such as:\n\n* The error message or symptom you are experiencing\n* The steps you have taken so far to try to resolve the issue\n* Any relevant system or application information\n\n**Step 6: Add Attachments (Optional)**\n\nIf you have any screenshots, logs, or other files that may be relevant to the issue, you can attach them to the request by clicking on the \"Add Attachment\" button.\n\n**Step 7: Select the Category and Subcategory**\n\nSelect the category and subcategory that best describes the issue you are experiencing. This will help the IT Helpdesk to route your request to the correct team.\n\n**Step 8: Enter Your Contact Information**\n\nEnter your contact information, including your name, email address, and phone number. This will allow the IT Helpdesk to contact you for further information or to provide updates on your request.\n\n**Step 9: Submit the Request**\n\nClick on the \"Submit\" button to create the new IT Problem Report. You will receive an email confirmation with a unique request ID, which you can use to track the status of your request.\n\n**Step 10: Track Your Request**\n\nYou can track the status of your request by logging",
+      "relevant_chunk_text": "**Creating a New IT Problem**\n\nAs an employee of [Company Name], you may encounter IT-related issues that require assistance from our IT Helpdesk team. To ensure prompt and efficient resolution of your issue, it's essential to create a new IT problem ticket correctly. Follow these steps to create a new IT problem:\n\n**Step 1: Access the IT Helpdesk Portal**\n\nTo create a new IT problem, navigate to the IT Helpdesk portal by clicking on the following link: [insert link]. Alternatively, you can search for \"IT Helpdesk\" on the company intranet or access it through the employee portal.\n\n**Step 2: Click on \"Create a New Problem\"**\n\nOnce you're logged in to the IT Helpdesk portal, click on the \"Create a New Problem\" button located at the top right corner of the page.\n\n**Step 3: Select the Problem Category**\n\nChoose the category that best describes your IT problem from the dropdown list. Categories include:\n\n* Hardware (e.g., computer, printer, or phone issues)\n* Software (e.g., application, operating system, or plugin issues)\n* Network (e.g., connectivity, Wi-Fi, or VPN issues)\n* Email (e.g., email client, account, or password issues)\n* Other (e.g., general IT inquiries or unknown issues)\n\n**Step 4: Enter Problem Details**\n\nIn the \"Problem Description\" field, provide a concise and detailed description of your issue. Include any relevant information, such as:\n\n* Error messages or beeps\n* Steps you've taken so far to troubleshoot the issue\n* Any recent changes made to your device or software\n* The frequency and duration of the issue\n\n**Step 5: Add Attachments (Optional)**\n\nIf you have any supporting documentation, such as screenshots or log files, attach them to the problem ticket by clicking the \"Add Attachment\" button. This will help our IT Helpdesk team better understand and resolve your issue.\n\n**Step 6: Provide Your Contact Information**\n\nEnter your contact information, including your name, email address, and phone number. This ensures our IT Helpdesk team can reach out to you for further clarification or to provide updates on your problem ticket.\n\n**Step 7: Submit the Problem Ticket**\n\nClick the \"Submit\" button to create the new IT problem ticket. You will receive an automated email with a ticket number, which you can use to track the progress of your issue.\n\n**What"
+    },
+    {
+      "evaluation_id": "semantic_eval_029",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "ground_truth_document_ids": [
+        "doc_010"
+      ],
+      "top_result": {
+        "rank": 1,
+        "document_id": "doc_001",
+        "chunk_id": "doc_001_chunk_001",
+        "topic": "",
+        "score": 0.8111312389373779
+      },
+      "relevant_result": {
+        "rank": 2,
+        "document_id": "doc_010",
+        "chunk_id": "doc_010_chunk_001",
+        "topic": "",
+        "score": 0.8000636100769043
+      },
+      "score_gap_top_vs_relevant": 0.011067628860473633,
+      "failure_type": "ranking_failure",
+      "top_chunk_text": "**Setting Up a Mobile Device for Company Email**\n\n**Prerequisites:**\n\n* Mobile device with a supported operating system (iOS, Android, or Windows)\n* Company email account credentials\n* Mobile device management (MDM) profile installed (if required by company policy)\n\n**Step 1: Ensure Mobile Device Management (MDM) Profile is Installed (if required)**\n\nIf your company requires MDM for mobile devices, ensure that the profile is installed on your device. This profile will allow your device to connect to the company network and access company email. If you are unsure whether MDM is required, contact your IT department for assistance.\n\n**Step 2: Set Up Email Account on Mobile Device**\n\n1. Go to the Settings app on your mobile device.\n2. Select \"Mail\" or \"Email\" (depending on your device's operating system).\n3. Tap \"Add Account\" or \"Create a new account\".\n4. Select \"Exchange\" or \"Corporate\" as the account type.\n5. Enter your company email address and password.\n6. If prompted, enter the company's email server address (e.g., mail.company.com).\n7. Select the desired synchronization options (e.g., sync email, contacts, calendar).\n\n**Step 3: Configure Email Settings**\n\n1. In the email account settings, select the \"Advanced\" or \"Security\" option.\n2. Ensure that the \"Use SSL/TLS\" or \"Use secure connection\" option is enabled.\n3. Set the authentication method to \"Username and Password\" or \"Domain\\Username\".\n4. If prompted, enter your company's email domain (e.g., company.com).\n\n**Step 4: Verify Email Account**\n\n1. Wait for the email account to synchronize with the company email server.\n2. Send a test email to yourself or a colleague to verify that email is sending and receiving correctly.\n\n**Troubleshooting Tips:**\n\n* If you encounter issues setting up your email account, ensure that your device has a stable internet connection and that your email credentials are correct.\n* If you are unable to connect to the company email server, contact your IT department for assistance.\n* If you experience issues with email synchronization, try restarting your device or checking the email account settings.\n\n**Additional Information:**\n\n* For security reasons, it is recommended to set up a password or PIN lock on your mobile device.\n* Company email policies may require additional security measures, such as encryption or two-factor authentication. Contact",
+      "relevant_chunk_text": "**Configuring Email on an Android Device**\n\nThis article provides step-by-step instructions on how to configure email on an Android device. Please follow the steps below to set up your email account on your Android device.\n\n**Prerequisites:**\n\n* An Android device with a valid internet connection\n* A valid email account (company email or personal email)\n* Email account credentials (username and password)\n\n**Step 1: Go to the Email App**\n\n* Locate the Email app on your Android device. It may be on the home screen or in the app drawer.\n* Tap on the Email app to open it.\n\n**Step 2: Add a New Account**\n\n* Tap on the \"Add account\" or \"Add email account\" button.\n* Select \"Email\" or \"Corporate\" as the account type, depending on your email provider.\n* Enter your email address and password in the required fields.\n* Tap \"Next\" to proceed.\n\n**Step 3: Configure Server Settings**\n\n* The device will attempt to automatically configure the server settings. If it fails, you will need to enter the settings manually.\n* Tap on \"Manual setup\" or \"Advanced setup\" to enter the server settings manually.\n* Enter the following information:\n\t+ Incoming server: [company email server or personal email server]\n\t+ Port: [company email port or personal email port]\n\t+ Security type: [company email security type or personal email security type]\n\t+ Username: [your email address]\n\t+ Password: [your email password]\n* Tap \"Next\" to proceed.\n\n**Step 4: Configure Outgoing Server Settings**\n\n* Enter the following information:\n\t+ Outgoing server: [company email server or personal email server]\n\t+ Port: [company email port or personal email port]\n\t+ Security type: [company email security type or personal email security type]\n\t+ Username: [your email address]\n\t+ Password: [your email password]\n* Tap \"Next\" to proceed.\n\n**Step 5: Account Options**\n\n* You may be prompted to configure additional account options, such as:\n\t+ Sync frequency: Choose how often you want your device to sync with the email server.\n\t+ Sync size: Choose the maximum size of emails to sync.\n\t+ Delete email from server: Choose whether to delete emails from the server after syncing.\n* Tap \"Next\" to proceed.\n\n**Step 6: Account Setup Complete**\n\n* You will be prompted to give"
+    }
+  ],
+  "created_at": "2026-09-05T23:59:32.199265"
+}

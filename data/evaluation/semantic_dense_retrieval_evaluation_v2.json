@@ -1,0 +1,1855 @@
+{
+  "stage": "natural_semantic_retrieval_evaluation",
+  "status": "success",
+  "evaluation_dataset": "semantic_evaluation_questions_v2.json",
+  "retrieval_method": "dense",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dimension": 384,
+  "index_type": "IndexFlatIP",
+  "similarity_metric": "inner_product",
+  "normalized_embeddings": true,
+  "top_k": 5,
+  "metrics": {
+    "recall_at_1": 0.8333,
+    "recall_at_3": 0.9667,
+    "recall_at_5": 1.0,
+    "mrr": 0.9067,
+    "total_questions": 30,
+    "hits_at_1": 25,
+    "hits_at_3": 29,
+    "hits_at_5": 30
+  },
+  "results": [
+    {
+      "evaluation_id": "semantic_eval_001",
+      "question": "How can I determine if my keyboard is not working properly?",
+      "ground_truth_document_ids": [
+        "doc_084"
+      ],
+      "retrieved_document_ids": [
+        "doc_084",
+        "doc_084",
+        "doc_049",
+        "doc_063",
+        "doc_091"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 138,
+          "chunk_id": "doc_084_chunk_001",
+          "document_id": "doc_084",
+          "topic": "",
+          "score": 0.8643574714660645
+        },
+        {
+          "rank": 2,
+          "chunk_index": 139,
+          "chunk_id": "doc_084_chunk_002",
+          "document_id": "doc_084",
+          "topic": "",
+          "score": 0.8198618292808533
+        },
+        {
+          "rank": 3,
+          "chunk_index": 83,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "",
+          "score": 0.6989718675613403
+        },
+        {
+          "rank": 4,
+          "chunk_index": 107,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "",
+          "score": 0.6973811388015747
+        },
+        {
+          "rank": 5,
+          "chunk_index": 149,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "",
+          "score": 0.6956930756568909
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_002",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_089",
+        "doc_082",
+        "doc_061"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 93,
+          "chunk_id": "doc_054_chunk_001",
+          "document_id": "doc_054",
+          "topic": "",
+          "score": 0.8811957836151123
+        },
+        {
+          "rank": 2,
+          "chunk_index": 115,
+          "chunk_id": "doc_068_chunk_001",
+          "document_id": "doc_068",
+          "topic": "",
+          "score": 0.7606195211410522
+        },
+        {
+          "rank": 3,
+          "chunk_index": 146,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.7556526064872742
+        },
+        {
+          "rank": 4,
+          "chunk_index": 136,
+          "chunk_id": "doc_082_chunk_001",
+          "document_id": "doc_082",
+          "topic": "",
+          "score": 0.7408567667007446
+        },
+        {
+          "rank": 5,
+          "chunk_index": 103,
+          "chunk_id": "doc_061_chunk_001",
+          "document_id": "doc_061",
+          "topic": "",
+          "score": 0.7389315962791443
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_003",
+      "question": "How do I securely connect to my company printer using my credentials and network settings?",
+      "ground_truth_document_ids": [
+        "doc_071"
+      ],
+      "retrieved_document_ids": [
+        "doc_071",
+        "doc_071",
+        "doc_012",
+        "doc_045",
+        "doc_099"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 120,
+          "chunk_id": "doc_071_chunk_001",
+          "document_id": "doc_071",
+          "topic": "",
+          "score": 0.8801635503768921
+        },
+        {
+          "rank": 2,
+          "chunk_index": 121,
+          "chunk_id": "doc_071_chunk_002",
+          "document_id": "doc_071",
+          "topic": "",
+          "score": 0.808725893497467
+        },
+        {
+          "rank": 3,
+          "chunk_index": 20,
+          "chunk_id": "doc_012_chunk_001",
+          "document_id": "doc_012",
+          "topic": "",
+          "score": 0.7956268787384033
+        },
+        {
+          "rank": 4,
+          "chunk_index": 76,
+          "chunk_id": "doc_045_chunk_001",
+          "document_id": "doc_045",
+          "topic": "",
+          "score": 0.7763363718986511
+        },
+        {
+          "rank": 5,
+          "chunk_index": 162,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "",
+          "score": 0.7737316489219666
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_004",
+      "question": "How can I fix unexpected errors when using Microsoft Publisher?",
+      "ground_truth_document_ids": [
+        "doc_046"
+      ],
+      "retrieved_document_ids": [
+        "doc_046",
+        "doc_046",
+        "doc_004",
+        "doc_081",
+        "doc_067"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 78,
+          "chunk_id": "doc_046_chunk_001",
+          "document_id": "doc_046",
+          "topic": "",
+          "score": 0.8518370389938354
+        },
+        {
+          "rank": 2,
+          "chunk_index": 79,
+          "chunk_id": "doc_046_chunk_002",
+          "document_id": "doc_046",
+          "topic": "",
+          "score": 0.8514106869697571
+        },
+        {
+          "rank": 3,
+          "chunk_index": 5,
+          "chunk_id": "doc_004_chunk_001",
+          "document_id": "doc_004",
+          "topic": "",
+          "score": 0.7238422632217407
+        },
+        {
+          "rank": 4,
+          "chunk_index": 135,
+          "chunk_id": "doc_081_chunk_001",
+          "document_id": "doc_081",
+          "topic": "",
+          "score": 0.7088696360588074
+        },
+        {
+          "rank": 5,
+          "chunk_index": 113,
+          "chunk_id": "doc_067_chunk_001",
+          "document_id": "doc_067",
+          "topic": "",
+          "score": 0.7067036628723145
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_005",
+      "question": "How do I set up a network printer on my Windows or Mac computer?",
+      "ground_truth_document_ids": [
+        "doc_045"
+      ],
+      "retrieved_document_ids": [
+        "doc_045",
+        "doc_045",
+        "doc_012",
+        "doc_071",
+        "doc_059"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 76,
+          "chunk_id": "doc_045_chunk_001",
+          "document_id": "doc_045",
+          "topic": "",
+          "score": 0.8720972537994385
+        },
+        {
+          "rank": 2,
+          "chunk_index": 77,
+          "chunk_id": "doc_045_chunk_002",
+          "document_id": "doc_045",
+          "topic": "",
+          "score": 0.8301767706871033
+        },
+        {
+          "rank": 3,
+          "chunk_index": 20,
+          "chunk_id": "doc_012_chunk_001",
+          "document_id": "doc_012",
+          "topic": "",
+          "score": 0.8172870874404907
+        },
+        {
+          "rank": 4,
+          "chunk_index": 120,
+          "chunk_id": "doc_071_chunk_001",
+          "document_id": "doc_071",
+          "topic": "",
+          "score": 0.7938668727874756
+        },
+        {
+          "rank": 5,
+          "chunk_index": 99,
+          "chunk_id": "doc_059_chunk_001",
+          "document_id": "doc_059",
+          "topic": "",
+          "score": 0.7380945682525635
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_006",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "ground_truth_document_ids": [
+        "doc_040"
+      ],
+      "retrieved_document_ids": [
+        "doc_040",
+        "doc_040",
+        "doc_092",
+        "doc_050",
+        "doc_078"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 68,
+          "chunk_id": "doc_040_chunk_001",
+          "document_id": "doc_040",
+          "topic": "",
+          "score": 0.8686689734458923
+        },
+        {
+          "rank": 2,
+          "chunk_index": 69,
+          "chunk_id": "doc_040_chunk_002",
+          "document_id": "doc_040",
+          "topic": "",
+          "score": 0.8657268285751343
+        },
+        {
+          "rank": 3,
+          "chunk_index": 151,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "",
+          "score": 0.7420945167541504
+        },
+        {
+          "rank": 4,
+          "chunk_index": 86,
+          "chunk_id": "doc_050_chunk_002",
+          "document_id": "doc_050",
+          "topic": "",
+          "score": 0.7346879839897156
+        },
+        {
+          "rank": 5,
+          "chunk_index": 131,
+          "chunk_id": "doc_078_chunk_001",
+          "document_id": "doc_078",
+          "topic": "",
+          "score": 0.7235983610153198
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_007",
+      "question": "How do I fix my device's failed fingerprint or facial recognition login?",
+      "ground_truth_document_ids": [
+        "doc_023"
+      ],
+      "retrieved_document_ids": [
+        "doc_023",
+        "doc_091",
+        "doc_100",
+        "doc_035",
+        "doc_007"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 38,
+          "chunk_id": "doc_023_chunk_001",
+          "document_id": "doc_023",
+          "topic": "",
+          "score": 0.7852579951286316
+        },
+        {
+          "rank": 2,
+          "chunk_index": 149,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "",
+          "score": 0.640670657157898
+        },
+        {
+          "rank": 3,
+          "chunk_index": 163,
+          "chunk_id": "doc_100_chunk_001",
+          "document_id": "doc_100",
+          "topic": "",
+          "score": 0.6378491520881653
+        },
+        {
+          "rank": 4,
+          "chunk_index": 60,
+          "chunk_id": "doc_035_chunk_001",
+          "document_id": "doc_035",
+          "topic": "",
+          "score": 0.6338934898376465
+        },
+        {
+          "rank": 5,
+          "chunk_index": 11,
+          "chunk_id": "doc_007_chunk_001",
+          "document_id": "doc_007",
+          "topic": "",
+          "score": 0.6338861584663391
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_008",
+      "question": "How can I fix Microsoft Project if it's not responding or crashing frequently?",
+      "ground_truth_document_ids": [
+        "doc_081"
+      ],
+      "retrieved_document_ids": [
+        "doc_081",
+        "doc_004",
+        "doc_053",
+        "doc_067",
+        "doc_088"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 135,
+          "chunk_id": "doc_081_chunk_001",
+          "document_id": "doc_081",
+          "topic": "",
+          "score": 0.8155801296234131
+        },
+        {
+          "rank": 2,
+          "chunk_index": 5,
+          "chunk_id": "doc_004_chunk_001",
+          "document_id": "doc_004",
+          "topic": "",
+          "score": 0.7342323660850525
+        },
+        {
+          "rank": 3,
+          "chunk_index": 91,
+          "chunk_id": "doc_053_chunk_001",
+          "document_id": "doc_053",
+          "topic": "",
+          "score": 0.716729998588562
+        },
+        {
+          "rank": 4,
+          "chunk_index": 113,
+          "chunk_id": "doc_067_chunk_001",
+          "document_id": "doc_067",
+          "topic": "",
+          "score": 0.7112228870391846
+        },
+        {
+          "rank": 5,
+          "chunk_index": 145,
+          "chunk_id": "doc_088_chunk_002",
+          "document_id": "doc_088",
+          "topic": "",
+          "score": 0.7100715637207031
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_009",
+      "question": "How can I fix my Citrix connection issues when I'm working remotely?",
+      "ground_truth_document_ids": [
+        "doc_011"
+      ],
+      "retrieved_document_ids": [
+        "doc_011",
+        "doc_011",
+        "doc_033",
+        "doc_003",
+        "doc_033"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 18,
+          "chunk_id": "doc_011_chunk_001",
+          "document_id": "doc_011",
+          "topic": "",
+          "score": 0.8037747144699097
+        },
+        {
+          "rank": 2,
+          "chunk_index": 19,
+          "chunk_id": "doc_011_chunk_002",
+          "document_id": "doc_011",
+          "topic": "",
+          "score": 0.7529751062393188
+        },
+        {
+          "rank": 3,
+          "chunk_index": 57,
+          "chunk_id": "doc_033_chunk_002",
+          "document_id": "doc_033",
+          "topic": "",
+          "score": 0.6828120350837708
+        },
+        {
+          "rank": 4,
+          "chunk_index": 3,
+          "chunk_id": "doc_003_chunk_001",
+          "document_id": "doc_003",
+          "topic": "",
+          "score": 0.6731704473495483
+        },
+        {
+          "rank": 5,
+          "chunk_index": 56,
+          "chunk_id": "doc_033_chunk_001",
+          "document_id": "doc_033",
+          "topic": "",
+          "score": 0.6673822999000549
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_010",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_017"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 0,
+          "chunk_id": "doc_001_chunk_001",
+          "document_id": "doc_001",
+          "topic": "",
+          "score": 0.8258454203605652
+        },
+        {
+          "rank": 2,
+          "chunk_index": 1,
+          "chunk_id": "doc_001_chunk_002",
+          "document_id": "doc_001",
+          "topic": "",
+          "score": 0.8161245584487915
+        },
+        {
+          "rank": 3,
+          "chunk_index": 27,
+          "chunk_id": "doc_017_chunk_001",
+          "document_id": "doc_017",
+          "topic": "",
+          "score": 0.8122706413269043
+        },
+        {
+          "rank": 4,
+          "chunk_index": 16,
+          "chunk_id": "doc_010_chunk_001",
+          "document_id": "doc_010",
+          "topic": "",
+          "score": 0.7708295583724976
+        },
+        {
+          "rank": 5,
+          "chunk_index": 28,
+          "chunk_id": "doc_017_chunk_002",
+          "document_id": "doc_017",
+          "topic": "",
+          "score": 0.762580394744873
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_011",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "ground_truth_document_ids": [
+        "doc_019"
+      ],
+      "retrieved_document_ids": [
+        "doc_019",
+        "doc_089",
+        "doc_019",
+        "doc_089",
+        "doc_061"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 31,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "",
+          "score": 0.8049361705780029
+        },
+        {
+          "rank": 2,
+          "chunk_index": 146,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.7308979034423828
+        },
+        {
+          "rank": 3,
+          "chunk_index": 32,
+          "chunk_id": "doc_019_chunk_002",
+          "document_id": "doc_019",
+          "topic": "",
+          "score": 0.7225119471549988
+        },
+        {
+          "rank": 4,
+          "chunk_index": 147,
+          "chunk_id": "doc_089_chunk_002",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.720558762550354
+        },
+        {
+          "rank": 5,
+          "chunk_index": 104,
+          "chunk_id": "doc_061_chunk_002",
+          "document_id": "doc_061",
+          "topic": "",
+          "score": 0.7176563739776611
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_012",
+      "question": "How do I allow a specific application to receive incoming network traffic through the firewall?",
+      "ground_truth_document_ids": [
+        "doc_031"
+      ],
+      "retrieved_document_ids": [
+        "doc_031",
+        "doc_031",
+        "doc_008",
+        "doc_008",
+        "doc_070"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 52,
+          "chunk_id": "doc_031_chunk_001",
+          "document_id": "doc_031",
+          "topic": "",
+          "score": 0.7635000944137573
+        },
+        {
+          "rank": 2,
+          "chunk_index": 53,
+          "chunk_id": "doc_031_chunk_002",
+          "document_id": "doc_031",
+          "topic": "",
+          "score": 0.7225990891456604
+        },
+        {
+          "rank": 3,
+          "chunk_index": 14,
+          "chunk_id": "doc_008_chunk_002",
+          "document_id": "doc_008",
+          "topic": "",
+          "score": 0.6775081753730774
+        },
+        {
+          "rank": 4,
+          "chunk_index": 13,
+          "chunk_id": "doc_008_chunk_001",
+          "document_id": "doc_008",
+          "topic": "",
+          "score": 0.674098551273346
+        },
+        {
+          "rank": 5,
+          "chunk_index": 119,
+          "chunk_id": "doc_070_chunk_001",
+          "document_id": "doc_070",
+          "topic": "",
+          "score": 0.6652900576591492
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_013",
+      "question": "Why is OneNote not syncing my notes across devices?",
+      "ground_truth_document_ids": [
+        "doc_074"
+      ],
+      "retrieved_document_ids": [
+        "doc_074",
+        "doc_074",
+        "doc_088",
+        "doc_088",
+        "doc_001"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 125,
+          "chunk_id": "doc_074_chunk_001",
+          "document_id": "doc_074",
+          "topic": "",
+          "score": 0.787026047706604
+        },
+        {
+          "rank": 2,
+          "chunk_index": 126,
+          "chunk_id": "doc_074_chunk_002",
+          "document_id": "doc_074",
+          "topic": "",
+          "score": 0.7350594401359558
+        },
+        {
+          "rank": 3,
+          "chunk_index": 144,
+          "chunk_id": "doc_088_chunk_001",
+          "document_id": "doc_088",
+          "topic": "",
+          "score": 0.6437159776687622
+        },
+        {
+          "rank": 4,
+          "chunk_index": 145,
+          "chunk_id": "doc_088_chunk_002",
+          "document_id": "doc_088",
+          "topic": "",
+          "score": 0.6416410803794861
+        },
+        {
+          "rank": 5,
+          "chunk_index": 0,
+          "chunk_id": "doc_001_chunk_001",
+          "document_id": "doc_001",
+          "topic": "",
+          "score": 0.5994782447814941
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_014",
+      "question": "How do I create a restore point to revert my system if it malfunctions?",
+      "ground_truth_document_ids": [
+        "doc_034"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_049",
+        "doc_030"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 58,
+          "chunk_id": "doc_034_chunk_001",
+          "document_id": "doc_034",
+          "topic": "",
+          "score": 0.8192745447158813
+        },
+        {
+          "rank": 2,
+          "chunk_index": 22,
+          "chunk_id": "doc_013_chunk_001",
+          "document_id": "doc_013",
+          "topic": "",
+          "score": 0.7992231845855713
+        },
+        {
+          "rank": 3,
+          "chunk_index": 59,
+          "chunk_id": "doc_034_chunk_002",
+          "document_id": "doc_034",
+          "topic": "",
+          "score": 0.7363516092300415
+        },
+        {
+          "rank": 4,
+          "chunk_index": 84,
+          "chunk_id": "doc_049_chunk_002",
+          "document_id": "doc_049",
+          "topic": "",
+          "score": 0.6867261528968811
+        },
+        {
+          "rank": 5,
+          "chunk_index": 50,
+          "chunk_id": "doc_030_chunk_001",
+          "document_id": "doc_030",
+          "topic": "",
+          "score": 0.6800282001495361
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 160,
+          "chunk_id": "doc_098_chunk_001",
+          "document_id": "doc_098",
+          "topic": "",
+          "score": 0.7476048469543457
+        },
+        {
+          "rank": 2,
+          "chunk_index": 149,
+          "chunk_id": "doc_091_chunk_001",
+          "document_id": "doc_091",
+          "topic": "",
+          "score": 0.7453464269638062
+        },
+        {
+          "rank": 3,
+          "chunk_index": 83,
+          "chunk_id": "doc_049_chunk_001",
+          "document_id": "doc_049",
+          "topic": "",
+          "score": 0.7437857389450073
+        },
+        {
+          "rank": 4,
+          "chunk_index": 71,
+          "chunk_id": "doc_042_chunk_001",
+          "document_id": "doc_042",
+          "topic": "",
+          "score": 0.7200149297714233
+        },
+        {
+          "rank": 5,
+          "chunk_index": 119,
+          "chunk_id": "doc_070_chunk_001",
+          "document_id": "doc_070",
+          "topic": "",
+          "score": 0.6934754848480225
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 7,
+          "chunk_id": "doc_005_chunk_001",
+          "document_id": "doc_005",
+          "topic": "",
+          "score": 0.8669207692146301
+        },
+        {
+          "rank": 2,
+          "chunk_index": 8,
+          "chunk_id": "doc_005_chunk_002",
+          "document_id": "doc_005",
+          "topic": "",
+          "score": 0.8412978053092957
+        },
+        {
+          "rank": 3,
+          "chunk_index": 73,
+          "chunk_id": "doc_043_chunk_001",
+          "document_id": "doc_043",
+          "topic": "",
+          "score": 0.7102400660514832
+        },
+        {
+          "rank": 4,
+          "chunk_index": 37,
+          "chunk_id": "doc_022_chunk_001",
+          "document_id": "doc_022",
+          "topic": "",
+          "score": 0.6992789506912231
+        },
+        {
+          "rank": 5,
+          "chunk_index": 162,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "",
+          "score": 0.6777305603027344
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_017",
+      "question": "Why is my company software not working properly despite being installed and licensed?",
+      "ground_truth_document_ids": [
+        "doc_077"
+      ],
+      "retrieved_document_ids": [
+        "doc_077",
+        "doc_077",
+        "doc_063",
+        "doc_046",
+        "doc_081"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 129,
+          "chunk_id": "doc_077_chunk_001",
+          "document_id": "doc_077",
+          "topic": "",
+          "score": 0.8209819793701172
+        },
+        {
+          "rank": 2,
+          "chunk_index": 130,
+          "chunk_id": "doc_077_chunk_002",
+          "document_id": "doc_077",
+          "topic": "",
+          "score": 0.7220840454101562
+        },
+        {
+          "rank": 3,
+          "chunk_index": 107,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "",
+          "score": 0.7086353302001953
+        },
+        {
+          "rank": 4,
+          "chunk_index": 79,
+          "chunk_id": "doc_046_chunk_002",
+          "document_id": "doc_046",
+          "topic": "",
+          "score": 0.7000542283058167
+        },
+        {
+          "rank": 5,
+          "chunk_index": 135,
+          "chunk_id": "doc_081_chunk_001",
+          "document_id": "doc_081",
+          "topic": "",
+          "score": 0.6857218146324158
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_018",
+      "question": "How do I securely connect to the company database from my workstation?",
+      "ground_truth_document_ids": [
+        "doc_078"
+      ],
+      "retrieved_document_ids": [
+        "doc_078",
+        "doc_092",
+        "doc_099",
+        "doc_050",
+        "doc_064"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 131,
+          "chunk_id": "doc_078_chunk_001",
+          "document_id": "doc_078",
+          "topic": "",
+          "score": 0.8326012492179871
+        },
+        {
+          "rank": 2,
+          "chunk_index": 151,
+          "chunk_id": "doc_092_chunk_001",
+          "document_id": "doc_092",
+          "topic": "",
+          "score": 0.752433180809021
+        },
+        {
+          "rank": 3,
+          "chunk_index": 162,
+          "chunk_id": "doc_099_chunk_001",
+          "document_id": "doc_099",
+          "topic": "",
+          "score": 0.7452501654624939
+        },
+        {
+          "rank": 4,
+          "chunk_index": 85,
+          "chunk_id": "doc_050_chunk_001",
+          "document_id": "doc_050",
+          "topic": "",
+          "score": 0.7347062826156616
+        },
+        {
+          "rank": 5,
+          "chunk_index": 108,
+          "chunk_id": "doc_064_chunk_001",
+          "document_id": "doc_064",
+          "topic": "",
+          "score": 0.7280045747756958
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_019",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "ground_truth_document_ids": [
+        "doc_013"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_006",
+        "doc_006"
+      ],
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 58,
+          "chunk_id": "doc_034_chunk_001",
+          "document_id": "doc_034",
+          "topic": "",
+          "score": 0.863142728805542
+        },
+        {
+          "rank": 2,
+          "chunk_index": 22,
+          "chunk_id": "doc_013_chunk_001",
+          "document_id": "doc_013",
+          "topic": "",
+          "score": 0.856985330581665
+        },
+        {
+          "rank": 3,
+          "chunk_index": 59,
+          "chunk_id": "doc_034_chunk_002",
+          "document_id": "doc_034",
+          "topic": "",
+          "score": 0.7482060790061951
+        },
+        {
+          "rank": 4,
+          "chunk_index": 9,
+          "chunk_id": "doc_006_chunk_001",
+          "document_id": "doc_006",
+          "topic": "",
+          "score": 0.7281938195228577
+        },
+        {
+          "rank": 5,
+          "chunk_index": 10,
+          "chunk_id": "doc_006_chunk_002",
+          "document_id": "doc_006",
+          "topic": "",
+          "score": 0.7253772020339966
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_020",
+      "question": "How can I fix Visio if it's not working properly?",
+      "ground_truth_document_ids": [
+        "doc_032"
+      ],
+      "retrieved_document_ids": [
+        "doc_032",
+        "doc_032",
+        "doc_035",
+        "doc_084",
+        "doc_088"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 55,
+          "chunk_id": "doc_032_chunk_002",
+          "document_id": "doc_032",
+          "topic": "",
+          "score": 0.8365088105201721
+        },
+        {
+          "rank": 2,
+          "chunk_index": 54,
+          "chunk_id": "doc_032_chunk_001",
+          "document_id": "doc_032",
+          "topic": "",
+          "score": 0.822755753993988
+        },
+        {
+          "rank": 3,
+          "chunk_index": 60,
+          "chunk_id": "doc_035_chunk_001",
+          "document_id": "doc_035",
+          "topic": "",
+          "score": 0.690949559211731
+        },
+        {
+          "rank": 4,
+          "chunk_index": 138,
+          "chunk_id": "doc_084_chunk_001",
+          "document_id": "doc_084",
+          "topic": "",
+          "score": 0.6892736554145813
+        },
+        {
+          "rank": 5,
+          "chunk_index": 145,
+          "chunk_id": "doc_088_chunk_002",
+          "document_id": "doc_088",
+          "topic": "",
+          "score": 0.6785893440246582
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_021",
+      "question": "How do I safely clear a paper jam from my copier and prevent future issues?",
+      "ground_truth_document_ids": [
+        "doc_056"
+      ],
+      "retrieved_document_ids": [
+        "doc_056",
+        "doc_056",
+        "doc_009",
+        "doc_074",
+        "doc_004"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 95,
+          "chunk_id": "doc_056_chunk_001",
+          "document_id": "doc_056",
+          "topic": "",
+          "score": 0.8898304104804993
+        },
+        {
+          "rank": 2,
+          "chunk_index": 96,
+          "chunk_id": "doc_056_chunk_002",
+          "document_id": "doc_056",
+          "topic": "",
+          "score": 0.8753981590270996
+        },
+        {
+          "rank": 3,
+          "chunk_index": 15,
+          "chunk_id": "doc_009_chunk_001",
+          "document_id": "doc_009",
+          "topic": "",
+          "score": 0.8391796946525574
+        },
+        {
+          "rank": 4,
+          "chunk_index": 126,
+          "chunk_id": "doc_074_chunk_002",
+          "document_id": "doc_074",
+          "topic": "",
+          "score": 0.684845507144928
+        },
+        {
+          "rank": 5,
+          "chunk_index": 5,
+          "chunk_id": "doc_004_chunk_001",
+          "document_id": "doc_004",
+          "topic": "",
+          "score": 0.6763883829116821
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_022",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_041",
+        "doc_096",
+        "doc_019"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 146,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.7683358788490295
+        },
+        {
+          "rank": 2,
+          "chunk_index": 147,
+          "chunk_id": "doc_089_chunk_002",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.7325241565704346
+        },
+        {
+          "rank": 3,
+          "chunk_index": 70,
+          "chunk_id": "doc_041_chunk_001",
+          "document_id": "doc_041",
+          "topic": "",
+          "score": 0.7247378826141357
+        },
+        {
+          "rank": 4,
+          "chunk_index": 157,
+          "chunk_id": "doc_096_chunk_001",
+          "document_id": "doc_096",
+          "topic": "",
+          "score": 0.6945302486419678
+        },
+        {
+          "rank": 5,
+          "chunk_index": 31,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "",
+          "score": 0.6645358800888062
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_023",
+      "question": "How do I create a helpful and organized knowledge base article for our system?",
+      "ground_truth_document_ids": [
+        "doc_027"
+      ],
+      "retrieved_document_ids": [
+        "doc_027",
+        "doc_027",
+        "doc_069",
+        "doc_048",
+        "doc_097"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 45,
+          "chunk_id": "doc_027_chunk_001",
+          "document_id": "doc_027",
+          "topic": "",
+          "score": 0.8724290728569031
+        },
+        {
+          "rank": 2,
+          "chunk_index": 46,
+          "chunk_id": "doc_027_chunk_002",
+          "document_id": "doc_027",
+          "topic": "",
+          "score": 0.7680369019508362
+        },
+        {
+          "rank": 3,
+          "chunk_index": 117,
+          "chunk_id": "doc_069_chunk_001",
+          "document_id": "doc_069",
+          "topic": "",
+          "score": 0.6692333221435547
+        },
+        {
+          "rank": 4,
+          "chunk_index": 82,
+          "chunk_id": "doc_048_chunk_001",
+          "document_id": "doc_048",
+          "topic": "",
+          "score": 0.6556026935577393
+        },
+        {
+          "rank": 5,
+          "chunk_index": 158,
+          "chunk_id": "doc_097_chunk_001",
+          "document_id": "doc_097",
+          "topic": "",
+          "score": 0.6511396169662476
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_024",
+      "question": "How do I schedule a Zoom meeting with specific participants and set the time zone?",
+      "ground_truth_document_ids": [
+        "doc_043"
+      ],
+      "retrieved_document_ids": [
+        "doc_043",
+        "doc_022",
+        "doc_043",
+        "doc_005",
+        "doc_052"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 73,
+          "chunk_id": "doc_043_chunk_001",
+          "document_id": "doc_043",
+          "topic": "",
+          "score": 0.8137593269348145
+        },
+        {
+          "rank": 2,
+          "chunk_index": 37,
+          "chunk_id": "doc_022_chunk_001",
+          "document_id": "doc_022",
+          "topic": "",
+          "score": 0.7541778087615967
+        },
+        {
+          "rank": 3,
+          "chunk_index": 74,
+          "chunk_id": "doc_043_chunk_002",
+          "document_id": "doc_043",
+          "topic": "",
+          "score": 0.750665545463562
+        },
+        {
+          "rank": 4,
+          "chunk_index": 7,
+          "chunk_id": "doc_005_chunk_001",
+          "document_id": "doc_005",
+          "topic": "",
+          "score": 0.6737441420555115
+        },
+        {
+          "rank": 5,
+          "chunk_index": 90,
+          "chunk_id": "doc_052_chunk_002",
+          "document_id": "doc_052",
+          "topic": "",
+          "score": 0.6679927706718445
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 160,
+          "chunk_id": "doc_098_chunk_001",
+          "document_id": "doc_098",
+          "topic": "",
+          "score": 0.715917706489563
+        },
+        {
+          "rank": 2,
+          "chunk_index": 119,
+          "chunk_id": "doc_070_chunk_001",
+          "document_id": "doc_070",
+          "topic": "",
+          "score": 0.7083829045295715
+        },
+        {
+          "rank": 3,
+          "chunk_index": 71,
+          "chunk_id": "doc_042_chunk_001",
+          "document_id": "doc_042",
+          "topic": "",
+          "score": 0.6867758631706238
+        },
+        {
+          "rank": 4,
+          "chunk_index": 145,
+          "chunk_id": "doc_088_chunk_002",
+          "document_id": "doc_088",
+          "topic": "",
+          "score": 0.6651980876922607
+        },
+        {
+          "rank": 5,
+          "chunk_index": 109,
+          "chunk_id": "doc_065_chunk_001",
+          "document_id": "doc_065",
+          "topic": "",
+          "score": 0.6513121724128723
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_026",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "ground_truth_document_ids": [
+        "doc_016"
+      ],
+      "retrieved_document_ids": [
+        "doc_016",
+        "doc_037",
+        "doc_044",
+        "doc_100",
+        "doc_002"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 26,
+          "chunk_id": "doc_016_chunk_001",
+          "document_id": "doc_016",
+          "topic": "",
+          "score": 0.8191879391670227
+        },
+        {
+          "rank": 2,
+          "chunk_index": 63,
+          "chunk_id": "doc_037_chunk_001",
+          "document_id": "doc_037",
+          "topic": "",
+          "score": 0.7620034217834473
+        },
+        {
+          "rank": 3,
+          "chunk_index": 75,
+          "chunk_id": "doc_044_chunk_001",
+          "document_id": "doc_044",
+          "topic": "",
+          "score": 0.7591659426689148
+        },
+        {
+          "rank": 4,
+          "chunk_index": 163,
+          "chunk_id": "doc_100_chunk_001",
+          "document_id": "doc_100",
+          "topic": "",
+          "score": 0.7479995489120483
+        },
+        {
+          "rank": 5,
+          "chunk_index": 2,
+          "chunk_id": "doc_002_chunk_001",
+          "document_id": "doc_002",
+          "topic": "",
+          "score": 0.7377291917800903
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_027",
+      "question": "How do I create a new folder in the company's file system while following naming rules and access settings?",
+      "ground_truth_document_ids": [
+        "doc_041"
+      ],
+      "retrieved_document_ids": [
+        "doc_041",
+        "doc_089",
+        "doc_019",
+        "doc_048",
+        "doc_024"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 70,
+          "chunk_id": "doc_041_chunk_001",
+          "document_id": "doc_041",
+          "topic": "",
+          "score": 0.8789701461791992
+        },
+        {
+          "rank": 2,
+          "chunk_index": 146,
+          "chunk_id": "doc_089_chunk_001",
+          "document_id": "doc_089",
+          "topic": "",
+          "score": 0.7711202502250671
+        },
+        {
+          "rank": 3,
+          "chunk_index": 31,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "",
+          "score": 0.7357546091079712
+        },
+        {
+          "rank": 4,
+          "chunk_index": 82,
+          "chunk_id": "doc_048_chunk_001",
+          "document_id": "doc_048",
+          "topic": "",
+          "score": 0.7073349356651306
+        },
+        {
+          "rank": 5,
+          "chunk_index": 39,
+          "chunk_id": "doc_024_chunk_001",
+          "document_id": "doc_024",
+          "topic": "",
+          "score": 0.697502613067627
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "first_relevant_rank": 5,
+      "reciprocal_rank": 0.2,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 117,
+          "chunk_id": "doc_069_chunk_001",
+          "document_id": "doc_069",
+          "topic": "",
+          "score": 0.7943493127822876
+        },
+        {
+          "rank": 2,
+          "chunk_index": 94,
+          "chunk_id": "doc_055_chunk_001",
+          "document_id": "doc_055",
+          "topic": "",
+          "score": 0.788102924823761
+        },
+        {
+          "rank": 3,
+          "chunk_index": 129,
+          "chunk_id": "doc_077_chunk_001",
+          "document_id": "doc_077",
+          "topic": "",
+          "score": 0.7805322408676147
+        },
+        {
+          "rank": 4,
+          "chunk_index": 107,
+          "chunk_id": "doc_063_chunk_001",
+          "document_id": "doc_063",
+          "topic": "",
+          "score": 0.7779579162597656
+        },
+        {
+          "rank": 5,
+          "chunk_index": 158,
+          "chunk_id": "doc_097_chunk_001",
+          "document_id": "doc_097",
+          "topic": "",
+          "score": 0.777064323425293
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_029",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "ground_truth_document_ids": [
+        "doc_010"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_010",
+        "doc_017",
+        "doc_010",
+        "doc_001"
+      ],
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 0,
+          "chunk_id": "doc_001_chunk_001",
+          "document_id": "doc_001",
+          "topic": "",
+          "score": 0.8111312389373779
+        },
+        {
+          "rank": 2,
+          "chunk_index": 16,
+          "chunk_id": "doc_010_chunk_001",
+          "document_id": "doc_010",
+          "topic": "",
+          "score": 0.8000636100769043
+        },
+        {
+          "rank": 3,
+          "chunk_index": 27,
+          "chunk_id": "doc_017_chunk_001",
+          "document_id": "doc_017",
+          "topic": "",
+          "score": 0.7678092122077942
+        },
+        {
+          "rank": 4,
+          "chunk_index": 17,
+          "chunk_id": "doc_010_chunk_002",
+          "document_id": "doc_010",
+          "topic": "",
+          "score": 0.7567890882492065
+        },
+        {
+          "rank": 5,
+          "chunk_index": 1,
+          "chunk_id": "doc_001_chunk_002",
+          "document_id": "doc_001",
+          "topic": "",
+          "score": 0.7227973937988281
+        }
+      ]
+    },
+    {
+      "evaluation_id": "semantic_eval_030",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "ground_truth_document_ids": [
+        "doc_073"
+      ],
+      "retrieved_document_ids": [
+        "doc_073",
+        "doc_073",
+        "doc_019",
+        "doc_059",
+        "doc_012"
+      ],
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_index": 123,
+          "chunk_id": "doc_073_chunk_001",
+          "document_id": "doc_073",
+          "topic": "",
+          "score": 0.8369029760360718
+        },
+        {
+          "rank": 2,
+          "chunk_index": 124,
+          "chunk_id": "doc_073_chunk_002",
+          "document_id": "doc_073",
+          "topic": "",
+          "score": 0.8076494932174683
+        },
+        {
+          "rank": 3,
+          "chunk_index": 31,
+          "chunk_id": "doc_019_chunk_001",
+          "document_id": "doc_019",
+          "topic": "",
+          "score": 0.7196575403213501
+        },
+        {
+          "rank": 4,
+          "chunk_index": 99,
+          "chunk_id": "doc_059_chunk_001",
+          "document_id": "doc_059",
+          "topic": "",
+          "score": 0.7121983766555786
+        },
+        {
+          "rank": 5,
+          "chunk_index": 20,
+          "chunk_id": "doc_012_chunk_001",
+          "document_id": "doc_012",
+          "topic": "",
+          "score": 0.7073635458946228
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-09-05T23:58:21.022285"
+}

@@ -1,0 +1,1387 @@
+{
+  "stage": "rag_answer_quality_evaluation",
+  "status": "success",
+  "evaluation_dataset": "semantic_evaluation_questions_v2.json",
+  "question_count": 30,
+  "retrieval_method": "dense",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "top_k": 5,
+  "generator_model": "qwen3:8b",
+  "judge_model": "qwen3:8b",
+  "judge_temperature": 0.0,
+  "scoring_scale": "1-5",
+  "evaluation_dimensions": [
+    "correctness",
+    "relevance",
+    "faithfulness",
+    "completeness"
+  ],
+  "aggregate": {
+    "total_questions": 30,
+    "successful_evaluations": 30,
+    "failed_evaluations": 0,
+    "mean_correctness": 4.533,
+    "mean_relevance": 4.967,
+    "mean_faithfulness": 4.533,
+    "mean_completeness": 3.933,
+    "mean_overall_score": 4.492,
+    "overall_score_percentage": 89.83,
+    "hallucination_count": 12,
+    "hallucination_rate": 0.4,
+    "unsupported_claim_count": 13,
+    "average_unsupported_claims_per_answer": 0.433,
+    "correctness_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 10,
+      "5": 18
+    },
+    "relevance_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 29
+    },
+    "faithfulness_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 10,
+      "5": 18
+    },
+    "completeness_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 11,
+      "4": 10,
+      "5": 9
+    },
+    "overall_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 9,
+      "5": 9
+    }
+  },
+  "results": [
+    {
+      "evaluation_id": "semantic_eval_001",
+      "question": "How can I determine if my keyboard is not working properly?",
+      "ground_truth_document_ids": [
+        "doc_084"
+      ],
+      "retrieved_document_ids": [
+        "doc_084",
+        "doc_084",
+        "doc_049",
+        "doc_063",
+        "doc_091"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To determine if your keyboard is not working properly, follow these steps:\n\n1. Check if the keyboard is properly connected to your computer. If it's a wireless keyboard, ensure the battery is charged and the keyboard is paired correctly with the receiver.\n2. Try using the keyboard on a different computer to see if the issue is with the keyboard itself or your current system.\n3. Look for any physical blockages, such as dust or debris, that might be preventing certain keys from functioning.\n4. Restart your computer, as this can sometimes resolve temporary software issues.\n5. Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac).\n6. Ensure the keyboard is set as the default input device in your system settings.\n7. If the keyboard still isn't working, it may be a hardware issue, and you may need to contact the IT helpdesk for further assistance or a replacement.",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly addresses the user's question by providing practical troubleshooting steps for a malfunctioning keyboard, which aligns with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question about determining if a keyboard is not working properly, without including any unrelated information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The generated answer is largely supported by the Retrieved Context, particularly the Ground-Truth Source. However, it includes a few steps not explicitly mentioned in the source, such as 'Ensure the keyboard is set as the default input device' and 'Update the keyboard drivers through your operating system's settings.'"
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers most of the important troubleshooting steps for a malfunctioning keyboard, though it omits some steps like checking for conflicts with other devices and performing a system restore, which are present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "Ensure the keyboard is set as the default input device in your system settings.",
+          "Update the keyboard drivers through your operating system's settings (Device Manager for Windows or System Preferences for Mac)."
+        ],
+        "hallucination": true,
+        "overall_score": 4.25,
+        "overall_reason": "The answer is mostly correct and relevant, but includes some unsupported claims and omits key steps from the Ground-Truth Source, resulting in a moderate overall score."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 13.7885,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:14:28.622737"
+    },
+    {
+      "evaluation_id": "semantic_eval_002",
+      "question": "How do I set up a new user's account in JIRA with the correct permissions and access?",
+      "ground_truth_document_ids": [
+        "doc_054"
+      ],
+      "retrieved_document_ids": [
+        "doc_054",
+        "doc_068",
+        "doc_089",
+        "doc_082",
+        "doc_061"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To set up a new user's account in JIRA with the correct permissions and access, follow these steps:\n\n1. **Verify the User's Information**: Ensure you have the user's full name, email address, job title, department, and any necessary permissions or access levels.\n\n2. **Log in to JIRA**: Use your administrator credentials to log in to the JIRA dashboard.\n\n3. **Access the User Management Page**: Click on the gear icon in the top right corner of the JIRA dashboard and select \"Issues and Projects\" > \"User Management\".\n\n4. **Create a New User**: Click the \"Create User\" button at the top right corner of the User Management page.\n\n5. **Enter User Information**: Fill in the required details for the new user, including their username (typically their email address or a unique identifier), full name, email address, password (a temporary password that the user will change on their first login), and optional fields like job title and department.\n\n6. **Assign Permissions**: Choose the appropriate permission level for the user based on their role. Options include:\n   - **Administrator**: Full access to manage users, projects, and workflows.\n   - **Project Administrator**: Access to manage projects, including creating and editing issues, workflows",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly outlines the steps for setting up a new user's account in JIRA, including verifying information, logging in, creating the user, assigning permissions, and notifying the user."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about setting up a new user's account in JIRA with the correct permissions and access, without including irrelevant information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The generated answer is largely supported by the Retrieved Context (doc_054), which provides the same steps and details. However, it omits some steps like 'Add to Groups (Optional)' and 'Verify the User's Account' which are present in the Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers most of the important steps for setting up a new user's account in JIRA, but it misses some key steps such as adding the user to groups and verifying the account, which are included in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "Options include: Administrator, Project Administrator, and User."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it lacks completeness and includes some unsupported claims about permission options."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 13.4698,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:14:42.093542"
+    },
+    {
+      "evaluation_id": "semantic_eval_003",
+      "question": "How do I securely connect to my company printer using my credentials and network settings?",
+      "ground_truth_document_ids": [
+        "doc_071"
+      ],
+      "retrieved_document_ids": [
+        "doc_071",
+        "doc_071",
+        "doc_012",
+        "doc_045",
+        "doc_099"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To securely connect to your company printer using your credentials and network settings, follow these steps:\n\n1. Ensure you have the printer's IP address or hostname, your company-issued username, and password ready.\n2. Install the printer driver specific to your printer model from the company's software repository.\n3. Add the printer to your device by entering the printer's IP address or hostname and selecting the appropriate driver.\n4. Configure the printer connection by enabling encryption and selecting \"Username and password\" as the authentication method. Enter your company-issued username and password in the respective fields.\n5. Test the printer connection by printing a test page to ensure it is working properly.\n\nIf you encounter any issues, check that your credentials are correct, the printer is connected to the network, and the printer driver is up to date. If problems persist, contact the IT helpdesk for further assistance.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about securely connecting to a company printer using credentials and network settings, following the steps outlined in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides specific, actionable steps for securely connecting to a company printer."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context, including steps for installing drivers, adding the printer, configuring encryption and authentication, and testing the connection."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers all important steps for securely connecting to a company printer, though it omits some specific details about network configuration and printer registration that are present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The generated answer is accurate, relevant, and faithful to the source material, with minor omissions in completeness."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.7891,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:14:52.883611"
+    },
+    {
+      "evaluation_id": "semantic_eval_004",
+      "question": "How can I fix unexpected errors when using Microsoft Publisher?",
+      "ground_truth_document_ids": [
+        "doc_046"
+      ],
+      "retrieved_document_ids": [
+        "doc_046",
+        "doc_046",
+        "doc_004",
+        "doc_081",
+        "doc_067"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To fix unexpected errors when using Microsoft Publisher, you can follow these steps:\n\n1. **Restart Microsoft Publisher**: Close all instances of Publisher, wait for 30 seconds, and then reopen the application. This can resolve issues caused by temporary glitches or corrupted files.\n\n2. **Check for Updates**: Ensure that Microsoft Publisher is up-to-date by checking for updates in the Microsoft Store or through the built-in update feature within Publisher.\n\n3. **Disable Add-ins**: Third-party plugins can cause conflicts and errors. Try disabling all add-ins and then restart Publisher. If the issue persists, re-enable add-ins one by one to identify the problematic plugin.\n\n4. **Check File Integrity**: Corrupted files can cause issues in Publisher. Try opening a different file or creating a new one to isolate the problem. If the issue persists, try repairing the file using the built-in repair tool or by saving the file in a different format.\n\n5. **Check Printer Settings**: Printer settings can affect how Publisher interacts with your printer. Ensure that the printer is properly configured and that the correct paper size and orientation are selected.\n\n6. **Check for Conflicting Programs**: Other applications may be interfering with Publisher's functionality. Try closing all other applications and background programs, then restart Publisher.\n\n7.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about fixing unexpected errors in Microsoft Publisher and aligns with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without including irrelevant information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context and Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers most of the important troubleshooting steps for Microsoft Publisher, though it omits Step 7 (Check for System File Corruption) and Step 8 (Reinstall Microsoft Publisher) from the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the source material, though it is slightly incomplete by omitting some steps from the Ground-Truth Source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.6083,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:15:04.493426"
+    },
+    {
+      "evaluation_id": "semantic_eval_005",
+      "question": "How do I set up a network printer on my Windows or Mac computer?",
+      "ground_truth_document_ids": [
+        "doc_045"
+      ],
+      "retrieved_document_ids": [
+        "doc_045",
+        "doc_045",
+        "doc_012",
+        "doc_071",
+        "doc_059"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To set up a network printer on your Windows or Mac computer, follow these steps:\n\n**Windows:**\n\n1. Locate the printer's IP address from your department's printer list or by contacting your IT representative.\n2. Open the **Devices and Printers** window by clicking the Start menu and selecting **Devices and Printers**.\n3. Click on **Add a printer** in the top menu bar.\n4. Choose **Add a network, wireless or Bluetooth printer** and click **Next**.\n5. Enter the printer's IP address in the **Hostname or IP address** field and click **Next**.\n6. Select the printer driver from the list of available drivers. If the driver is not listed, you may need to download and install it from the manufacturer's website.\n7. Follow the prompts to complete the installation of the printer driver.\n8. Optionally, set the printer as your default printer by right-clicking on the printer and selecting **Set as default printer**.\n\n**Mac:**\n\n1. Locate the printer's IP address from your department's printer list or by contacting your IT representative.\n2. Open the **Printers & Scanners** window by clicking the Apple menu, selecting **System Preferences**, and then clicking **Printers & Scanners",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about setting up a network printer on Windows or Mac, following the steps provided in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides step-by-step instructions for setting up a network printer on both Windows and Mac."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "The generated answer is fully supported by the Retrieved Context and Ground-Truth Source, with no unsupported claims."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers the important steps for setting up a network printer on both Windows and Mac, but it does not include the troubleshooting tips or additional configuration steps found in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the source material, but it is slightly incomplete as it omits some troubleshooting and configuration details."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.8466,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:15:16.341075"
+    },
+    {
+      "evaluation_id": "semantic_eval_006",
+      "question": "How do I ensure my connection to a SharePoint site is secure and properly authenticated?",
+      "ground_truth_document_ids": [
+        "doc_040"
+      ],
+      "retrieved_document_ids": [
+        "doc_040",
+        "doc_040",
+        "doc_092",
+        "doc_050",
+        "doc_078"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To ensure your connection to a SharePoint site is secure and properly authenticated, follow these steps:\n\n1. **Use the Correct URL**: Ensure the SharePoint site URL starts with \"https\" to establish an encrypted connection.\n\n2. **Verify the SSL Certificate**: Click on the padlock icon in your browser's address bar to check the site's security certificate. Confirm that the certificate is valid, not expired, and issued to the correct domain.\n\n3. **Install the Security Certificate (If Required)**: If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings.\n\n4. **Configure Browser Settings**: Enable certificate revocation checks in your browser settings. For Internet Explorer, go to \"Tools\" > \"Internet Options\" > \"Security\" and ensure \"Check for server certificate revocation\" is enabled. For Chrome, go to \"Settings\" > \"Advanced\" > \"Privacy and security\" and enable \"Check for certificate revocation.\"\n\n5. **Authenticate with Your Credentials**: Enter your username and password when prompted. If Single Sign-On (SSO) or another authentication method is used, follow the on-screen instructions to authenticate.\n\n6. **Verify the Secure Connection**:",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly addresses the user's question about securing a SharePoint connection and authentication, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about securing and authenticating a SharePoint connection without unnecessary information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The answer is largely supported by the Retrieved Context, though it includes some minor variations in phrasing and structure that are not factually incorrect."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers most of the important steps for securing a SharePoint connection, but it omits some details about verifying the certificate and browser settings that are present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "Install the Security Certificate (If Required): If the SharePoint site uses a self-signed or custom certificate, install it on your computer to trust the connection. This can typically be done through your browser's certificate management settings."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but contains some unsupported claims and lacks completeness in certain areas."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.961,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:15:27.303626"
+    },
+    {
+      "evaluation_id": "semantic_eval_007",
+      "question": "How do I fix my device's failed fingerprint or facial recognition login?",
+      "ground_truth_document_ids": [
+        "doc_023"
+      ],
+      "retrieved_document_ids": [
+        "doc_023",
+        "doc_091",
+        "doc_100",
+        "doc_035",
+        "doc_007"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "If you are experiencing issues with your device's failed fingerprint or facial recognition login, follow these steps:\n\n1. Ensure you are using a trusted device that has been registered with the IT department. If you are using a personal device, confirm it meets the company's security requirements.\n\n2. Access the biometric login settings. On a Windows device, press the Windows key + I to open Settings, then navigate to \"Accounts\" > \"Sign-in options.\" On a Mac device, click the Apple menu, select \"System Preferences,\" then \"Users & Groups,\" and choose \"Login Options.\"\n\n3. Remove the existing biometric data by locating the section related to your biometric login method (e.g., Fingerprint, Face ID) and clicking the \"Remove\" or \"Delete\" button.\n\n4. Restart your device to ensure the changes take effect.\n\n5. Re-enroll your biometric data by returning to the biometric login settings and following the prompts to re-scan your fingerprint or re-register your facial recognition data.\n\n6. Test your biometric login to ensure it is working correctly. If you continue to experience issues, contact the IT helpdesk for further assistance.\n\nMake sure your device's biometric sensor is clean and free of obstructions. If you have recently",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about fixing failed fingerprint or facial recognition login by providing step-by-step instructions that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides actionable steps to resolve the issue without introducing unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Ground-Truth Source (doc_023), including the steps for accessing settings, removing biometric data, restarting the device, re-enrolling data, and testing the login."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers the important steps to resolve the issue, but it omits the 'Additional Tips' section from the Ground-Truth Source, which includes information about sensor cleanliness and changes to biometric features."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the Ground-Truth Source, with minor incompleteness in omitting some additional tips."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 12.0641,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:15:39.369180"
+    },
+    {
+      "evaluation_id": "semantic_eval_008",
+      "question": "How can I fix Microsoft Project if it's not responding or crashing frequently?",
+      "ground_truth_document_ids": [
+        "doc_081"
+      ],
+      "retrieved_document_ids": [
+        "doc_081",
+        "doc_004",
+        "doc_053",
+        "doc_067",
+        "doc_088"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "If Microsoft Project is not responding or crashing frequently, follow these steps to troubleshoot the issue:\n\n1. **Verify the Installation**: Ensure that Microsoft Project is properly installed on your machine. If it is not installed, install it from the company's software repository or contact the IT department for assistance.\n\n2. **Check for Updates**: Go to **File** > **Account** > **Update Options** > **Update Now** to check for and install any available updates. Restart the application after the update.\n\n3. **Disable Add-ins**: Go to **File** > **Options** > **Add-ins**, and uncheck the boxes next to each add-in. Restart Microsoft Project to see if the issue is resolved. If the issue is resolved, re-enable the add-ins one by one to identify the problematic one.\n\n4. **Check Project File Integrity**: Try opening a different project file to determine if the issue is specific to a particular file. If the issue occurs with a specific file, use **File** > **Info** > **Organizer** > **Repair** to repair the file.\n\n5. **Check for Conflicting Applications**: Close all other applications and restart Microsoft Project. If the issue resolves, re-open other applications one by one to identify any conflicting programs",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about fixing Microsoft Project if it's not responding or crashing frequently, and the steps provided are accurate and relevant."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without including any unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All the steps in the generated answer are supported by the Retrieved Context, particularly Document ID: doc_081."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers most of the important troubleshooting steps for Microsoft Project, but it omits some steps like checking system resources and resetting settings, which are included in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the retrieved context, but it is slightly incomplete as it misses some steps from the ground-truth source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.2781,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:15:49.648786"
+    },
+    {
+      "evaluation_id": "semantic_eval_009",
+      "question": "How can I fix my Citrix connection issues when I'm working remotely?",
+      "ground_truth_document_ids": [
+        "doc_011"
+      ],
+      "retrieved_document_ids": [
+        "doc_011",
+        "doc_011",
+        "doc_033",
+        "doc_003",
+        "doc_033"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To fix Citrix connection issues when working remotely, follow these steps:\n\n1. **Verify Citrix Server Connection**: Ensure your device is connected to the company's network and has a stable internet connection. Confirm that you are connected to the company's VPN if working remotely.\n\n2. **Check Citrix Receiver Version**: Make sure you are using the latest version of Citrix Receiver. On Windows, check via **Control Panel > Programs and Features**, and on Mac, check via **Applications > Citrix Receiver > About Citrix Receiver**. Update if necessary.\n\n3. **Verify Authentication**: Ensure your credentials are correct and that you are using the appropriate authentication method (e.g., username/password, smart card, or biometric). Try logging in again with accurate details.\n\n4. **Check Resource Availability**: Confirm that the Citrix resource you are trying to access is available. You can check the Citrix Resource Monitoring dashboard or contact the resource owner for confirmation.\n\n5. **Clear Citrix Cache**: Delete the contents of the Citrix cache folder. On Windows, go to **C:\\Users\\<username>\\AppData\\Local\\Citrix\\CtxCache**, and on Mac, go to **~/Library/Application Support/Citrix/CtxCache**. Restart the Citrix",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about fixing Citrix connection issues by providing accurate and relevant troubleshooting steps."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about Citrix connection issues without including unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All the steps provided in the generated answer are directly supported by the Retrieved Context, particularly from Document ID: doc_011."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers most of the important steps for resolving Citrix connection issues, but it omits the step about disabling and re-enabling Citrix, which is present in the Retrieved Context."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the Retrieved Context, with minor incompleteness in the steps provided."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.5976,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:00.248343"
+    },
+    {
+      "evaluation_id": "semantic_eval_010",
+      "question": "How do I configure my mobile device to access company email securely?",
+      "ground_truth_document_ids": [
+        "doc_001"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_001",
+        "doc_017",
+        "doc_010",
+        "doc_017"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To configure your mobile device to access company email securely, follow these steps:\n\n1. Ensure that your mobile device has a supported operating system (iOS, Android, or Windows) and that you have your company email account credentials.\n\n2. If your company requires a Mobile Device Management (MDM) profile, make sure it is installed on your device. This profile allows your device to connect to the company network and access company email. If you are unsure whether MDM is required, contact your IT department for assistance.\n\n3. Set up your email account on your mobile device by going to the Settings app, selecting \"Mail\" or \"Email,\" and tapping \"Add Account\" or \"Create a new account.\" Choose \"Exchange\" or \"Corporate\" as the account type, then enter your company email address and password. If prompted, enter the company's email server address.\n\n4. In the email account settings, select the \"Advanced\" or \"Security\" option. Ensure that \"Use SSL/TLS\" or \"Use secure connection\" is enabled. Set the authentication method to \"Username and Password\" or \"Domain\\Username.\" If prompted, enter your company's email domain.\n\n5. Wait for the email account to synchronize with the company email server. Send a test email",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly outlines the steps to configure a mobile device for company email, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about configuring a mobile device to access company email securely."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The generated answer is largely supported by the Retrieved Context, though it omits some specific details like the need for a password lock or additional security measures mentioned in the Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers the main steps for configuring email, but it misses some important details like setting up a password lock or additional security measures such as encryption or two-factor authentication."
+        },
+        "unsupported_claims": [
+          "If prompted, enter your company's email domain."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it lacks completeness and includes some unsupported claims."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.8297,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:11.080016"
+    },
+    {
+      "evaluation_id": "semantic_eval_011",
+      "question": "How do I set up a new user's computer with the correct account and network settings?",
+      "ground_truth_document_ids": [
+        "doc_019"
+      ],
+      "retrieved_document_ids": [
+        "doc_019",
+        "doc_089",
+        "doc_019",
+        "doc_089",
+        "doc_061"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To set up a new user's computer with the correct account and network settings, follow these steps:\n\n1. Ensure the user's account is created and active in the company's directory, verifying their login credentials, email address, and phone number. If the account is not already created, follow the process outlined in \"Creating a New User Account.\"\n\n2. Obtain the new user's computer and confirm that the serial number and asset tag match the information in the company's asset management system.\n\n3. Install the company-approved image, which includes the operating system, core applications, and security software. Ensure the installation is completed successfully and the computer restarts automatically.\n\n4. Connect the computer to the company network using a wired Ethernet connection. Configure the IP address, subnet mask, default gateway, and DNS settings according to the company's network configuration guidelines.\n\n5. Join the computer to the company domain by opening the System Properties window, selecting \"Domain,\" entering the company domain name, and authenticating with a domain admin account.\n\n6. Install any additional software required by the user's role using the company's software distribution tool.\n\n7. Configure the user's email client and phone settings, including the email address, password, server settings, phone number, and voicemail password.\n\n8.",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly addresses the user's question about setting up a new user's computer with account and network settings, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without unnecessary information, focusing on account creation, computer setup, network configuration, and domain joining."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The generated answer is largely supported by the Retrieved Context, particularly the Ground-Truth Source (doc_019). However, it omits some steps like verifying the computer is powered down and setting up security software, which are present in the source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers most of the important steps for setting up a new user's computer, but it misses some details like verifying the computer is powered down and setting up security software, which are included in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "If the account is not already created, follow the process outlined in 'Creating a New User Account.'"
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it includes some unsupported claims and omits key steps from the Ground-Truth Source, affecting its faithfulness and completeness."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 12.6821,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:23.764571"
+    },
+    {
+      "evaluation_id": "semantic_eval_012",
+      "question": "How do I allow a specific application to receive incoming network traffic through the firewall?",
+      "ground_truth_document_ids": [
+        "doc_031"
+      ],
+      "retrieved_document_ids": [
+        "doc_031",
+        "doc_031",
+        "doc_008",
+        "doc_008",
+        "doc_070"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To allow a specific application to receive incoming network traffic through the firewall, follow these steps:\n\n1. Open the Windows Defender Firewall with Advanced Security by searching for it in the Start menu and clicking the result.\n2. Click on \"Inbound Rules\" in the left-hand menu to view the list of existing inbound rules.\n3. Click on \"New Rule\" in the right-hand \"Actions\" menu to start the \"New Inbound Rule Wizard.\"\n4. Select \"Rule Type\" as \"Program\" and click \"Next.\"\n5. Click \"Browse\" to locate the executable file of the application you want to allow, then click \"Open\" and \"Next.\"\n6. Select the protocol required by the application (e.g., TCP, UDP) and specify any local ports if needed, then click \"Next.\"\n7. Choose \"Any IP address\" to allow traffic from any remote computer, or specify a particular IP address or range if needed, then click \"Next.\"\n8. Select \"Allow the connection\" to permit incoming traffic, then click \"Finish.\"\n9. Verify that the new rule appears in the \"Inbound Rules\" list and ensure it is enabled by checking the \"Enabled\" column.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question by providing step-by-step instructions to allow a specific application to receive incoming network traffic through the firewall, which matches the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question about allowing incoming network traffic to a specific application through the firewall."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "The generated answer is fully supported by the Retrieved Context and Ground-Truth Source, with no unsupported claims or deviations from the provided information."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all the important steps needed to configure a firewall exception for an application, as outlined in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully aligned with the Ground-Truth Source and supported by the Retrieved Context."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.1003,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:33.866366"
+    },
+    {
+      "evaluation_id": "semantic_eval_013",
+      "question": "Why is OneNote not syncing my notes across devices?",
+      "ground_truth_document_ids": [
+        "doc_074"
+      ],
+      "retrieved_document_ids": [
+        "doc_074",
+        "doc_074",
+        "doc_088",
+        "doc_088",
+        "doc_001"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "OneNote may not be syncing your notes across devices due to several potential issues. First, ensure your internet connection is stable and working correctly. Next, verify that you are signed in to the correct Microsoft account associated with your OneNote notebooks. Check the notebook settings to confirm it is set to sync with the correct location, such as OneDrive, SharePoint, or a local computer. You can also try initiating a manual sync by clicking the Sync button in the top right corner of the OneNote window. If the issue persists, ensure that OneNote is up to date and consider checking for conflicts by closing and reopening the notebook. If these steps do not resolve the issue, contact your IT support team for further assistance.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about OneNote syncing issues and provides accurate troubleshooting steps that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question about OneNote syncing and does not include any unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All the troubleshooting steps and recommendations in the generated answer are supported by the Retrieved Context and Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all the important troubleshooting steps for OneNote syncing issues as outlined in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully supported by the provided sources."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 9.7115,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:43.579411"
+    },
+    {
+      "evaluation_id": "semantic_eval_014",
+      "question": "How do I create a restore point to revert my system if it malfunctions?",
+      "ground_truth_document_ids": [
+        "doc_034"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_049",
+        "doc_030"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To create a restore point on your Windows system, follow these steps:\n\n1. Open System Properties by right-clicking on **This PC** or **Computer** and selecting **Properties**, or by pressing the Windows key + Pause/Break.\n2. In the System Properties window, click on the **System Protection** tab.\n3. Select the drive you want to use for system restore points (usually the C: drive) and adjust the **Max Usage** slider if needed.\n4. Click the **Create** button at the bottom of the window.\n5. Enter a description for the restore point (e.g., \"Before installing new software\") and click **Create**.\n6. Wait for the system to create the restore point, which may take a few minutes.\n7. Verify the restore point by checking the list of available restore points in the **System Protection** tab.\n\nIt is recommended to create a restore point before making significant changes to your system, such as installing new software or drivers. Ensure you have sufficient disk space available, as restore points can take up a significant amount of storage.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer accurately reflects the steps for creating a system restore point as described in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about creating a restore point to revert the system if it malfunctions."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context and Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer provides all necessary steps and best practices for creating a restore point, as outlined in the source material."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully supported by the provided sources."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 9.7147,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:16:53.296654"
+    },
+    {
+      "evaluation_id": "semantic_eval_015",
+      "question": "How can I determine if my laptop's battery is causing performance issues?",
+      "ground_truth_document_ids": [
+        "doc_091"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_091",
+        "doc_049",
+        "doc_042",
+        "doc_070"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To determine if your laptop's battery is causing performance issues, you can follow these steps based on the available information:\n\n1. **Check Battery Health and Calibration**: If your laptop has a removable battery, ensure it is properly seated and calibrated. For non-removable batteries, check the battery health through the laptop's built-in diagnostics or manufacturer tools.\n\n2. **Ensure Proper Ventilation**: Overheating can cause performance issues. Make sure your laptop is placed on a flat, stable surface with proper airflow to prevent overheating, which can be exacerbated by a degraded battery.\n\n3. **Run a Diagnostic Test**: Use the laptop's built-in diagnostic tools or manufacturer-provided software to check the health of the battery and other hardware components. This can help identify if the battery is the source of the problem.\n\n4. **Monitor System Performance**: If your laptop is running slowly, check for resource-intensive applications or background processes that may be affecting performance. Close unnecessary programs and ensure your operating system and software are up-to-date.\n\n5. **Check for Error Messages or Symptoms**: Look for any error messages related to the battery or performance issues. These can provide clues about whether the battery is the cause.\n\nIf the issue persists after these steps, it may be necessary to escalate the issue",
+      "evaluation": {
+        "correctness": {
+          "score": 3,
+          "reason": "The answer provides general troubleshooting steps that are relevant to determining if a laptop's battery is causing performance issues, but it does not directly address battery-specific diagnostics or performance impact."
+        },
+        "relevance": {
+          "score": 4,
+          "reason": "The answer directly addresses the user's question about determining if a laptop's battery is causing performance issues, with steps that are relevant to the topic."
+        },
+        "faithfulness": {
+          "score": 3,
+          "reason": "The answer is mostly supported by the retrieved context, but some steps (e.g., checking for error messages, monitoring system performance) are not explicitly mentioned in the context."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers several relevant steps, but it lacks specific battery-related diagnostics that are present in the retrieved context, such as checking battery health and calibration."
+        },
+        "unsupported_claims": [
+          "If the issue persists after these steps, it may be necessary to escalate the issue"
+        ],
+        "hallucination": true,
+        "overall_score": 3.25,
+        "overall_reason": "The answer is partially relevant and faithful to the retrieved context, but it lacks completeness and includes unsupported claims about escalation."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.4892,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:17:04.787369"
+    },
+    {
+      "evaluation_id": "semantic_eval_016",
+      "question": "How do I ensure everyone can join a Cisco Webex meeting with clear audio and video?",
+      "ground_truth_document_ids": [
+        "doc_005"
+      ],
+      "retrieved_document_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_043",
+        "doc_022",
+        "doc_099"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To ensure everyone can join a Cisco Webex meeting with clear audio and video, follow these steps:\n\n1. **Schedule the Meeting**: Log in to Cisco Webex, navigate to the \"Meetings\" tab, and select \"Schedule a Meeting.\" Enter the meeting topic, start and end times, and invite participants by email or from the company directory.\n\n2. **Configure Audio Settings**: In the \"Audio\" section, select \"Cisco Webex Audio\" as the default audio type. Allow participants to join via phone or VoIP if needed.\n\n3. **Set Up Video Settings (Optional)**: If video is required, click on the \"Video\" tab and select \"Cisco Webex Video\" as the default video type. Allow participants to join via video if desired.\n\n4. **Send Invitations**: Click \"Schedule\" to send the meeting invitation. The invitation will include a link to join the meeting and dial-in information for audio-only participants.\n\n5. **Test Audio and Video Settings**: Before the meeting, test your audio and video settings to ensure they are working properly. Encourage invitees to join early to troubleshoot any technical issues.\n\n6. **Use Mute and Share Features**: As the host, use the \"Mute\" feature to minimize background",
+      "evaluation": {
+        "correctness": {
+          "score": 3,
+          "reason": "The generated answer provides accurate steps for setting up a Cisco Webex meeting, but it omits some key details like adding an agenda, troubleshooting, and the 'Start' button step."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about ensuring clear audio and video for all participants in a Cisco Webex meeting."
+        },
+        "faithfulness": {
+          "score": 3,
+          "reason": "The answer is largely faithful to the retrieved context, but it includes some steps not explicitly mentioned in the source material, such as 'Use Mute and Share Features' which is only partially covered."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers most of the important steps for setting up a Cisco Webex meeting, but it misses some key elements like adding an agenda, troubleshooting, and the 'Start' button step."
+        },
+        "unsupported_claims": [
+          "Use the 'Mute' feature to minimize background noise and ensure clear audio."
+        ],
+        "hallucination": true,
+        "overall_score": 3.5,
+        "overall_reason": "The answer is mostly relevant and faithful to the retrieved context, but it includes some unsupported claims and omits key steps, resulting in a moderate score."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 12.2368,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:17:17.025692"
+    },
+    {
+      "evaluation_id": "semantic_eval_017",
+      "question": "Why is my company software not working properly despite being installed and licensed?",
+      "ground_truth_document_ids": [
+        "doc_077"
+      ],
+      "retrieved_document_ids": [
+        "doc_077",
+        "doc_077",
+        "doc_063",
+        "doc_046",
+        "doc_081"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "The software may not be working properly due to several potential issues. First, ensure that the software is properly installed and licensed by checking the installation directory and verifying the license key or subscription status. Next, confirm that your system meets the minimum requirements for the software, such as operating system, processor speed, and memory. \n\nCheck for any conflicting software, such as antivirus or firewall programs, that may be interfering with the application. Clearing cache and temporary files can also help resolve issues. Ensure the software is up-to-date with the latest patches and updates. If the problem persists, consult the software's documentation or online resources for additional troubleshooting steps. If these steps do not resolve the issue, escalate it to advanced support for further assistance.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question by providing a list of troubleshooting steps that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question about why the software is not working properly and offers actionable steps to resolve the issue."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context, including verifying installation and licensing, checking system requirements, checking for conflicting software, clearing cache, checking for updates, consulting documentation, escalating to support, and considering reinstallation."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all the important troubleshooting steps outlined in the Ground-Truth Source, providing a comprehensive guide to resolving software issues."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully aligned with the Ground-Truth Source and supported by the Retrieved Context."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.1596,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:17:28.187810"
+    },
+    {
+      "evaluation_id": "semantic_eval_018",
+      "question": "How do I securely connect to the company database from my workstation?",
+      "ground_truth_document_ids": [
+        "doc_078"
+      ],
+      "retrieved_document_ids": [
+        "doc_078",
+        "doc_092",
+        "doc_099",
+        "doc_050",
+        "doc_064"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To securely connect to the company database from your workstation, follow these steps:\n\n1. Ensure you have the necessary database client software installed on your machine. This software can be downloaded from the company's internal software repository.\n2. Obtain the database connection details, including the database server name or IP address, port number, database username and password, and database name or schema. Contact the database administrator or refer to the database documentation for this information.\n3. Configure your database client software by creating a new connection profile. Enter the server name, port number, and database name or schema in the respective fields. Select the encryption method required by the company's security policy, such as SSL/TLS.\n4. Enter your database username and password in the client software.\n5. Click the \"Connect\" or \"Login\" button to establish a connection to the database. If prompted, accept the security certificate or trust the connection.\n6. Verify that the connection is encrypted by checking the connection status or properties.\n7. Test the connection by executing a simple query, such as \"SELECT 1,\" to ensure it returns the expected results.\n\nAdditionally, ensure your database client software and operating system are up to date with the latest security patches. Avoid storing database credentials in plain text and use strong passwords",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about securely connecting to a company database, following the steps outlined in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides specific, actionable steps for securely connecting to a company database."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Ground-Truth Source and the Retrieved Context, including steps for installing software, obtaining connection details, configuring encryption, and testing the connection."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all important aspects of securely connecting to a company database, including security considerations, testing, and updates, as outlined in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully aligned with the Ground-Truth Source and the Retrieved Context."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.3696,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:17:39.559416"
+    },
+    {
+      "evaluation_id": "semantic_eval_019",
+      "question": "How do I protect my system from data loss by creating a restore point in Windows?",
+      "ground_truth_document_ids": [
+        "doc_013"
+      ],
+      "retrieved_document_ids": [
+        "doc_034",
+        "doc_013",
+        "doc_034",
+        "doc_006",
+        "doc_006"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To protect your system from data loss by creating a restore point in Windows, follow these steps:\n\n1. Open System Properties by right-clicking on **Computer** or **This PC** and selecting **Properties**, or by pressing the Windows key + Pause/Break.\n\n2. In the System Properties window, click on the **System Protection** tab.\n\n3. Select the drive you want to use for system restore points (usually the C: drive) and adjust the **Max Usage** slider to set the amount of disk space allocated for restore points.\n\n4. Click the **Create** button at the bottom of the window. Enter a description for the restore point, such as \"Before installing new software,\" and click **Create**.\n\n5. Wait for the system to create the restore point, which may take a few minutes. A progress bar will indicate the status.\n\n6. Verify the restore point by checking the list of available restore points in the **System Protection** tab. The newly created restore point will be listed with the current date and time.\n\nCreating a restore point is a good practice before making significant changes to your system, such as installing new software or drivers. It ensures that you can revert your system to a stable state if any issues arise.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about creating a restore point in Windows and provides accurate, step-by-step instructions that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and focuses solely on the process of creating a restore point in Windows without introducing unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context, including the steps for creating a restore point, the use of the System Protection tab, and the verification process."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers all important steps for creating a restore point, including setting the Max Usage, creating the point, and verifying it. However, it does not mention scheduling automatic restore points or troubleshooting steps, which are included in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The generated answer is highly accurate, relevant, and faithful to the source material, with only minor omissions in completeness."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.8181,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:17:50.379510"
+    },
+    {
+      "evaluation_id": "semantic_eval_020",
+      "question": "How can I fix Visio if it's not working properly?",
+      "ground_truth_document_ids": [
+        "doc_032"
+      ],
+      "retrieved_document_ids": [
+        "doc_032",
+        "doc_032",
+        "doc_035",
+        "doc_084",
+        "doc_088"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "If Visio is not working properly, you can try the following steps:\n\n1. Restart Visio and your computer to resolve any temporary system glitches or corrupted files.\n2. Check for updates by opening Visio, going to **File** > **Account** > **Update Options**, and clicking **Update Now** to install any available updates.\n3. Disable all add-ins by going to **File** > **Options** > **Add-ins**, unchecking each add-in, and restarting Visio. If the issue persists, re-enable add-ins one by one to identify the problematic one.\n4. Close all other applications and restart Visio. If the issue continues, consider uninstalling recently installed software or updates.\n5. Ensure your system meets the minimum requirements for running Visio, including sufficient RAM, processor speed, and disk space.\n6. Repair or reinstall Visio by going to **Control Panel** > **Programs and Features** (Windows 10/8) or **Control Panel** > **Add or Remove Programs** (Windows 7), uninstalling Microsoft Visio, and then reinstalling it from the Microsoft website or your company's software repository.\n7. If none of the above steps resolve the issue, contact IT support for further assistance.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about fixing Visio by providing accurate troubleshooting steps that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides actionable steps to resolve Visio issues."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All the steps in the generated answer are supported by the Retrieved Context and Ground-Truth Source, with no unsupported claims."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers most of the important troubleshooting steps for Visio, though it omits some details like checking file format and compatibility, which are present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the source material, with minor omissions in completeness."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 9.9532,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:00.335689"
+    },
+    {
+      "evaluation_id": "semantic_eval_021",
+      "question": "How do I safely clear a paper jam from my copier and prevent future issues?",
+      "ground_truth_document_ids": [
+        "doc_056"
+      ],
+      "retrieved_document_ids": [
+        "doc_056",
+        "doc_056",
+        "doc_009",
+        "doc_074",
+        "doc_004"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To safely clear a paper jam from your copier and prevent future issues, follow these steps:\n\n1. **Identify the Error Message or Symptom**: Check the copier's control panel for any error messages such as \"Paper Jam,\" \"Misfeed,\" or \"Output Tray Full.\"\n\n2. **Turn Off and Unplug the Copier**: Switch off the copier using the power button, then unplug it from the power outlet to ensure your safety and prevent accidental startup.\n\n3. **Locate the Jam**: Use the copier's control panel or visually inspect the exterior and interior to find the jammed area.\n\n4. **Open the Copier**: Open the top cover, front cover, or both, depending on your model. Refer to the user manual if unsure.\n\n5. **Remove Any Visible Paper Debris**: Gently pull out any visible paper scraps or torn pages from the jammed area. Avoid pushing the paper further into the copier.\n\n6. **Check for and Remove Any Obstructing Objects**: Inspect the jammed area for objects like paper clips, staples, or torn paper fragments and remove them.\n\n7. **Check and Clean the Paper Path**: Inspect the paper path for dust, dirt, or debris. Use a soft",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about safely clearing a paper jam and preventing future issues, following the steps outlined in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides specific, actionable steps for clearing a paper jam and preventing future issues."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context, including the steps for identifying the error, turning off the copier, locating the jam, removing debris, and cleaning the paper path."
+        },
+        "completeness": {
+          "score": 4,
+          "reason": "The answer covers the important steps for clearing a paper jam and preventing future issues, but it omits some steps like reassembling the copier, plugging it back in, testing it, and contacting IT support if needed."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 4.75,
+        "overall_reason": "The answer is correct, relevant, and faithful to the source material, but it is slightly incomplete as it misses some key steps from the Ground-Truth Source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 12.8133,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:13.151466"
+    },
+    {
+      "evaluation_id": "semantic_eval_022",
+      "question": "How do I grant a new user access to specific folders in Box?",
+      "ground_truth_document_ids": [
+        "doc_089"
+      ],
+      "retrieved_document_ids": [
+        "doc_089",
+        "doc_089",
+        "doc_041",
+        "doc_096",
+        "doc_019"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To grant a new user access to specific folders in Box, follow these steps:\n\n1. Log in to the Box admin console using your administrator credentials.\n2. Click on the \"Users\" tab and select the new user's account.\n3. Click on \"Edit Folder Settings\" for the specific folder you want to grant access to.\n4. Add the new user to the folder permissions and choose the appropriate permission level (e.g., Editor, Viewer).\n5. Click \"Save\" to apply the changes.\n\nOnce the user has been granted access, notify them of their login credentials and provide any additional information they may need to access the folders. If the user is unable to access a folder, verify that they have been assigned the correct permissions.",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly outlines the steps to grant a new user access to specific folders in Box, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about granting folder access to a new user in Box without unnecessary information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The answer is largely supported by the Retrieved Context, particularly the steps for setting up folder access. However, it omits some details like identifying the folders first, which is mentioned in the Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers the main steps for granting folder access but lacks some details, such as identifying the folders before setting up access, which is included in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "Notify them of their login credentials and provide any additional information they may need to access the folders."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it includes some unsupported claims and lacks completeness in certain steps."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.0486,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:24.203059"
+    },
+    {
+      "evaluation_id": "semantic_eval_023",
+      "question": "How do I create a helpful and organized knowledge base article for our system?",
+      "ground_truth_document_ids": [
+        "doc_027"
+      ],
+      "retrieved_document_ids": [
+        "doc_027",
+        "doc_027",
+        "doc_069",
+        "doc_048",
+        "doc_097"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To create a helpful and organized knowledge base article, follow these steps:\n\n1. **Determine the Need for a New Article**: Search the knowledge base to ensure a similar article does not already exist, avoiding duplication and maintaining an organized structure.\n\n2. **Gather Information**: Collect all relevant details about the topic. This may involve consulting internal resources, external sources, subject matter experts, and existing documentation.\n\n3. **Plan the Article Structure**: Organize the content into sections such as a title, summary, prerequisites, steps to resolve, troubleshooting tips, and related articles.\n\n4. **Write the Article**: Present the information clearly and concisely, using simple language and formatting like bullet points and headings to improve readability.\n\n5. **Add Relevant Media**: Include images, videos, or diagrams to enhance understanding and provide visual support for complex topics.\n\n6. **Review and Edit**: Check the article for accuracy, completeness, and clarity, ensuring it meets the required standards for quality and usability.\n\n7. **Obtain Approval**: Get approval from a supervisor or peer reviewer to confirm the article is ready for publication.\n\n8. **Publish the Article**: Once approved, publish the article to the knowledge base, ensuring it is properly categorized and tagged with relevant keywords for easy retrieval.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about creating a helpful and organized knowledge base article, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without including irrelevant information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All claims in the generated answer are supported by the Retrieved Context, including steps like determining the need for a new article, gathering information, planning structure, writing, adding media, reviewing, obtaining approval, and publishing."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all important steps needed to create a helpful and organized knowledge base article, as outlined in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully supported by the provided context and ground-truth source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.3871,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:34.592164"
+    },
+    {
+      "evaluation_id": "semantic_eval_024",
+      "question": "How do I schedule a Zoom meeting with specific participants and set the time zone?",
+      "ground_truth_document_ids": [
+        "doc_043"
+      ],
+      "retrieved_document_ids": [
+        "doc_043",
+        "doc_022",
+        "doc_043",
+        "doc_005",
+        "doc_052"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To schedule a Zoom meeting with specific participants and set the time zone, follow these steps:\n\n1. Log in to your Zoom account through the Zoom client or web portal.\n2. Click on \"New Meeting.\"\n3. Enter a topic for your meeting in the \"Topic\" field.\n4. Set the start and end times for your meeting in the \"Start\" and \"End\" fields.\n5. Select the time zone for your meeting from the \"Time Zone\" dropdown menu.\n6. Add participants by entering their email addresses in the \"Invitees\" field, or use the \"Directory\" tab to add participants from your company's directory.\n7. Configure any additional meeting settings such as audio/video options, screen sharing, or recording.\n8. Click \"Save\" to save your meeting settings, then click \"Send Invitation\" to send the meeting details to the participants.\n\nThe meeting invitations will be sent to the participants' email addresses with a link to join the meeting.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about scheduling a Zoom meeting with specific participants and setting the time zone, following the steps outlined in the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and provides step-by-step instructions for scheduling a Zoom meeting with participants and setting the time zone."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "The generated answer is fully supported by the Retrieved Context (specifically doc_043) and does not introduce any unsupported claims."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all important steps needed to schedule a Zoom meeting with participants and set the time zone, as detailed in the Ground-Truth Source."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The answer is correct, relevant, faithful, and complete, fully aligned with the Ground-Truth Source and supported by the Retrieved Context."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.851,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:45.445677"
+    },
+    {
+      "evaluation_id": "semantic_eval_025",
+      "question": "Why is my internet connection so slow, and what can I do to fix it?",
+      "ground_truth_document_ids": [
+        "doc_070"
+      ],
+      "retrieved_document_ids": [
+        "doc_098",
+        "doc_070",
+        "doc_042",
+        "doc_088",
+        "doc_065"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "A slow internet connection can be caused by various factors, and here are some steps you can take to address the issue:\n\n1. **Check Network Connectivity**: Ensure your device is connected to the correct network (wired or wireless). Check the network cable or Wi-Fi connection for damage or interference. Make sure the device's network settings are configured correctly.\n\n2. **Restart Your Device and Router**: Restart your device to clear any temporary issues. If the issue persists, restart your router or modem to refresh the network connection.\n\n3. **Run Network Diagnostics**: Use built-in network diagnostic tools, such as Windows Network Diagnostics or macOS Network Utility, to identify potential issues. You can also run a speed test using a tool like Speedtest.net to determine the current network speed.\n\n4. **Check for Resource Intensive Applications**: Identify any applications or background processes that may be consuming significant network resources, such as video streaming or file transfers. Close unnecessary applications or background processes.\n\n5. **Check for Malware**: Run a full scan with your antivirus software to detect and remove any malware that may be consuming network resources.\n\n6. **Investigate Network Congestion**: Use tools like Network Monitor or Wireshark to check network utilization and identify any bottlenecks or high-traffic",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly addresses the user's question about slow internet and provides actionable steps to fix it, which aligns with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question about slow internet and offers specific troubleshooting steps."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The answer is largely supported by the Retrieved Context, particularly Document 070, which outlines similar troubleshooting steps for slow network performance."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers most of the key steps for troubleshooting slow internet, but it omits some important details like gathering information about the scope of the issue and escalating to network infrastructure teams."
+        },
+        "unsupported_claims": [
+          "Check for OneDrive Updates"
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it includes an unsupported claim about OneDrive updates and lacks some completeness in addressing the issue."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.5681,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:18:56.016315"
+    },
+    {
+      "evaluation_id": "semantic_eval_026",
+      "question": "How do I recover my username if I've forgotten it and can't access the self-service portal?",
+      "ground_truth_document_ids": [
+        "doc_016"
+      ],
+      "retrieved_document_ids": [
+        "doc_016",
+        "doc_037",
+        "doc_044",
+        "doc_100",
+        "doc_002"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "If you've forgotten your username and cannot access the self-service portal, you should contact the IT helpdesk for assistance. Provide your full name, email address, and a brief description of the issue. A helpdesk specialist will verify your identity and guide you through the process of resetting your username. You may be required to answer security questions or provide additional information to confirm your identity. Once verified, they will assist you in resetting your username and may also help you set up a new password if needed. Make sure to update any saved login credentials with your new username after the reset.",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly addresses the user's question about recovering a forgotten username when the self-service portal is inaccessible. It recommends contacting the helpdesk, which aligns with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without including irrelevant information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The answer is largely supported by the Retrieved Context, particularly the steps for contacting the helpdesk and providing identity verification. However, it omits the step about identifying the account type, which is present in the Ground-Truth Source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers the main steps for contacting the helpdesk and verifying identity, but it misses some details about account type identification and the username reset process that are present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "You may be required to answer security questions or provide additional information to confirm your identity."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly relevant and correct but lacks some completeness and includes an unsupported claim about security questions."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 11.4728,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:19:07.492108"
+    },
+    {
+      "evaluation_id": "semantic_eval_027",
+      "question": "How do I create a new folder in the company's file system while following naming rules and access settings?",
+      "ground_truth_document_ids": [
+        "doc_041"
+      ],
+      "retrieved_document_ids": [
+        "doc_041",
+        "doc_089",
+        "doc_019",
+        "doc_048",
+        "doc_024"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To create a new folder in the company's file system while following naming rules and access settings, follow these steps:\n\n1. Access the file system through the company's intranet portal by typing [intranet.company.com](http://intranet.company.com) into your web browser and logging in with your network credentials.\n\n2. Navigate to the desired location where you want to create the new folder, such as your personal drive, a departmental share, or a project-specific folder.\n\n3. Click the \"New Folder\" button, which is represented by a folder icon with a plus sign (+) overlay.\n\n4. Enter the folder name, ensuring it follows the company's naming conventions and avoids special characters or spaces.\n\n5. Optionally, add a description to the folder to provide context or explain its purpose.\n\n6. If you need to restrict access, set permissions for specific users or groups by clicking the \"Permissions\" tab and adding or removing users and groups as needed.\n\n7. Click the \"Create\" button to create the new folder in the specified location.\n\n8. Verify that the folder has been created successfully by checking the folder tree or testing it by uploading a file or creating a subfolder. \n\nIf you encounter any issues or have questions, contact the IT",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about creating a new folder in the company's file system, following naming rules and access settings."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question without including any unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "All steps in the generated answer are supported by the content in the Ground-Truth Source (doc_041)."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all important steps needed to create a new folder in the company's file system, including naming rules and access settings."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully aligned with the Ground-Truth Source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.2072,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:19:17.702338"
+    },
+    {
+      "evaluation_id": "semantic_eval_028",
+      "question": "How do I properly report an IT issue to ensure quick support?",
+      "ground_truth_document_ids": [
+        "doc_097"
+      ],
+      "retrieved_document_ids": [
+        "doc_069",
+        "doc_055",
+        "doc_077",
+        "doc_063",
+        "doc_097"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To properly report an IT issue and ensure quick support, follow these steps:\n\n1. **Access the IT Helpdesk Portal**: Navigate to the IT Helpdesk Portal using the provided link or through the company intranet.\n\n2. **Log in to the Portal**: Enter your company credentials to log in. If you have trouble, contact the IT Helpdesk.\n\n3. **Create a New Request**: Click on the \"Create a New Request\" or \"Create a New Problem\" button, depending on the portal.\n\n4. **Select the Request Type**: Choose \"IT Problem Report\" or \"IT Problem\" as the request type.\n\n5. **Enter the Problem Description**: Provide a detailed description of the issue, including any error messages, symptoms, steps taken to resolve the issue, and relevant system or application information.\n\n6. **Add Attachments (Optional)**: Attach any supporting documents such as screenshots or logs that may help in troubleshooting.\n\n7. **Select the Category and Subcategory**: Choose the category and subcategory that best describe the issue. This helps in routing the request to the correct team.\n\n8. **Enter Your Contact Information**: Provide your name, email address, and phone number so the IT Helpdesk can contact you for further information or updates.\n\n9.",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly outlines the steps to report an IT issue, aligning with the Ground-Truth Source (doc_097) and other retrieved contexts."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about how to properly report an IT issue, without unnecessary information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The answer is largely supported by the retrieved contexts, particularly doc_097 and doc_055, which describe similar steps for creating an IT problem report. However, it omits some details like the 'Submit the Request' step and the tracking process."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers the main steps for reporting an IT issue, but it misses some important details such as the tracking process, the submission confirmation, and the expected response time."
+        },
+        "unsupported_claims": [
+          "Click on the 'Create a New Request' or 'Create a New Problem' button, depending on the portal."
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly correct and relevant, but it contains some unsupported claims and lacks completeness in certain areas."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 12.0135,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:19:29.718876"
+    },
+    {
+      "evaluation_id": "semantic_eval_029",
+      "question": "How do I set up my company email on my Android phone if automatic setup fails?",
+      "ground_truth_document_ids": [
+        "doc_010"
+      ],
+      "retrieved_document_ids": [
+        "doc_001",
+        "doc_010",
+        "doc_017",
+        "doc_010",
+        "doc_001"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "If automatic setup fails when configuring your company email on your Android phone, follow these steps:\n\n1. Open the Email app on your Android device.\n2. Tap \"Add account\" or \"Add email account.\"\n3. Select \"Email\" or \"Corporate\" as the account type.\n4. Enter your company email address and password.\n5. Tap \"Next.\" If automatic setup fails, tap \"Manual setup\" or \"Advanced setup.\"\n6. Enter the following server settings:\n   - Incoming server: [company email server address]\n   - Port: [company email port]\n   - Security type: [SSL/TLS or similar]\n   - Username: [your email address]\n   - Password: [your email password]\n7. Tap \"Next\" to proceed.\n8. Enter the outgoing server settings using the same details as the incoming server.\n9. Configure additional account options such as sync frequency, sync size, and whether to delete emails from the server after syncing.\n10. Tap \"Next\" and then \"Done\" to complete the setup.\n\nIf you continue to experience issues, ensure your internet connection is stable and your email credentials are correct. If problems persist, contact your IT department for further assistance.",
+      "evaluation": {
+        "correctness": {
+          "score": 5,
+          "reason": "The generated answer correctly addresses the user's question about setting up company email on an Android phone when automatic setup fails. It provides accurate and relevant steps that align with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer is directly relevant to the user's question and does not include any unnecessary or unrelated information."
+        },
+        "faithfulness": {
+          "score": 5,
+          "reason": "The generated answer is fully supported by the Retrieved Context and Ground-Truth Source. All steps and instructions are consistent with the provided documents."
+        },
+        "completeness": {
+          "score": 5,
+          "reason": "The answer covers all important information needed to address the user's question, including manual setup steps, server configuration, and troubleshooting tips."
+        },
+        "unsupported_claims": [],
+        "hallucination": false,
+        "overall_score": 5.0,
+        "overall_reason": "The generated answer is correct, relevant, faithful, and complete, fully supported by the provided context and ground-truth source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.1267,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:19:39.849058"
+    },
+    {
+      "evaluation_id": "semantic_eval_030",
+      "question": "How do I set up my fax machine to work on the company network?",
+      "ground_truth_document_ids": [
+        "doc_073"
+      ],
+      "retrieved_document_ids": [
+        "doc_073",
+        "doc_073",
+        "doc_019",
+        "doc_059",
+        "doc_012"
+      ],
+      "ground_truth_in_top_k": true,
+      "answer": "To set up your fax machine on the company network, follow these steps:\n\n1. Connect the fax machine to the network using an Ethernet cable, ensuring it is turned off before connecting.\n2. Obtain a static IP address assigned by the IT department and access the fax machine's administration interface by typing its current IP address in a web browser. Use the default administrator credentials (Username: admin, Password: password) to log in.\n3. Navigate to the **Network Settings** section and select **TCP/IP**. Enter the assigned static IP address, subnet mask, default gateway, and DNS server addresses. Save the changes and restart the fax machine.\n4. Access the administration interface again and navigate to the **Fax Settings** section. Set the **Fax Mode** to **Network Fax**, enter the company's fax domain (e.g., fax.example.com), set the **Fax Resolution** to **Fine**, and the **Fax Compression** to **MH**. Save the changes.\n5. If you want to enable email notifications for incoming faxes, navigate to the **Email Settings** section. Enter the company's email server address (e.g., mail.example.com), set the **Email Protocol** to **SMTP**, and enter the fax machine's email address (e.g",
+      "evaluation": {
+        "correctness": {
+          "score": 4,
+          "reason": "The generated answer correctly outlines the steps to configure a network fax machine, aligning with the Ground-Truth Source."
+        },
+        "relevance": {
+          "score": 5,
+          "reason": "The answer directly addresses the user's question about setting up a fax machine on the company network without unnecessary information."
+        },
+        "faithfulness": {
+          "score": 4,
+          "reason": "The generated answer is largely supported by the Retrieved Context, though it includes some additional details not explicitly mentioned in the source."
+        },
+        "completeness": {
+          "score": 3,
+          "reason": "The answer covers the main steps for configuring a network fax machine, but it omits the 'Test the Fax Machine' step and some troubleshooting tips present in the Ground-Truth Source."
+        },
+        "unsupported_claims": [
+          "Enter the fax machine's email address (e.g,"
+        ],
+        "hallucination": true,
+        "overall_score": 4.0,
+        "overall_reason": "The answer is mostly accurate and relevant, but it includes some unsupported claims and omits key steps from the Ground-Truth Source."
+      },
+      "judge_model": "qwen3:8b",
+      "judge_temperature": 0.0,
+      "evaluation_time_seconds": 10.663,
+      "status": "success",
+      "evaluated_at": "2026-09-06T00:19:50.514508"
+    }
+  ],
+  "created_at": "2026-09-06T00:19:50.518011"
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "semantic_evaluation_dataset_preparation",
+  "status": "success",
+  "evaluation_count": 30,
+  "source_document_count": 100,
+  "random_seed": 42,
+  "query_generation_method": "alt_ki_text_without_exact_topic",
+  "output_path": "E:\\rag\\data\\evaluation\\semantic_evaluation_questions.json",
+  "created_at": "2026-09-05T23:51:15.185670"
+}

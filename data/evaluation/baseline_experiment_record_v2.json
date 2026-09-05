@@ -1,0 +1,149 @@
+{
+  "experiment": {
+    "name": "Baseline Dense RAG",
+    "version": "v2",
+    "status": "completed",
+    "purpose": "Establish a reproducible baseline for dense Retrieval-Augmented Generation using the synthetic IT knowledge corpus."
+  },
+  "dataset": {
+    "dataset_name": "Synthetic IT-Related Knowledge Items",
+    "dataset_version": "Version 3",
+    "records": 100,
+    "columns": 4,
+    "baseline_text_fields": [
+      "ki_topic",
+      "ki_text"
+    ],
+    "excluded_text_fields": [
+      "alt_ki_text",
+      "bad_ki_text"
+    ],
+    "document_count": 100,
+    "notes": "The primary knowledge text was used for the baseline corpus. Alternative and deliberately poor text versions were excluded from the baseline experiment."
+  },
+  "document_preparation": {
+    "documents": 100,
+    "text_cleaning": "Conservative whitespace and line-ending normalization.",
+    "original_dataset_modified": false
+  },
+  "chunking": {
+    "tokenizer": "cl100k_base",
+    "chunk_size_tokens": 500,
+    "chunk_overlap_tokens": 50,
+    "chunk_step_tokens": 450,
+    "document_count": 100,
+    "chunk_count": 164,
+    "average_tokens_per_chunk": 347.0,
+    "median_tokens_per_chunk": 474,
+    "minimum_tokens_per_chunk": 53,
+    "maximum_tokens_per_chunk": 500
+  },
+  "embedding": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "dimension": 384,
+    "device": "cuda",
+    "normalized": true,
+    "embedding_count": 164,
+    "batch_size": 32
+  },
+  "vector_index": {
+    "index_type": "FAISS IndexFlatIP",
+    "vector_count": 164,
+    "dimension": 384,
+    "similarity_metric": "inner_product",
+    "normalized_embeddings": true,
+    "cosine_similarity_equivalent": true
+  },
+  "retrieval": {
+    "evaluation_type": "Natural semantic question retrieval",
+    "evaluation_questions": 30,
+    "retrieval_method": "dense",
+    "top_k": 5,
+    "recall_at_1": 0.8333,
+    "recall_at_3": 0.9667,
+    "recall_at_5": 1.0,
+    "mrr": 0.9067,
+    "top_1_hits": 25,
+    "top_3_hits": 29,
+    "top_5_hits": 30,
+    "ranking_failure_cases": 5,
+    "retrieval_failure_cases": 0,
+    "mean_ground_truth_rank": null
+  },
+  "generation": {
+    "evaluation_questions": 30,
+    "successful_answers": 30,
+    "failed_answers": 0,
+    "generator": "qwen3:8b",
+    "thinking": false,
+    "temperature": 0.0,
+    "num_predict": 256,
+    "top_k": 5,
+    "average_generation_time_seconds": 9.6274,
+    "total_generation_time_seconds": 288.8213,
+    "average_answer_length_characters": 1138.87
+  },
+  "answer_quality": {
+    "evaluation_questions": 30,
+    "mean_correctness": 4.533,
+    "mean_relevance": 4.967,
+    "mean_faithfulness": 4.533,
+    "mean_completeness": 3.933,
+    "mean_overall_score": 4.492,
+    "overall_score_percentage": 89.83,
+    "hallucination_count": 12,
+    "hallucination_rate": 0.4,
+    "unsupported_claim_count": 13
+  },
+  "failure_analysis": {
+    "total_cases": 30,
+    "hallucination_cases": 12,
+    "hallucination_rate": 0.4,
+    "unsupported_claims": 13,
+    "low_completeness_cases": 11,
+    "low_correctness_cases": 2,
+    "low_faithfulness_cases": 2,
+    "ground_truth_in_top5": 30,
+    "ground_truth_not_retrieved": 0,
+    "ground_truth_not_rank1": 5,
+    "mean_ground_truth_rank": 1.267,
+    "failure_category_counts": {
+      "generation_faithfulness_failure": 11,
+      "no_major_failure": 18,
+      "retrieval_ranking_failure": 1
+    }
+  },
+  "research_findings": {
+    "retrieval_finding": "The dense retriever achieved complete Top-5 coverage on the 30 natural semantic evaluation questions. The main retrieval limitation was ranking ambiguity rather than failure to retrieve the relevant document.",
+    "generation_finding": "The RAG generator successfully produced answers for all 30 evaluation questions. Answer relevance was very high, while completeness was lower than the other evaluated dimensions.",
+    "faithfulness_finding": "The baseline generated generally useful answers, but unsupported claims were identified in a subset of responses. This indicates that strong retrieval does not automatically guarantee fully grounded generation.",
+    "primary_baseline_limitation": "The most visible answer-quality weakness is completeness, followed by unsupported additions in generated answers.",
+    "retrieval_generation_relationship": "The baseline results demonstrate that retrieval coverage and generation quality are related but distinct components of RAG performance.",
+    "experimental_status": "Baseline experiment completed. No retrieval, embedding, chunking, or generation parameters were modified after baseline evaluation."
+  },
+  "artifacts": {
+    "documents": "E:\\rag\\data\\processed\\rag_documents.json",
+    "chunks": "E:\\rag\\data\\processed\\rag_chunks.json",
+    "embeddings": "E:\\rag\\data\\embeddings\\rag_embeddings.json",
+    "vector_index": "E:\\rag\\data\\vector_index\\dense_index.faiss",
+    "semantic_evaluation": "E:\\rag\\data\\evaluation\\semantic_evaluation_questions_v2.json",
+    "retrieval_evaluation": "E:\\rag\\data\\evaluation\\semantic_dense_retrieval_evaluation_v2.json",
+    "rag_generation": "E:\\rag\\data\\evaluation\\end_to_end_rag_evaluation_v2.json",
+    "answer_quality": "E:\\rag\\data\\evaluation\\rag_answer_quality_evaluation_v2.json",
+    "failure_analysis": "E:\\rag\\data\\evaluation\\rag_failure_analysis_v2.json"
+  },
+  "reproducibility": {
+    "retrieval_method": "dense",
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "embedding_dimension": 384,
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "top_k": 5,
+    "generator": "qwen3:8b",
+    "temperature": 0.0,
+    "thinking": false,
+    "judge_model": "qwen3:8b",
+    "evaluation_questions": 30
+  },
+  "created_at": "2026-09-06T00:26:40.209718"
+}
